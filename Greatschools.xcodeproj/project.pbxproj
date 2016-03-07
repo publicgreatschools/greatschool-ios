@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB64C731E3E46684679EDD28 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E026157D431E85F27D397280 /* Pods.framework */; };
+		E903456B1C8D26C700542F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903456A1C8D26C700542F55 /* AppDelegate.swift */; };
+		E90345701C8D26C700542F55 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E903456E1C8D26C700542F55 /* Home.storyboard */; };
+		E90345721C8D26C700542F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90345711C8D26C700542F55 /* Assets.xcassets */; };
+		E90345751C8D26C700542F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345731C8D26C700542F55 /* LaunchScreen.storyboard */; };
+		E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903457D1C8D27FB00542F55 /* AppDelegate+Appearance.swift */; };
+		E90345811C8D283500542F55 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90345801C8D283500542F55 /* TabBarController.swift */; };
+		E90345861C8D28CC00542F55 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90345851C8D28CC00542F55 /* Widgets.swift */; };
+		E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90345871C8D2A7900542F55 /* AppDelegate+UI.swift */; };
+		E903458A1C8D2BB800542F55 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90345891C8D2BB800542F55 /* Extensions.swift */; };
+		E903458E1C8D2C4300542F55 /* Greatschools-Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903458D1C8D2C4300542F55 /* Greatschools-Define.swift */; };
+		E90345961C8D2FBE00542F55 /* NearBy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345951C8D2FBE00542F55 /* NearBy.storyboard */; };
+		E90345981C8D2FCD00542F55 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345971C8D2FCD00542F55 /* Search.storyboard */; };
+		E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345991C8D2FDB00542F55 /* MySchools.storyboard */; };
+		E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E903459B1C8D2FE800542F55 /* GreatKids.storyboard */; };
+		E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345911C8D2D0500542F55 /* ProximaNova-Bold.otf */; };
+		E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */; };
+		E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */; };
+		E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345941C8D2D0500542F55 /* ProximaNova-Semibold.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CAEA027565171A5336A7BFAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E026157D431E85F27D397280 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90345671C8D26C700542F55 /* Greatschools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greatschools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E903456A1C8D26C700542F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E903456F1C8D26C700542F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		E90345711C8D26C700542F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E90345741C8D26C700542F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E90345761C8D26C700542F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E903457D1C8D27FB00542F55 /* AppDelegate+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Appearance.swift"; sourceTree = "<group>"; };
+		E90345801C8D283500542F55 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E90345851C8D28CC00542F55 /* Widgets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		E90345871C8D2A7900542F55 /* AppDelegate+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UI.swift"; sourceTree = "<group>"; };
+		E90345891C8D2BB800542F55 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E903458D1C8D2C4300542F55 /* Greatschools-Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Greatschools-Define.swift"; sourceTree = "<group>"; };
+		E90345911C8D2D0500542F55 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		E90345941C8D2D0500542F55 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		E90345951C8D2FBE00542F55 /* NearBy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NearBy.storyboard; sourceTree = "<group>"; };
+		E90345971C8D2FCD00542F55 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		E90345991C8D2FDB00542F55 /* MySchools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MySchools.storyboard; sourceTree = "<group>"; };
+		E903459B1C8D2FE800542F55 /* GreatKids.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreatKids.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E90345641C8D26C700542F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB64C731E3E46684679EDD28 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B5594CCF93801D6AD8639CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAEA027565171A5336A7BFAA /* Pods.debug.xcconfig */,
+				A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D62C20BFCB8E38672A4201DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E026157D431E85F27D397280 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E903455E1C8D26C700542F55 = {
+			isa = PBXGroup;
+			children = (
+				E90345691C8D26C700542F55 /* Greatschools */,
+				E90345681C8D26C700542F55 /* Products */,
+				5B5594CCF93801D6AD8639CD /* Pods */,
+				D62C20BFCB8E38672A4201DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E90345681C8D26C700542F55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E90345671C8D26C700542F55 /* Greatschools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E90345691C8D26C700542F55 /* Greatschools */ = {
+			isa = PBXGroup;
+			children = (
+				E903458B1C8D2BFC00542F55 /* Supporting Files */,
+				E90345831C8D289500542F55 /* Extensions */,
+				E90345821C8D288C00542F55 /* Widgets */,
+				E90345841C8D28A200542F55 /* Model */,
+				E903457F1C8D281800542F55 /* UI */,
+				E903457C1C8D27A900542F55 /* AppDelegate */,
+				E90345711C8D26C700542F55 /* Assets.xcassets */,
+				E90345731C8D26C700542F55 /* LaunchScreen.storyboard */,
+			);
+			path = Greatschools;
+			sourceTree = "<group>";
+		};
+		E903457C1C8D27A900542F55 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E903456A1C8D26C700542F55 /* AppDelegate.swift */,
+				E903457D1C8D27FB00542F55 /* AppDelegate+Appearance.swift */,
+				E90345871C8D2A7900542F55 /* AppDelegate+UI.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E903457F1C8D281800542F55 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E903456E1C8D26C700542F55 /* Home.storyboard */,
+				E90345801C8D283500542F55 /* TabBarController.swift */,
+				E9483D811C8D428D002656B8 /* GreatKids */,
+				E9483D801C8D427F002656B8 /* MySchools */,
+				E9483D7F1C8D4274002656B8 /* NearBy */,
+				E9483D7E1C8D426A002656B8 /* Search */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E90345821C8D288C00542F55 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				E90345851C8D28CC00542F55 /* Widgets.swift */,
+			);
+			name = Widgets;
+			sourceTree = "<group>";
+		};
+		E90345831C8D289500542F55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E90345891C8D2BB800542F55 /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E90345841C8D28A200542F55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E903458B1C8D2BFC00542F55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E90345761C8D26C700542F55 /* Info.plist */,
+				E903458C1C8D2C0800542F55 /* Font */,
+				E903458D1C8D2C4300542F55 /* Greatschools-Define.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E903458C1C8D2C0800542F55 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E90345911C8D2D0500542F55 /* ProximaNova-Bold.otf */,
+				E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */,
+				E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */,
+				E90345941C8D2D0500542F55 /* ProximaNova-Semibold.otf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		E9483D7E1C8D426A002656B8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E90345971C8D2FCD00542F55 /* Search.storyboard */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		E9483D7F1C8D4274002656B8 /* NearBy */ = {
+			isa = PBXGroup;
+			children = (
+				E90345951C8D2FBE00542F55 /* NearBy.storyboard */,
+			);
+			name = NearBy;
+			sourceTree = "<group>";
+		};
+		E9483D801C8D427F002656B8 /* MySchools */ = {
+			isa = PBXGroup;
+			children = (
+				E90345991C8D2FDB00542F55 /* MySchools.storyboard */,
+			);
+			name = MySchools;
+			sourceTree = "<group>";
+		};
+		E9483D811C8D428D002656B8 /* GreatKids */ = {
+			isa = PBXGroup;
+			children = (
+				E903459B1C8D2FE800542F55 /* GreatKids.storyboard */,
+			);
+			name = GreatKids;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E90345661C8D26C700542F55 /* Greatschools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90345791C8D26C700542F55 /* Build configuration list for PBXNativeTarget "Greatschools" */;
+			buildPhases = (
+				E726E6D269A1FF3226DEF64E /* Check Pods Manifest.lock */,
+				E90345631C8D26C700542F55 /* Sources */,
+				E90345641C8D26C700542F55 /* Frameworks */,
+				E90345651C8D26C700542F55 /* Resources */,
+				1191A58A319BA95E241C2DC6 /* Embed Pods Frameworks */,
+				A4B84CA3080D40E8F44AC294 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Greatschools;
+			productName = Greatschools;
+			productReference = E90345671C8D26C700542F55 /* Greatschools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E903455F1C8D26C700542F55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ilabs;
+				TargetAttributes = {
+					E90345661C8D26C700542F55 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E90345621C8D26C700542F55 /* Build configuration list for PBXProject "Greatschools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E903455E1C8D26C700542F55;
+			productRefGroup = E90345681C8D26C700542F55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E90345661C8D26C700542F55 /* Greatschools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E90345651C8D26C700542F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */,
+				E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */,
+				E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */,
+				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
+				E90345751C8D26C700542F55 /* LaunchScreen.storyboard in Resources */,
+				E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */,
+				E90345721C8D26C700542F55 /* Assets.xcassets in Resources */,
+				E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */,
+				E90345701C8D26C700542F55 /* Home.storyboard in Resources */,
+				E90345961C8D2FBE00542F55 /* NearBy.storyboard in Resources */,
+				E90345981C8D2FCD00542F55 /* Search.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1191A58A319BA95E241C2DC6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B84CA3080D40E8F44AC294 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E726E6D269A1FF3226DEF64E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E90345631C8D26C700542F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */,
+				E903458A1C8D2BB800542F55 /* Extensions.swift in Sources */,
+				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,
+				E903456B1C8D26C700542F55 /* AppDelegate.swift in Sources */,
+				E90345811C8D283500542F55 /* TabBarController.swift in Sources */,
+				E903458E1C8D2C4300542F55 /* Greatschools-Define.swift in Sources */,
+				E90345861C8D28CC00542F55 /* Widgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E903456E1C8D26C700542F55 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E903456F1C8D26C700542F55 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		E90345731C8D26C700542F55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E90345741C8D26C700542F55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E90345771C8D26C700542F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E90345781C8D26C700542F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E903457A1C8D26C700542F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAEA027565171A5336A7BFAA /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Greatschools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilabs.Greatschools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E903457B1C8D26C700542F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Greatschools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilabs.Greatschools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E90345621C8D26C700542F55 /* Build configuration list for PBXProject "Greatschools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90345771C8D26C700542F55 /* Debug */,
+				E90345781C8D26C700542F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90345791C8D26C700542F55 /* Build configuration list for PBXNativeTarget "Greatschools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E903457A1C8D26C700542F55 /* Debug */,
+				E903457B1C8D26C700542F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E903455F1C8D26C700542F55 /* Project object */;
+}
