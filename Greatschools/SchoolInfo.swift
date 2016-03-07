@@ -9,7 +9,7 @@
 import UIKit
 
 struct SchoolRate {
-	let rate: Float
+	let rate: Int
 	let color: UIColor
 }
 

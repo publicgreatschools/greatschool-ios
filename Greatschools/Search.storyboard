@@ -39,6 +39,7 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="W3W-f2-cVI" firstAttribute="leading" secondItem="2yB-EV-Rcb" secondAttribute="leading" id="2TU-87-53K"/>
                             <constraint firstAttribute="trailing" secondItem="W3W-f2-cVI" secondAttribute="trailing" id="4BM-5y-6WI"/>
@@ -51,6 +52,10 @@
                             <constraint firstAttribute="trailing" secondItem="3wP-D3-AdU" secondAttribute="trailing" id="q6m-Pg-dkV"/>
                             <constraint firstAttribute="bottom" secondItem="3wP-D3-AdU" secondAttribute="bottom" id="xXT-zI-9ym"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="EZ6-rE-ONh" appends="YES" id="EpH-5x-Ktl"/>
+                            <outletCollection property="gestureRecognizers" destination="Xkx-zc-41C" appends="YES" id="XnA-FS-iAw"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="hsg-9j-rxV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -59,6 +64,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ain-d8-FIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="EZ6-rE-ONh" userLabel="SwipeLeft">
+                    <connections>
+                        <action selector="handleSwipeFrom:" destination="3Ve-8E-Z32" id="gY9-ug-OEI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Xkx-zc-41C" userLabel="SwipeRight">
+                    <connections>
+                        <action selector="handleSwipeFrom:" destination="3Ve-8E-Z32" id="mF9-hl-6VL"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="835" y="121"/>
         </scene>
