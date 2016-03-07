@@ -22,10 +22,11 @@ class SchoolInfoCell: UITableViewCell {
 			schoolName.text = schoolInfo.name
 			schoolAddress.text = schoolInfo.address
 			schoolMiles.text = "\(schoolInfo.miles) Miles"
-			let image = UIImage(named: "rate_background")!.imageWithRenderingMode(.AlwaysTemplate)
-			rateBackground.image = image
+			let imageTemplate = UIImage(named: "rate_background")!.imageWithRenderingMode(.AlwaysTemplate)
+			rateBackground.image = imageTemplate
 			rateBackground.tintColor = schoolInfo.rateInfo.color
 			rate.text = "\(schoolInfo.rateInfo.rate)"
+			starView.starInfo = schoolInfo.starInfo
 			reviews.text = "\(schoolInfo.reviews) reviews"
 		}
 	}

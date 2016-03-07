@@ -14,7 +14,7 @@ struct SchoolRate {
 }
 
 struct SchoolStar {
-	let count: Float
+	let count: Int
 	let color: UIColor
 }
 
