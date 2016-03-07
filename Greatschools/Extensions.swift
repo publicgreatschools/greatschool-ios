@@ -8,6 +8,14 @@
 
 import UIKit
 
+extension UITabBar {
+	public override func sizeThatFits(size: CGSize) -> CGSize {
+		var sizeThatFits = super.sizeThatFits(size)
+		sizeThatFits.height = TabBarHeight
+		return sizeThatFits
+	}
+}
+
 extension UIFont {
 	class func regularFontOfSize(fontSize: CGFloat) -> UIFont {
 		return UIFont(name: regularFont, size: fontSize)!
