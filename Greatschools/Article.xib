@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Article" customModule="Greatschools" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTICLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5q-ub-76t">
+                    <rect key="frame" x="0.0" y="0.0" width="56" height="17.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are our screen-addicated kids frying their brains?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gn2-oC-zXE">
+                    <rect key="frame" x="0.0" y="27" width="269" height="39"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="content by Greatkids" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqx-1T-LR0">
+                    <rect key="frame" x="0.0" y="75" width="109.5" height="15"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYC-tg-jX0">
+                    <rect key="frame" x="321" y="32" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="u5t-5W-iFv"/>
+                        <constraint firstAttribute="height" constant="35" id="v92-bi-TZb"/>
+                    </constraints>
+                    <state key="normal" image="arrow_right"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gn2-oC-zXE" firstAttribute="top" secondItem="a5q-ub-76t" secondAttribute="bottom" constant="10" id="85c-oX-hOO"/>
+                <constraint firstItem="a5q-ub-76t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BrX-zu-cPY"/>
+                <constraint firstItem="a5q-ub-76t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WXY-iX-6uS"/>
+                <constraint firstItem="Uqx-1T-LR0" firstAttribute="top" secondItem="Gn2-oC-zXE" secondAttribute="bottom" constant="9" id="iaO-O7-rQr"/>
+                <constraint firstAttribute="trailing" secondItem="hYC-tg-jX0" secondAttribute="trailing" id="mKa-Pd-gN3"/>
+                <constraint firstItem="Uqx-1T-LR0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wuK-RK-Teu"/>
+                <constraint firstAttribute="trailing" secondItem="Gn2-oC-zXE" secondAttribute="trailing" constant="87" id="wxm-Be-mL3"/>
+                <constraint firstItem="hYC-tg-jX0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="y2I-Ld-Vnp"/>
+                <constraint firstItem="Gn2-oC-zXE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zd6-8l-c9U"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="35" height="35"/>
+    </resources>
+</document>

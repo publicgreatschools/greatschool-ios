@@ -26,6 +26,8 @@
 		E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */; };
 		E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */; };
 		E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345941C8D2D0500542F55 /* ProximaNova-Semibold.otf */; };
+		E94DB2A01C8D59D70030F431 /* NearByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DB29F1C8D59D70030F431 /* NearByViewController.swift */; };
+		E94DB2A61C8D85A20030F431 /* Article.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DB2A51C8D85A20030F431 /* Article.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		E90345971C8D2FCD00542F55 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		E90345991C8D2FDB00542F55 /* MySchools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MySchools.storyboard; sourceTree = "<group>"; };
 		E903459B1C8D2FE800542F55 /* GreatKids.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreatKids.storyboard; sourceTree = "<group>"; };
+		E94DB29F1C8D59D70030F431 /* NearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewController.swift; sourceTree = "<group>"; };
+		E94DB2A51C8D85A20030F431 /* Article.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Article.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				E90345851C8D28CC00542F55 /* Widgets.swift */,
+				E94DB2A51C8D85A20030F431 /* Article.xib */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				E90345951C8D2FBE00542F55 /* NearBy.storyboard */,
+				E94DB29F1C8D59D70030F431 /* NearByViewController.swift */,
 			);
 			name = NearBy;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */,
 				E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
+				E94DB2A61C8D85A20030F431 /* Article.xib in Resources */,
 				E90345751C8D26C700542F55 /* LaunchScreen.storyboard in Resources */,
 				E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */,
 				E90345721C8D26C700542F55 /* Assets.xcassets in Resources */,
@@ -350,6 +357,7 @@
 				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,
 				E903456B1C8D26C700542F55 /* AppDelegate.swift in Sources */,
 				E90345811C8D283500542F55 /* TabBarController.swift in Sources */,
+				E94DB2A01C8D59D70030F431 /* NearByViewController.swift in Sources */,
 				E903458E1C8D2C4300542F55 /* Greatschools-Define.swift in Sources */,
 				E90345861C8D28CC00542F55 /* Widgets.swift in Sources */,
 			);

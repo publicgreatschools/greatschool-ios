@@ -4,31 +4,163 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+            <string>ProximaNova-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Near By View Controller-->
         <scene sceneID="TUy-vp-W0W">
             <objects>
-                <viewController id="cqa-iO-JoP" sceneMemberID="viewController">
+                <viewController id="cqa-iO-JoP" customClass="NearByViewController" customModule="Greatschools" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FkQ-uw-Phz"/>
                         <viewControllerLayoutGuide type="bottom" id="hAE-7q-a5Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Wde-o1-86e">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aw9-R7-lQC" customClass="GradientView" customModule="Greycats">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="VwM-9Z-eVS">
+                                        <rect key="frame" x="106" y="45" width="107" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="107" id="ZEv-Kk-5Dx"/>
+                                            <constraint firstAttribute="height" constant="25" id="att-eD-8Yz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vat-YL-6Do" customClass="GradientLabel" customModule="Greatschools" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="100" width="200" height="140"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="XSb-JB-Rh8"/>
+                                            <constraint firstAttribute="height" constant="140" id="j8x-AA-wl5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color1">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                                <color key="value" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="120"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="30"/>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="loc1">
+                                                <point key="value" x="0.0" y="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="loc2">
+                                                <point key="value" x="1" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDg-gh-X6z">
+                                        <rect key="frame" x="72" y="286" width="175" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Lf0-Pc-WMB"/>
+                                            <constraint firstAttribute="width" constant="175" id="ycT-DI-cZJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                        <state key="normal" title="Let's explore" backgroundImage="gradient_background">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                <point key="value" x="0.0" y="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.14999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="explore:" destination="cqa-iO-JoP" eventType="touchUpInside" id="Goq-Iu-Row"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHOOLS IN THIS NEIGHBORHOOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZi-3I-Utl">
+                                        <rect key="frame" x="51" y="240" width="217.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="y0w-Tc-KCV">
+                                        <rect key="frame" x="0.0" y="380" width="320" height="2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="5YC-qO-eF1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xn-5p-epV" customClass="Article" customModule="Greatschools" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="400" width="280" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="YAY-dP-LFq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="y0w-Tc-KCV" firstAttribute="top" secondItem="KDg-gh-X6z" secondAttribute="bottom" constant="50" id="0Iw-QD-rze"/>
+                                    <constraint firstItem="rZi-3I-Utl" firstAttribute="centerX" secondItem="Aw9-R7-lQC" secondAttribute="centerX" id="2zj-Wb-Afz"/>
+                                    <constraint firstItem="y0w-Tc-KCV" firstAttribute="leading" secondItem="Aw9-R7-lQC" secondAttribute="leading" id="BSh-nf-maX"/>
+                                    <constraint firstItem="VwM-9Z-eVS" firstAttribute="top" secondItem="Aw9-R7-lQC" secondAttribute="top" constant="45" id="E9i-GQ-Jbc"/>
+                                    <constraint firstAttribute="trailing" secondItem="8xn-5p-epV" secondAttribute="trailing" constant="20" id="GAv-G3-r81"/>
+                                    <constraint firstItem="8xn-5p-epV" firstAttribute="top" secondItem="y0w-Tc-KCV" secondAttribute="bottom" constant="18" id="IfF-ga-KZH"/>
+                                    <constraint firstItem="Vat-YL-6Do" firstAttribute="top" secondItem="VwM-9Z-eVS" secondAttribute="bottom" constant="30" id="KaO-B7-dzt"/>
+                                    <constraint firstItem="KDg-gh-X6z" firstAttribute="top" secondItem="rZi-3I-Utl" secondAttribute="bottom" constant="30" id="Zq5-gg-Srj"/>
+                                    <constraint firstItem="Vat-YL-6Do" firstAttribute="centerX" secondItem="Aw9-R7-lQC" secondAttribute="centerX" id="exH-TM-zqo"/>
+                                    <constraint firstItem="VwM-9Z-eVS" firstAttribute="centerX" secondItem="Aw9-R7-lQC" secondAttribute="centerX" id="hpx-GU-jhP"/>
+                                    <constraint firstAttribute="trailing" secondItem="y0w-Tc-KCV" secondAttribute="trailing" id="kXw-SA-FLe"/>
+                                    <constraint firstItem="rZi-3I-Utl" firstAttribute="top" secondItem="Vat-YL-6Do" secondAttribute="bottom" id="oDt-8l-LnA"/>
+                                    <constraint firstItem="8xn-5p-epV" firstAttribute="leading" secondItem="Aw9-R7-lQC" secondAttribute="leading" constant="20" id="sxV-Tm-KdZ"/>
+                                    <constraint firstItem="KDg-gh-X6z" firstAttribute="centerX" secondItem="Aw9-R7-lQC" secondAttribute="centerX" id="wrr-Nh-ae5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color1">
+                                        <color key="value" red="0.090196078431372548" green="0.41176470588235292" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                        <color key="value" red="0.2196078431372549" green="0.78431372549019607" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Aw9-R7-lQC" secondAttribute="trailing" id="R4c-ZU-XJb"/>
+                            <constraint firstItem="hAE-7q-a5Z" firstAttribute="top" secondItem="Aw9-R7-lQC" secondAttribute="bottom" id="W4r-tc-tjF"/>
+                            <constraint firstItem="Aw9-R7-lQC" firstAttribute="top" secondItem="Wde-o1-86e" secondAttribute="top" id="h9K-gs-0OK"/>
+                            <constraint firstItem="Aw9-R7-lQC" firstAttribute="leading" secondItem="Wde-o1-86e" secondAttribute="leading" id="sDF-0F-gka"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gSN-mK-lVc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="article" destination="8xn-5p-epV" id="FDg-Wl-qOg"/>
+                        <outlet property="countLabel" destination="Vat-YL-6Do" id="Gwn-7T-VhX"/>
+                        <outlet property="descriptionLabel" destination="rZi-3I-Utl" id="fbw-o7-WBU"/>
+                        <outlet property="exploreButton" destination="KDg-gh-X6z" id="aBU-fI-dd3"/>
+                        <outlet property="gredientView" destination="Aw9-R7-lQC" id="Ffr-p0-ANi"/>
+                        <outlet property="header" destination="VwM-9Z-eVS" id="YJS-L8-yOr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Odi-DL-avQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="335"/>
+            <point key="canvasLocation" x="989" y="335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ib1-Ug-GAw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zuY-99-qLR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zuY-99-qLR" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kkm-qj-Sea">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -43,4 +175,9 @@
             <point key="canvasLocation" x="165" y="335"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="divider" width="414" height="3"/>
+        <image name="gradient_background" width="175" height="44"/>
+        <image name="headerLogo" width="107" height="25"/>
+    </resources>
 </document>
