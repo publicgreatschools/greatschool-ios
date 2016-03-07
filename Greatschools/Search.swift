@@ -27,7 +27,7 @@ class SearchViewController: UIViewController{
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 	{
-		return 4
+		return SchoolInfo.demoData.count
 	}
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -37,7 +37,7 @@ class SearchViewController: UIViewController{
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
 	{
 		let cell = tableView.dequeueReusableCellWithIdentifier("SchoolInfoCell", forIndexPath: indexPath) as! SchoolInfoCell
-//		cell.value = "\(indexPath.row)"
+		cell.schoolInfo = SchoolInfo.demoData[indexPath.row]
 		return cell
 	}
 	
