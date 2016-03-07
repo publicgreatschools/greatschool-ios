@@ -8,6 +8,28 @@
 
 import UIKit
 
+extension UIImage {
+	class func imageFromColors(colors: [CGColorRef], horizontal: Bool = true) -> UIImage {
+		let size = CGSizeMake(1, 1)
+		return self.imageFromSize(size) { context in
+			let gradient = CGGradientCreateWithColors(CGColorSpaceCreateDeviceRGB(), colors, nil)
+			CGContextDrawLinearGradient(context, gradient,
+				CGPointMake(0, 0),
+				CGPointMake(horizontal ? size.width : 0, horizontal ? 0 : size.height),
+				CGGradientDrawingOptions.DrawsBeforeStartLocation.union(CGGradientDrawingOptions.DrawsAfterEndLocation))
+		}
+	}
+	
+	class func imageFromSize(size: CGSize, block: (CGContextRef -> Void)) -> UIImage {
+		UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.mainScreen().scale)
+		let context = UIGraphicsGetCurrentContext()
+		block(context!)
+		let image = UIGraphicsGetImageFromCurrentImageContext()
+		UIGraphicsEndImageContext()
+		return image
+	}
+}
+
 extension UITabBar {
 	public override func sizeThatFits(size: CGSize) -> CGSize {
 		var sizeThatFits = super.sizeThatFits(size)
@@ -34,6 +56,12 @@ extension UIFont {
 	}
 }
 
+extension String {
+	var length: Int {
+		return characters.count
+	}
+}
+
 extension UIColor {
 	class func barBlueColor() -> UIColor {
 		return UIColor(hexRGB: 0x0DA7E3)
@@ -45,5 +73,9 @@ extension UIColor {
 	
 	class func barBlueTextColor() -> UIColor {
 		return UIColor(hexRGB: 0x0E94C7)
+	}
+	
+	class func lightGreenColor() -> UIColor {
+		return UIColor(hexRGB: 0xB8E986)
 	}
 }
