@@ -19,7 +19,7 @@ class NearByViewController: UIViewController {
 	@IBOutlet weak var article: Article!
 	
 	@IBAction func explore(sender: AnyObject) {
-
+		performSegueWithIdentifier("pick", sender: nil)
 	}
 	
 	override func viewDidLoad() {

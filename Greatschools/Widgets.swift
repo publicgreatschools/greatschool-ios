@@ -28,6 +28,27 @@ class Article: NibView {
 	override var nibName: String { return "Article" }
 }
 
+class CartoonButton: NibView {
+	override var nibName: String { return "CartoonButton" }
+	@IBOutlet weak var textLabel: UILabel!
+	@IBOutlet weak var cartoon: UIButton!
+	@IBOutlet weak var badgeButton: UIButton!
+	@IBInspectable var text: String = "" { didSet { textLabel.text = text } }
+	@IBInspectable var imageName: String? {
+		didSet {
+			if let imageName = imageName {
+				cartoon.setImage(UIImage(named: imageName), forState: .Normal)
+			}
+		}
+	}
+	@IBInspectable var badge: Int = 0 {
+		didSet {
+			badgeButton.hidden = badge == 0
+			badgeButton.setTitle("\(badge)", forState: .Normal)
+		}
+	}
+}
+
 @IBDesignable
 class GradientLabel: GradientView {
 	private var attributedText: [NSAttributedString]!

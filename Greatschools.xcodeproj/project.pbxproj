@@ -23,6 +23,7 @@
 		E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345991C8D2FDB00542F55 /* MySchools.storyboard */; };
 		E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E903459B1C8D2FE800542F55 /* GreatKids.storyboard */; };
 		E920742C1C8E6D3F0029611A /* PickSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920742B1C8E6D3F0029611A /* PickSchoolViewController.swift */; };
+		E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = E920742D1C8E758D0029611A /* CartoonButton.xib */; };
 		E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345911C8D2D0500542F55 /* ProximaNova-Bold.otf */; };
 		E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */; };
 		E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */; };
@@ -56,6 +57,7 @@
 		E90345991C8D2FDB00542F55 /* MySchools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MySchools.storyboard; sourceTree = "<group>"; };
 		E903459B1C8D2FE800542F55 /* GreatKids.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreatKids.storyboard; sourceTree = "<group>"; };
 		E920742B1C8E6D3F0029611A /* PickSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickSchoolViewController.swift; sourceTree = "<group>"; };
+		E920742D1C8E758D0029611A /* CartoonButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartoonButton.xib; sourceTree = "<group>"; };
 		E94DB29F1C8D59D70030F431 /* NearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewController.swift; sourceTree = "<group>"; };
 		E94DB2A51C8D85A20030F431 /* Article.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Article.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 			children = (
 				E90345851C8D28CC00542F55 /* Widgets.swift */,
 				E94DB2A51C8D85A20030F431 /* Article.xib */,
+				E920742D1C8E758D0029611A /* CartoonButton.xib */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */,
 				E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */,
 				E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */,
+				E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
 				E94DB2A61C8D85A20030F431 /* Article.xib in Resources */,
 				E90345751C8D26C700542F55 /* LaunchScreen.storyboard in Resources */,
