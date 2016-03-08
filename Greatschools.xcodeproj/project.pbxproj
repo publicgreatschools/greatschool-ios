@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB241C8E6C7C0087A26A /* MapView.swift */; };
+		B584CB271C8EC15A0087A26A /* SchoolInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */; };
+		B584CB291C8EC2A40087A26A /* SchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */; };
 		B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */; };
 		B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36C1C8D53C20092636F /* Stars.xib */; };
 		B5D7A36F1C8D57340092636F /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7A36E1C8D57340092636F /* Stars.swift */; };
@@ -57,6 +59,8 @@
 /* Begin PBXFileReference section */
 		A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B584CB241C8E6C7C0087A26A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoView.xib; sourceTree = "<group>"; };
+		B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolInfoView.swift; sourceTree = "<group>"; };
 		B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoCell.xib; sourceTree = "<group>"; };
 		B5D7A36C1C8D53C20092636F /* Stars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Stars.xib; sourceTree = "<group>"; };
 		B5D7A36E1C8D57340092636F /* Stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				B5D7A3721C8D6EF30092636F /* SchoolInfoCell.swift */,
 				B5D7A36C1C8D53C20092636F /* Stars.xib */,
 				B5D7A36E1C8D57340092636F /* Stars.swift */,
+				B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */,
+				B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */,
 				E92074311C8E933E0029611A /* PickSchoolHeader.xib */,
 				E92074331C8E93FA0029611A /* PickSchoolHeader.swift */,
 				E92074371C8EA2C10029611A /* MileStoneCell.xib */,
@@ -366,6 +372,7 @@
 				E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */,
 				E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */,
 				E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */,
+				B584CB271C8EC15A0087A26A /* SchoolInfoView.xib in Resources */,
 				E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */,
 				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
@@ -463,6 +470,7 @@
 				E903458E1C8D2C4300542F55 /* Greatschools-Define.swift in Sources */,
 				E920743C1C8EA77F0029611A /* AppCell.swift in Sources */,
 				E90345861C8D28CC00542F55 /* Widgets.swift in Sources */,
+				B584CB291C8EC2A40087A26A /* SchoolInfoView.swift in Sources */,
 				E920743A1C8EA2E40029611A /* MileStoneCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

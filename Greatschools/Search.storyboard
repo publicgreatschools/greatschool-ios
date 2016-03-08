@@ -8,7 +8,7 @@
         <!--Search-->
         <scene sceneID="IZC-sd-hrM">
             <objects>
-                <viewController id="3Ve-8E-Z32" customClass="SearchViewController" customModule="Greatschools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Ve-8E-Z32" customClass="SearchViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s1e-GE-I2s"/>
                         <viewControllerLayoutGuide type="bottom" id="cXC-ex-bCp"/>
