@@ -19,6 +19,7 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 		tableView.registerNib(UINib(nibName: "SchoolInfoCell", bundle: nil), forCellReuseIdentifier: "SchoolInfoCell")
 		tableView.registerNib(UINib(nibName: "MileStoneCell", bundle: nil), forCellReuseIdentifier: "MileStoneCell")
 		tableView.registerNib(UINib(nibName: "SimpleCell", bundle: nil), forCellReuseIdentifier: "SimpleCell")
+		tableView.registerNib(UINib(nibName: "CardCell", bundle: nil), forCellReuseIdentifier: "CardCell")
 		tableView.registerNib(UINib(nibName: "AppCell", bundle: nil), forCellReuseIdentifier: "AppCell")
 		tableView.registerNib(UINib(nibName: "PickSchoolHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "PickSchoolHeader")
 	}
@@ -31,7 +32,7 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 		if section == 0 {
 			return SchoolInfo.demoData.count + 1
 		} else if section == 1 {
-			return 1
+			return 2
 		} else {
 			return AppInfo.demoData.count
 		}
@@ -47,9 +48,14 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 				let cell = tableView.dequeueReusableCellWithIdentifier("SimpleCell", forIndexPath: indexPath) as! SimpleCell
 				return cell
 			}
-		} else if indexPath.section == 1{
-			let cell = tableView.dequeueReusableCellWithIdentifier("MileStoneCell", forIndexPath: indexPath) as! MileStoneCell
-			return cell
+		} else if indexPath.section == 1 {
+			if indexPath.row == 0 {
+				let cell = tableView.dequeueReusableCellWithIdentifier("MileStoneCell", forIndexPath: indexPath) as! MileStoneCell
+				return cell
+			} else {
+				let cell = tableView.dequeueReusableCellWithIdentifier("CardCell", forIndexPath: indexPath) as! CardCell
+				return cell
+			}
 		} else {
 			let cell = tableView.dequeueReusableCellWithIdentifier("AppCell", forIndexPath: indexPath) as! AppCell
 			cell.info = AppInfo.demoData[indexPath.row]
@@ -64,7 +70,10 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 			}
 			return 62
 		} else if indexPath.section == 1 {
-			return 290
+			if indexPath.row == 0 {
+				return 290
+			}
+			return 380
 		}
 		return 75
 	}

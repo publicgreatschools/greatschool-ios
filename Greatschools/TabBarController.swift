@@ -27,4 +27,12 @@ class TabBarController: UITabBarController {
 		
 		viewControllers = [nearby, search, myschools, greatkids]
 	}
+	
+	override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+		if let index = tabBar.items?.indexOf(item) where index == 0 {
+			if let nav = viewControllers?[index] as? UINavigationController, let _ = nav.viewControllers.first as? PickSchoolViewController {
+				nav.popToRootViewControllerAnimated(true)
+			}
+		}
+	}
 }
