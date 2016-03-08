@@ -92,6 +92,7 @@
                 <constraint firstItem="LTO-eO-0NT" firstAttribute="top" secondItem="iEN-ui-U4k" secondAttribute="top" constant="26" id="fK9-B7-FZf"/>
                 <constraint firstItem="Ecn-da-qch" firstAttribute="top" secondItem="yl8-BL-KlH" secondAttribute="bottom" constant="2" id="nyq-Ht-bkK"/>
                 <constraint firstItem="ZFx-6E-jkN" firstAttribute="leading" secondItem="iEN-ui-U4k" secondAttribute="leading" constant="31" id="pEv-8x-Omh"/>
+                <constraint firstItem="ZFx-6E-jkN" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="yl8-BL-KlH" secondAttribute="leading" constant="-5" id="thU-BN-vbn"/>
                 <constraint firstItem="0nC-gH-DBe" firstAttribute="centerX" secondItem="yl8-BL-KlH" secondAttribute="centerX" id="ycM-j5-UXz"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
