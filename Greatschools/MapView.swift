@@ -9,6 +9,8 @@
 import UIKit
 
 class MapView: UIView {
+	var scaledPin: PinView?
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
@@ -28,6 +30,10 @@ class MapView: UIView {
 	override func willMoveToSuperview(newSuperview: UIView?) {
 		for schoolInfo in SchoolInfo.demoData {
 			let pin = PinView(schoolInfo: schoolInfo)
+			let tapGesture = UITapGestureRecognizer(target: self, action: "pinTap:")
+			tapGesture.numberOfTapsRequired = 1
+			pin.addGestureRecognizer(tapGesture)
+			
 			self.addSubview(pin)
 			UIView.animateWithDuration(0.5, animations: {
 				pin.transform = CGAffineTransformScale(self.transform, 1/2, 1/2)
@@ -38,11 +44,34 @@ class MapView: UIView {
 	}
 	
 	func resetPin(gesture: UIPanGestureRecognizer) {
-		if let pinScale = PinView.scalePin {
+		if let pin = scaledPin {
 			UIView.animateWithDuration(0.3, animations: {
-				pinScale.transform = CGAffineTransformIdentity
+				pin.transform = CGAffineTransformIdentity
 			})
-			PinView.scalePin = nil
+			scaledPin = nil
+		}
+	}
+	
+	func pinTap(gesture: UIPanGestureRecognizer) {
+		if let pinCurrent = gesture.view as? PinView {
+			if let pinScaled = scaledPin {
+				if pinCurrent.schoolID == pinScaled.schoolID {
+					return
+				}
+				else {
+					UIView.animateWithDuration(0.3, animations: {
+						pinScaled.transform = CGAffineTransformScale(pinScaled.transform, 1/2, 1/2)
+					})
+				}
+			}
+			
+			scaledPin = pinCurrent
+			UIView.animateWithDuration(0.3, animations: {
+				pinCurrent.transform = CGAffineTransformScale(pinCurrent.transform, 2, 2)
+			})
+			
+			let schoolInfoView = NSBundle.mainBundle().loadNibNamed("SchoolInfoCell", owner: nil, options: nil).first as? SchoolInfoCell
+			self.addSubview(schoolInfoView!)
 		}
 	}
 }
@@ -51,7 +80,6 @@ class MapView: UIView {
 
 class PinView: UIView {
 	var schoolID: Int
-	static var scalePin: PinView?
 	
 	init(schoolInfo: SchoolInfo) {
 		schoolID = schoolInfo.id
@@ -73,26 +101,5 @@ class PinView: UIView {
 
 	required init?(coder aDecoder: NSCoder) {
 	    fatalError("init(coder:) has not been implemented")
-	}
-	
-	func pinTap(gesture: UIPanGestureRecognizer) {
-		print("SchoolID:\(self.schoolID)")
-		let pinScale = PinView.scalePin
-		
-		if (pinScale != nil) {
-			if pinScale?.schoolID == self.schoolID {
-				return
-			}
-			else {
-				UIView.animateWithDuration(0.3, animations: {
-					pinScale!.transform = CGAffineTransformScale(pinScale!.transform, 1/2, 1/2)
-				})
-			}
-		}
-		
-		PinView.scalePin = self
-		UIView.animateWithDuration(0.3, animations: {
-			self.transform = CGAffineTransformScale(self.transform, 2, 2)
-		})
 	}
 }
