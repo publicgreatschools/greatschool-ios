@@ -16,6 +16,7 @@ class SchoolInfoCell: UITableViewCell {
 	@IBOutlet weak var starView: Stars!
 	@IBOutlet weak var rate: UILabel!
 	@IBOutlet weak var reviews: UILabel!
+	@IBOutlet weak var bgView: UIView!
 	
 	var schoolInfo: SchoolInfo! {
 		didSet {
@@ -29,6 +30,11 @@ class SchoolInfoCell: UITableViewCell {
 			starView.starInfo = schoolInfo.starInfo
 			reviews.text = "\(schoolInfo.reviews) reviews"
 		}
+	}
+	
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		selectedBackgroundView?.frame = bgView.frame
 	}
 }
 
