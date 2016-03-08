@@ -18,14 +18,6 @@ class SchoolInfoView: NibView {
 	@IBOutlet weak var rate: UILabel!
 	@IBOutlet weak var reviews: UILabel!
 	
-	convenience init(size: CGRect) {
-		self.init()
-		self.frame = size
-		self.backgroundColor = UIColor.whiteColor()
-		self.cornerRadius = 4
-		self.masksToBounds = true
-	}
-	
 	var schoolInfo: SchoolInfo! {
 		didSet {
 			schoolName.text = schoolInfo.name

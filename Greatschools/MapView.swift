@@ -9,6 +9,7 @@
 import UIKit
 
 class MapView: UIView {
+	var demoData: [SchoolInfo]!
 	var imageView: UIImageView!
 	var scaledPin: PinView?
 	var infoView: SchoolInfoView!
@@ -23,7 +24,10 @@ class MapView: UIView {
 		imageView = UIImageView(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
 		imageView.image = UIImage(named: "Bitmap")
 		
-		infoView = SchoolInfoView(size: CGRectMake(16, 11, self.frame.size.width-16*2, 130))
+		infoView = SchoolInfoView(frame: CGRectMake(16, 11, self.frame.size.width-16*2, 130))
+		infoView.backgroundColor = UIColor.whiteColor()
+		infoView.cornerRadius = 4
+		infoView.masksToBounds = true
 	}
 
 	required init?(coder aDecoder: NSCoder) {
@@ -31,29 +35,7 @@ class MapView: UIView {
 	}
 	
 	override func willMoveToSuperview(newSuperview: UIView?) {
-		for subView in self.subviews {
-			subView.removeFromSuperview()
-		}
-		
-		scaledPin = nil
-		self.addSubview(imageView)
-		infoView.alpha = 0
-		infoView.transform = CGAffineTransformTranslate(self.infoView.transform, 0, -100)
-		self.addSubview(infoView)
-		
-		for schoolInfo in SchoolInfo.demoData {
-			let pin = PinView(info: schoolInfo)
-			let tapGesture = UITapGestureRecognizer(target: self, action: "pinTap:")
-			tapGesture.numberOfTapsRequired = 1
-			pin.addGestureRecognizer(tapGesture)
-			
-			self.addSubview(pin)
-			UIView.animateWithDuration(0.5, animations: {
-				pin.transform = CGAffineTransformScale(self.transform, 1/2, 1/2)
-				pin.transform = CGAffineTransformScale(self.transform, 2, 2)
-				pin.transform = CGAffineTransformIdentity
-			})
-		}
+		self.resetData()
 	}
 	
 	func resetPin(gesture: UIPanGestureRecognizer) {
@@ -99,6 +81,32 @@ class MapView: UIView {
 			}
 		}
 	}
+	
+	func resetData() {
+		for subView in self.subviews {
+			subView.removeFromSuperview()
+		}
+		
+		scaledPin = nil
+		self.addSubview(imageView)
+		infoView.alpha = 0
+		infoView.transform = CGAffineTransformTranslate(self.infoView.transform, 0, -100)
+		self.addSubview(infoView)
+		
+		for schoolInfo in demoData {
+			let pin = PinView(info: schoolInfo)
+			let tapGesture = UITapGestureRecognizer(target: self, action: "pinTap:")
+			tapGesture.numberOfTapsRequired = 1
+			pin.addGestureRecognizer(tapGesture)
+			
+			self.addSubview(pin)
+			UIView.animateWithDuration(0.5, animations: {
+				pin.transform = CGAffineTransformScale(self.transform, 1/2, 1/2)
+				pin.transform = CGAffineTransformScale(self.transform, 2, 2)
+				pin.transform = CGAffineTransformIdentity
+			})
+		}
+	}
 }
 
 // MARK: -
@@ -108,7 +116,7 @@ class PinView: UIView {
 	
 	init(info: SchoolInfo) {
 		schoolInfo = info
-		super.init(frame: CGRectMake(CGFloat(arc4random_uniform(300)), 150+CGFloat(arc4random_uniform(200)), 47, 53))
+		super.init(frame: CGRectMake(schoolInfo.position.x, schoolInfo.position.y, 47, 53))
 		let imageView = UIImageView(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
 		imageView.image = UIImage(named: schoolInfo.pinColorId == 0 ? "PinGreen" : "PinOrange")
 		self.addSubview(imageView)

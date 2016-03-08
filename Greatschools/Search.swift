@@ -16,11 +16,13 @@ class SearchViewController: UIViewController{
 	var segmentChanged: Bool = false
 	var isMapView: Bool = false
 	var mapView: MapView!
-	
+	var demoData: [SchoolInfo]!
+
 	// MARK: - override
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		demoData = SchoolInfo.demoData
 		tableView.registerNib(UINib(nibName: "SchoolInfoCell", bundle: nil), forCellReuseIdentifier: "SchoolInfoCell")
 		mapView = MapView(frame: CGRectMake(0, 20+44+44, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-20-44-44-49))
 	}
@@ -34,7 +36,7 @@ class SearchViewController: UIViewController{
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 	{
-		return SchoolInfo.demoData.count
+		return demoData.count
 	}
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -44,7 +46,7 @@ class SearchViewController: UIViewController{
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
 	{
 		let cell = tableView.dequeueReusableCellWithIdentifier("SchoolInfoCell", forIndexPath: indexPath) as! SchoolInfoCell
-		cell.schoolInfo = SchoolInfo.demoData[indexPath.row]
+		cell.schoolInfo = demoData[indexPath.row]
 		return cell
 	}
 	
@@ -70,9 +72,9 @@ class SearchViewController: UIViewController{
 		}
 		if segmentChanged {
 			switch segmentId {
-				case 1: SchoolInfo.demoData.sortInPlace{ $0.name < $1.name }
-				case 2: SchoolInfo.demoData.sortInPlace{ $0.rateInfo.rate > $1.rateInfo.rate }
-				default: SchoolInfo.demoData.sortInPlace{ $0.miles < $1.miles }
+				case 1: demoData.sortInPlace{ $0.name < $1.name }
+				case 2: demoData.sortInPlace{ $0.rateInfo.rate > $1.rateInfo.rate }
+				default: demoData.sortInPlace{ $0.miles < $1.miles }
 			}
 			tableView.reloadData()
 		}
@@ -88,8 +90,21 @@ class SearchViewController: UIViewController{
 		} else {
 			navRightItem.image = UIImage(named: "List")
 			isMapView = true
+			mapView.demoData = demoData
 			self.view.addSubview(mapView)
 		}
 	}
 	
+	// MARK: - search
+	
+	func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+		if searchText == "" {
+			demoData = SchoolInfo.demoData
+		} else {
+			demoData = SchoolInfo.demoData.filter{ $0.name.containsString(searchText) }
+		}
+		tableView.reloadData()
+		mapView.demoData = demoData
+		mapView.resetData()
+	}
 }
