@@ -23,13 +23,7 @@ class MapView: UIView {
 		imageView = UIImageView(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
 		imageView.image = UIImage(named: "Bitmap")
 		
-		infoView = SchoolInfoView()
-		infoView.frame = CGRectMake(16, 11, self.frame.size.width-16*2, 130)
-		infoView.tag = 99
-		infoView.backgroundColor = UIColor.whiteColor()
-		infoView.cornerRadius = 4
-		infoView.masksToBounds = true
-		infoView.transform = CGAffineTransformScale(self.infoView.transform, 0, 0)
+		infoView = SchoolInfoView(size: CGRectMake(16, 11, self.frame.size.width-16*2, 130))
 	}
 
 	required init?(coder aDecoder: NSCoder) {
@@ -41,7 +35,10 @@ class MapView: UIView {
 			subView.removeFromSuperview()
 		}
 		
+		scaledPin = nil
 		self.addSubview(imageView)
+		infoView.alpha = 0
+		infoView.transform = CGAffineTransformTranslate(self.infoView.transform, 0, -100)
 		self.addSubview(infoView)
 		
 		for schoolInfo in SchoolInfo.demoData {
@@ -63,7 +60,8 @@ class MapView: UIView {
 		if let pin = scaledPin {
 			UIView.animateWithDuration(0.3, animations: {
 				pin.transform = CGAffineTransformIdentity
-				self.infoView.transform = CGAffineTransformScale(self.infoView.transform, 0, 0)
+				self.infoView.alpha = 0
+				self.infoView.transform = CGAffineTransformTranslate(self.infoView.transform, 0, -100)
 			})
 			scaledPin = nil
 		}
@@ -78,12 +76,14 @@ class MapView: UIView {
 				else {
 					UIView.animateWithDuration(0.3, animations: {
 						pinScaled.transform = CGAffineTransformScale(pinScaled.transform, 1/2, 1/2)
-						self.infoView.transform = CGAffineTransformScale(self.infoView.transform, 0, 0)
+						self.infoView.alpha = 0
+						self.infoView.transform = CGAffineTransformTranslate(self.infoView.transform, 0, -100)
 						}, completion: {finished in
 							self.scaledPin = pinCurrent
 							self.infoView.schoolInfo = pinCurrent.schoolInfo
 							UIView.animateWithDuration(0.3, animations: {
 								pinCurrent.transform = CGAffineTransformScale(pinCurrent.transform, 2, 2)
+								self.infoView.alpha = 1
 								self.infoView.transform = CGAffineTransformIdentity
 							})
 					})
@@ -93,6 +93,7 @@ class MapView: UIView {
 				infoView.schoolInfo = pinCurrent.schoolInfo
 				UIView.animateWithDuration(0.3, animations: {
 					pinCurrent.transform = CGAffineTransformScale(pinCurrent.transform, 2, 2)
+					self.infoView.alpha = 1
 					self.infoView.transform = CGAffineTransformIdentity
 				})
 			}
