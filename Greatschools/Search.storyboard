@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q9z-Ab-6Pe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q9z-Ab-6Pe">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -8,7 +8,7 @@
         <!--Search-->
         <scene sceneID="IZC-sd-hrM">
             <objects>
-                <viewController id="3Ve-8E-Z32" customClass="SearchViewController" customModule="Greatschools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Ve-8E-Z32" customClass="SearchViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s1e-GE-I2s"/>
                         <viewControllerLayoutGuide type="bottom" id="cXC-ex-bCp"/>
@@ -17,16 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcW-q0-vfD" customClass="GradientView" customModule="Greycats">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="fg3-84-I2M"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color1">
+                                        <color key="value" red="0.20784313730000001" green="0.80392156859999997" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                        <color key="value" red="0.035294117649999998" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="loc1">
+                                        <point key="value" x="0.0" y="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="loc2">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3wP-D3-AdU">
-                                <rect key="frame" x="0.0" y="72" width="320" height="496"/>
+                                <rect key="frame" x="0.0" y="136" width="320" height="432"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="3Ve-8E-Z32" id="Dk4-5m-DUn"/>
                                     <outlet property="delegate" destination="3Ve-8E-Z32" id="ssf-ZY-jY2"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="W3W-f2-cVI">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="W3W-f2-cVI">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dYv-to-3Pd">
@@ -44,13 +66,16 @@
                             <constraint firstItem="W3W-f2-cVI" firstAttribute="leading" secondItem="2yB-EV-Rcb" secondAttribute="leading" id="2TU-87-53K"/>
                             <constraint firstAttribute="trailing" secondItem="W3W-f2-cVI" secondAttribute="trailing" id="4BM-5y-6WI"/>
                             <constraint firstItem="s1e-GE-I2s" firstAttribute="bottom" secondItem="W3W-f2-cVI" secondAttribute="top" id="4Et-jr-YWJ"/>
+                            <constraint firstItem="HcW-q0-vfD" firstAttribute="top" secondItem="2yB-EV-Rcb" secondAttribute="top" id="6nd-1O-foX"/>
                             <constraint firstItem="dYv-to-3Pd" firstAttribute="leading" secondItem="2yB-EV-Rcb" secondAttribute="leading" id="9ZT-zq-bb1"/>
                             <constraint firstItem="3wP-D3-AdU" firstAttribute="leading" secondItem="2yB-EV-Rcb" secondAttribute="leading" id="bnU-0N-W5x"/>
                             <constraint firstItem="dYv-to-3Pd" firstAttribute="top" secondItem="W3W-f2-cVI" secondAttribute="bottom" id="f5x-6s-dHO"/>
-                            <constraint firstItem="3wP-D3-AdU" firstAttribute="top" secondItem="dYv-to-3Pd" secondAttribute="bottom" constant="-64" id="je7-Iy-dRH"/>
+                            <constraint firstItem="3wP-D3-AdU" firstAttribute="top" secondItem="dYv-to-3Pd" secondAttribute="bottom" id="je7-Iy-dRH"/>
                             <constraint firstAttribute="trailing" secondItem="dYv-to-3Pd" secondAttribute="trailing" id="pxl-1g-iOf"/>
                             <constraint firstAttribute="trailing" secondItem="3wP-D3-AdU" secondAttribute="trailing" id="q6m-Pg-dkV"/>
+                            <constraint firstAttribute="trailing" secondItem="HcW-q0-vfD" secondAttribute="trailing" id="vkz-FE-rUK"/>
                             <constraint firstAttribute="bottom" secondItem="3wP-D3-AdU" secondAttribute="bottom" id="xXT-zI-9ym"/>
+                            <constraint firstItem="HcW-q0-vfD" firstAttribute="leading" secondItem="2yB-EV-Rcb" secondAttribute="leading" id="xXz-rq-lMU"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="EZ6-rE-ONh" appends="YES" id="EpH-5x-Ktl"/>
@@ -85,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="835" y="121"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Transparent Navigation Controller-->
         <scene sceneID="Le7-03-MF6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q9z-Ab-6Pe" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q9z-Ab-6Pe" customClass="TransparentNavigationController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ck-LX-WOQ">

@@ -38,6 +38,9 @@ extension UITabBar {
 	}
 }
 
+class TransparentNavigationController: UINavigationController {
+}
+
 extension UIFont {
 	class func regularFontOfSize(fontSize: CGFloat) -> UIFont {
 		return UIFont(name: regularFont, size: fontSize)!

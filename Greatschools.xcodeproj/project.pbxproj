@@ -46,6 +46,7 @@
 		E92074481C8EB8990029611A /* CardScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92074471C8EB8990029611A /* CardScrollView.xib */; };
 		E920744A1C8EBCFD0029611A /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92074491C8EBCFD0029611A /* CardCell.swift */; };
 		E920744C1C8EBD1E0029611A /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E920744B1C8EBD1E0029611A /* CardCell.xib */; };
+		E92074511C8ED1F90029611A /* UIView+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E92074501C8ED1F90029611A /* UIView+Appearance.m */; };
 		E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345911C8D2D0500542F55 /* ProximaNova-Bold.otf */; };
 		E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */; };
 		E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */; };
@@ -102,6 +103,9 @@
 		E92074471C8EB8990029611A /* CardScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardScrollView.xib; sourceTree = "<group>"; };
 		E92074491C8EBCFD0029611A /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		E920744B1C8EBD1E0029611A /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		E920744E1C8ED1F90029611A /* Greatschools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Greatschools-Bridging-Header.h"; sourceTree = "<group>"; };
+		E920744F1C8ED1F90029611A /* UIView+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Appearance.h"; sourceTree = "<group>"; };
+		E92074501C8ED1F90029611A /* UIView+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Appearance.m"; sourceTree = "<group>"; };
 		E94DB29F1C8D59D70030F431 /* NearBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearBy.swift; sourceTree = "<group>"; };
 		E94DB2A51C8D85A20030F431 /* Article.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Article.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +181,7 @@
 		E90345691C8D26C700542F55 /* Greatschools */ = {
 			isa = PBXGroup;
 			children = (
+				E920744D1C8ED1C60029611A /* Vendor */,
 				E903458B1C8D2BFC00542F55 /* Supporting Files */,
 				E90345831C8D289500542F55 /* Extensions */,
 				E90345821C8D288C00542F55 /* Widgets */,
@@ -263,6 +268,16 @@
 				E90345941C8D2D0500542F55 /* ProximaNova-Semibold.otf */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		E920744D1C8ED1C60029611A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E920744F1C8ED1F90029611A /* UIView+Appearance.h */,
+				E92074501C8ED1F90029611A /* UIView+Appearance.m */,
+				E920744E1C8ED1F90029611A /* Greatschools-Bridging-Header.h */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 		E9483D7E1C8D426A002656B8 /* Search */ = {
@@ -449,6 +464,7 @@
 				E92074401C8EA96A0029611A /* AppInfo.swift in Sources */,
 				B5D7A3731C8D6EF30092636F /* SchoolInfoCell.swift in Sources */,
 				E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */,
+				E92074511C8ED1F90029611A /* UIView+Appearance.m in Sources */,
 				E903458A1C8D2BB800542F55 /* Extensions.swift in Sources */,
 				E920742C1C8E6D3F0029611A /* PickSchool.swift in Sources */,
 				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,
@@ -575,11 +591,14 @@
 			baseConfigurationReference = CAEA027565171A5336A7BFAA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Greatschools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilabs.Greatschools;
 				PRODUCT_NAME = Native;
+				SWIFT_OBJC_BRIDGING_HEADER = "Greatschools/Greatschools-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -588,11 +607,13 @@
 			baseConfigurationReference = A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Greatschools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilabs.Greatschools;
 				PRODUCT_NAME = Native;
+				SWIFT_OBJC_BRIDGING_HEADER = "Greatschools/Greatschools-Bridging-Header.h";
 			};
 			name = Release;
 		};
