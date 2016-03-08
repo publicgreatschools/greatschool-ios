@@ -18,7 +18,6 @@ class SchoolInfoView: NibView {
 	@IBOutlet weak var rate: UILabel!
 	@IBOutlet weak var reviews: UILabel!
 	
-	
 	var schoolInfo: SchoolInfo! {
 		didSet {
 			schoolName.text = schoolInfo.name

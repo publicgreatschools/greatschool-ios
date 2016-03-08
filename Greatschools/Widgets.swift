@@ -24,13 +24,21 @@ class TabBarItem: UITabBarItem {
 	}
 }
 
+class CardScrollView: NibView {
+	override var nibName: String { return "CardScrollView" }
+}
+
 class Article: NibView {
 	override var nibName: String { return "Article" }
 }
 
+class MileStone: NibView {
+	override var nibName: String { return "MileStone" }
+}
+
 class CartoonButton: NibView {
 	override var nibName: String { return "CartoonButton" }
-	@IBOutlet weak var textLabel: UILabel!
+	@IBOutlet weak var textLabel: KernLabel!
 	@IBOutlet weak var cartoon: UIButton!
 	@IBOutlet weak var badgeButton: UIButton!
 	@IBInspectable var text: String = "" { didSet { textLabel.text = text } }

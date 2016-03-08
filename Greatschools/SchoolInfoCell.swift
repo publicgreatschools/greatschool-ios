@@ -16,5 +16,10 @@ class SchoolInfoCell: UITableViewCell {
 			infoView.schoolInfo = schoolInfo
 		}
 	}
+	
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		selectedBackgroundView?.frame = infoView.frame
+	}
 }
 
