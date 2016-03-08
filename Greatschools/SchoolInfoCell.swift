@@ -14,5 +14,21 @@ class SchoolInfoCell: UITableViewCell {
 	@IBOutlet weak var schoolMiles: UILabel!
 	@IBOutlet weak var rateBackground: UIImageView!
 	@IBOutlet weak var starView: Stars!
+	@IBOutlet weak var rate: UILabel!
+	@IBOutlet weak var reviews: UILabel!
+	
+	var schoolInfo: SchoolInfo! {
+		didSet {
+			schoolName.text = schoolInfo.name
+			schoolAddress.text = schoolInfo.address
+			schoolMiles.text = "\(schoolInfo.miles) Miles"
+			let imageTemplate = UIImage(named: "rate_background")!.imageWithRenderingMode(.AlwaysTemplate)
+			rateBackground.image = imageTemplate
+			rateBackground.tintColor = schoolInfo.rateInfo.color
+			rate.text = "\(schoolInfo.rateInfo.rate)"
+			starView.starInfo = schoolInfo.starInfo
+			reviews.text = "\(schoolInfo.reviews) reviews"
+		}
+	}
 }
 
