@@ -54,6 +54,10 @@ extension UIFont {
 	class func semiBoldFontOfSize(fontSize: CGFloat) -> UIFont {
 		return UIFont(name: semiBoldFont, size: fontSize)!
 	}
+	
+	class func ssStandardFontOfSize(fontSize: CGFloat) -> UIFont {
+		return UIFont(name: ssFont, size: fontSize)!
+	}
 }
 
 extension String {
@@ -77,5 +81,9 @@ extension UIColor {
 	
 	class func lightGreenColor() -> UIColor {
 		return UIColor(hexRGB: 0xB8E986)
+	}
+	
+	class func backgroundColor() -> UIColor {
+		return UIColor(hexRGB: 0xF0F5F6)
 	}
 }

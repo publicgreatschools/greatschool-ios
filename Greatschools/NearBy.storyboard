@@ -86,7 +86,7 @@
                                             <action selector="explore:" destination="cqa-iO-JoP" eventType="touchUpInside" id="Goq-Iu-Row"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SCHOOLS IN THIS NEIGHBORHOOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZi-3I-Utl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHOOLS IN THIS NEIGHBORHOOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZi-3I-Utl">
                                         <rect key="frame" x="51" y="240" width="217.5" height="16"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,14 +169,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tI9-CY-JnY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tI9-CY-JnY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="465-Do-Yib" customClass="GradientView" customModule="Greycats">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="380"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pick a School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="823-O4-NJY">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="823-O4-NJY">
                                             <rect key="frame" x="106" y="40" width="109" height="22"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="18"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -226,7 +227,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejI-Ug-Zrj" customClass="CartoonButton" customModule="Native" customModuleProvider="target">
-                                            <rect key="frame" x="12" y="229" width="127" height="127"/>
+                                            <rect key="frame" x="12" y="249" width="127" height="127"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="127" id="JKd-Xx-TUV"/>
@@ -241,7 +242,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwr-Os-5hI" customClass="CartoonButton" customModule="Native" customModuleProvider="target">
-                                            <rect key="frame" x="181" y="229" width="127" height="127"/>
+                                            <rect key="frame" x="181" y="249" width="127" height="127"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="127" id="TGS-xh-dUI"/>
@@ -265,8 +266,8 @@
                                         <constraint firstItem="vp7-JF-8gn" firstAttribute="top" secondItem="dra-JO-YaM" secondAttribute="bottom" constant="8" id="Mxe-QO-LF9"/>
                                         <constraint firstItem="vp7-JF-8gn" firstAttribute="leading" secondItem="465-Do-Yib" secondAttribute="leading" id="OLr-pY-SZN"/>
                                         <constraint firstItem="C9C-rX-n0S" firstAttribute="leading" secondItem="dra-JO-YaM" secondAttribute="trailing" constant="20" id="OSP-GK-eCH"/>
-                                        <constraint firstItem="vwr-Os-5hI" firstAttribute="top" secondItem="vp7-JF-8gn" secondAttribute="bottom" constant="8" id="PDn-Bg-ghr"/>
-                                        <constraint firstItem="ejI-Ug-Zrj" firstAttribute="top" secondItem="vp7-JF-8gn" secondAttribute="bottom" constant="8" id="Sdj-Bd-xe8"/>
+                                        <constraint firstItem="vwr-Os-5hI" firstAttribute="top" secondItem="vp7-JF-8gn" secondAttribute="bottom" constant="28" id="PDn-Bg-ghr"/>
+                                        <constraint firstItem="ejI-Ug-Zrj" firstAttribute="top" secondItem="vp7-JF-8gn" secondAttribute="bottom" constant="28" id="Sdj-Bd-xe8"/>
                                         <constraint firstItem="C9C-rX-n0S" firstAttribute="centerX" secondItem="465-Do-Yib" secondAttribute="centerX" id="TCF-su-ncy"/>
                                         <constraint firstItem="vp7-JF-8gn" firstAttribute="centerY" secondItem="465-Do-Yib" secondAttribute="centerY" constant="30" id="TN4-xe-Nkj"/>
                                         <constraint firstAttribute="trailing" secondItem="vp7-JF-8gn" secondAttribute="trailing" id="foV-1F-HO1"/>
@@ -290,16 +291,10 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HTH-mi-nsV">
-                                        <rect key="frame" x="0.0" y="408" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HTH-mi-nsV" id="ZAG-yK-doX">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NX6-aV-anK" id="XDy-Dc-qoa"/>
+                                    <outlet property="delegate" destination="NX6-aV-anK" id="ZPv-ip-Fe2"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -310,7 +305,11 @@
                             <constraint firstItem="tI9-CY-JnY" firstAttribute="top" secondItem="eJk-PH-Cep" secondAttribute="top" id="yBo-ir-PAa"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="tI9-CY-JnY" id="mut-lc-0NT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzQ-eF-IlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,7 +318,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ib1-Ug-GAw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zuY-99-qLR" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zuY-99-qLR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kkm-qj-Sea">

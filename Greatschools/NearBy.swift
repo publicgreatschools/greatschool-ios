@@ -9,7 +9,7 @@
 import UIKit
 import Greycats
 
-class NearByViewController: UIViewController {
+class NearByViewController: ViewController {
 	
 	@IBOutlet weak var gredientView: GradientView!
 	@IBOutlet weak var header: UIImageView!

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+        <mutableArray key="ss-standard.ttf">
+            <string>SSStandard</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="idT-Ws-1Ub" customClass="AppCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="idT-Ws-1Ub" id="CJi-XC-0cr">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x53-bz-DN4">
+                        <rect key="frame" x="16" y="0.0" width="288" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feeling Word Game" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHp-S7-RJa">
+                                <rect key="frame" x="82" y="27" width="139.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-NI-QwF">
+                                <rect key="frame" x="0.0" y="73" width="288" height="0.5"/>
+                                <color key="backgroundColor" red="0.75686274509803919" green="0.82352941176470584" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="ssh-fa-N07"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0A-fc-Vce">
+                                <rect key="frame" x="268" y="30" width="10" height="14"/>
+                                <fontDescription key="fontDescription" name="SSStandard" family="SS Standard" pointSize="10"/>
+                                <color key="textColor" red="0.52156862745098043" green="0.57647058823529407" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iXo-WR-SeA">
+                                <rect key="frame" x="14" y="14" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="9KP-dT-jIg"/>
+                                    <constraint firstAttribute="height" constant="46" id="NwU-Y0-eYa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1wX-NI-QwF" secondAttribute="trailing" id="20B-FQ-IkJ"/>
+                            <constraint firstAttribute="bottom" secondItem="1wX-NI-QwF" secondAttribute="bottom" id="CWp-h2-H30"/>
+                            <constraint firstAttribute="trailing" secondItem="o0A-fc-Vce" secondAttribute="trailing" constant="10" id="Kop-d5-Ap9"/>
+                            <constraint firstItem="lHp-S7-RJa" firstAttribute="centerY" secondItem="x53-bz-DN4" secondAttribute="centerY" id="MO8-c4-fp8"/>
+                            <constraint firstItem="iXo-WR-SeA" firstAttribute="centerY" secondItem="x53-bz-DN4" secondAttribute="centerY" id="UoD-NZ-5Cw"/>
+                            <constraint firstItem="o0A-fc-Vce" firstAttribute="centerY" secondItem="x53-bz-DN4" secondAttribute="centerY" id="dtU-Ik-2Tb"/>
+                            <constraint firstItem="1wX-NI-QwF" firstAttribute="leading" secondItem="x53-bz-DN4" secondAttribute="leading" id="poU-hw-7A9"/>
+                            <constraint firstItem="lHp-S7-RJa" firstAttribute="leading" secondItem="iXo-WR-SeA" secondAttribute="trailing" constant="22" id="xg4-Wx-SJJ"/>
+                            <constraint firstItem="iXo-WR-SeA" firstAttribute="leading" secondItem="x53-bz-DN4" secondAttribute="leading" constant="14" id="xjg-0u-4Kz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="x53-bz-DN4" firstAttribute="top" secondItem="CJi-XC-0cr" secondAttribute="top" id="Q0E-La-Ni2"/>
+                    <constraint firstAttribute="bottom" secondItem="x53-bz-DN4" secondAttribute="bottom" id="p1M-tC-E5X"/>
+                    <constraint firstAttribute="trailing" secondItem="x53-bz-DN4" secondAttribute="trailing" constant="16" id="pPL-Zk-mZ7"/>
+                    <constraint firstItem="x53-bz-DN4" firstAttribute="leading" secondItem="CJi-XC-0cr" secondAttribute="leading" constant="16" id="v6n-bp-DOi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="container" destination="x53-bz-DN4" id="jrV-Y9-iM8"/>
+                <outlet property="iconImageView" destination="iXo-WR-SeA" id="wrb-Sk-UWl"/>
+                <outlet property="nameLabel" destination="lHp-S7-RJa" id="sCX-1e-Ogw"/>
+            </connections>
+            <point key="canvasLocation" x="309" y="361.5"/>
+        </tableViewCell>
+    </objects>
+</document>

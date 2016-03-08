@@ -28,6 +28,10 @@ class Article: NibView {
 	override var nibName: String { return "Article" }
 }
 
+class MileStone: NibView {
+	override var nibName: String { return "MileStone" }
+}
+
 class CartoonButton: NibView {
 	override var nibName: String { return "CartoonButton" }
 	@IBOutlet weak var textLabel: UILabel!

@@ -29,13 +29,25 @@
 		E90345981C8D2FCD00542F55 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345971C8D2FCD00542F55 /* Search.storyboard */; };
 		E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345991C8D2FDB00542F55 /* MySchools.storyboard */; };
 		E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E903459B1C8D2FE800542F55 /* GreatKids.storyboard */; };
-		E920742C1C8E6D3F0029611A /* PickSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920742B1C8E6D3F0029611A /* PickSchoolViewController.swift */; };
+		E920742C1C8E6D3F0029611A /* PickSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920742B1C8E6D3F0029611A /* PickSchool.swift */; };
 		E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = E920742D1C8E758D0029611A /* CartoonButton.xib */; };
+		E92074301C8E8D730029611A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920742F1C8E8D730029611A /* ViewController.swift */; };
+		E92074321C8E933E0029611A /* PickSchoolHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92074311C8E933E0029611A /* PickSchoolHeader.xib */; };
+		E92074341C8E93FA0029611A /* PickSchoolHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92074331C8E93FA0029611A /* PickSchoolHeader.swift */; };
+		E92074361C8E995F0029611A /* MileStone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92074351C8E995F0029611A /* MileStone.xib */; };
+		E92074381C8EA2C10029611A /* MileStoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92074371C8EA2C10029611A /* MileStoneCell.xib */; };
+		E920743A1C8EA2E40029611A /* MileStoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92074391C8EA2E40029611A /* MileStoneCell.swift */; };
+		E920743C1C8EA77F0029611A /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920743B1C8EA77F0029611A /* AppCell.swift */; };
+		E920743E1C8EA78E0029611A /* AppCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E920743D1C8EA78E0029611A /* AppCell.xib */; };
+		E92074401C8EA96A0029611A /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920743F1C8EA96A0029611A /* AppInfo.swift */; };
+		E92074421C8EB03B0029611A /* ss-standard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E92074411C8EB03B0029611A /* ss-standard.ttf */; };
+		E92074441C8EB27C0029611A /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92074431C8EB27C0029611A /* SimpleCell.swift */; };
+		E92074461C8EB29A0029611A /* SimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92074451C8EB29A0029611A /* SimpleCell.xib */; };
 		E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345911C8D2D0500542F55 /* ProximaNova-Bold.otf */; };
 		E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */; };
 		E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */; };
 		E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345941C8D2D0500542F55 /* ProximaNova-Semibold.otf */; };
-		E94DB2A01C8D59D70030F431 /* NearByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DB29F1C8D59D70030F431 /* NearByViewController.swift */; };
+		E94DB2A01C8D59D70030F431 /* NearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DB29F1C8D59D70030F431 /* NearBy.swift */; };
 		E94DB2A61C8D85A20030F431 /* Article.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DB2A51C8D85A20030F431 /* Article.xib */; };
 /* End PBXBuildFile section */
 
@@ -70,9 +82,21 @@
 		E90345971C8D2FCD00542F55 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		E90345991C8D2FDB00542F55 /* MySchools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MySchools.storyboard; sourceTree = "<group>"; };
 		E903459B1C8D2FE800542F55 /* GreatKids.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreatKids.storyboard; sourceTree = "<group>"; };
-		E920742B1C8E6D3F0029611A /* PickSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickSchoolViewController.swift; sourceTree = "<group>"; };
+		E920742B1C8E6D3F0029611A /* PickSchool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickSchool.swift; sourceTree = "<group>"; };
 		E920742D1C8E758D0029611A /* CartoonButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartoonButton.xib; sourceTree = "<group>"; };
-		E94DB29F1C8D59D70030F431 /* NearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewController.swift; sourceTree = "<group>"; };
+		E920742F1C8E8D730029611A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E92074311C8E933E0029611A /* PickSchoolHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickSchoolHeader.xib; sourceTree = "<group>"; };
+		E92074331C8E93FA0029611A /* PickSchoolHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickSchoolHeader.swift; sourceTree = "<group>"; };
+		E92074351C8E995F0029611A /* MileStone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MileStone.xib; sourceTree = "<group>"; };
+		E92074371C8EA2C10029611A /* MileStoneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MileStoneCell.xib; sourceTree = "<group>"; };
+		E92074391C8EA2E40029611A /* MileStoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MileStoneCell.swift; sourceTree = "<group>"; };
+		E920743B1C8EA77F0029611A /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		E920743D1C8EA78E0029611A /* AppCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppCell.xib; sourceTree = "<group>"; };
+		E920743F1C8EA96A0029611A /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		E92074411C8EB03B0029611A /* ss-standard.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ss-standard.ttf"; sourceTree = "<group>"; };
+		E92074431C8EB27C0029611A /* SimpleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
+		E92074451C8EB29A0029611A /* SimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleCell.xib; sourceTree = "<group>"; };
+		E94DB29F1C8D59D70030F431 /* NearBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearBy.swift; sourceTree = "<group>"; };
 		E94DB2A51C8D85A20030F431 /* Article.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Article.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +128,14 @@
 				B5D7A3721C8D6EF30092636F /* SchoolInfoCell.swift */,
 				B5D7A36C1C8D53C20092636F /* Stars.xib */,
 				B5D7A36E1C8D57340092636F /* Stars.swift */,
+				E92074311C8E933E0029611A /* PickSchoolHeader.xib */,
+				E92074331C8E93FA0029611A /* PickSchoolHeader.swift */,
+				E92074371C8EA2C10029611A /* MileStoneCell.xib */,
+				E92074391C8EA2E40029611A /* MileStoneCell.swift */,
+				E920743B1C8EA77F0029611A /* AppCell.swift */,
+				E920743D1C8EA78E0029611A /* AppCell.xib */,
+				E92074431C8EB27C0029611A /* SimpleCell.swift */,
+				E92074451C8EB29A0029611A /* SimpleCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -164,6 +196,7 @@
 			children = (
 				E903456E1C8D26C700542F55 /* Home.storyboard */,
 				E90345801C8D283500542F55 /* TabBarController.swift */,
+				E920742F1C8E8D730029611A /* ViewController.swift */,
 				E9483D811C8D428D002656B8 /* GreatKids */,
 				E9483D801C8D427F002656B8 /* MySchools */,
 				E9483D7F1C8D4274002656B8 /* NearBy */,
@@ -179,6 +212,7 @@
 				E90345851C8D28CC00542F55 /* Widgets.swift */,
 				E94DB2A51C8D85A20030F431 /* Article.xib */,
 				E920742D1C8E758D0029611A /* CartoonButton.xib */,
+				E92074351C8E995F0029611A /* MileStone.xib */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -195,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D7A3741C8D86120092636F /* SchoolInfo.swift */,
+				E920743F1C8EA96A0029611A /* AppInfo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -212,6 +247,7 @@
 		E903458C1C8D2C0800542F55 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				E92074411C8EB03B0029611A /* ss-standard.ttf */,
 				E90345911C8D2D0500542F55 /* ProximaNova-Bold.otf */,
 				E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */,
 				E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */,
@@ -234,8 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				E90345951C8D2FBE00542F55 /* NearBy.storyboard */,
-				E94DB29F1C8D59D70030F431 /* NearByViewController.swift */,
-				E920742B1C8E6D3F0029611A /* PickSchoolViewController.swift */,
+				E94DB29F1C8D59D70030F431 /* NearBy.swift */,
+				E920742B1C8E6D3F0029611A /* PickSchool.swift */,
 			);
 			name = NearBy;
 			sourceTree = "<group>";
@@ -324,13 +360,19 @@
 				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
 				E94DB2A61C8D85A20030F431 /* Article.xib in Resources */,
+				E92074461C8EB29A0029611A /* SimpleCell.xib in Resources */,
 				E90345751C8D26C700542F55 /* LaunchScreen.storyboard in Resources */,
 				E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */,
 				E90345721C8D26C700542F55 /* Assets.xcassets in Resources */,
 				E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */,
 				B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */,
+				E92074381C8EA2C10029611A /* MileStoneCell.xib in Resources */,
 				E90345701C8D26C700542F55 /* Home.storyboard in Resources */,
+				E92074321C8E933E0029611A /* PickSchoolHeader.xib in Resources */,
+				E92074421C8EB03B0029611A /* ss-standard.ttf in Resources */,
 				E90345961C8D2FBE00542F55 /* NearBy.storyboard in Resources */,
+				E92074361C8E995F0029611A /* MileStone.xib in Resources */,
+				E920743E1C8EA78E0029611A /* AppCell.xib in Resources */,
 				E90345981C8D2FCD00542F55 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,20 +432,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92074301C8E8D730029611A /* ViewController.swift in Sources */,
 				B5D7A3711C8D6AB40092636F /* Search.swift in Sources */,
 				B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */,
+				E92074401C8EA96A0029611A /* AppInfo.swift in Sources */,
 				B5D7A3731C8D6EF30092636F /* SchoolInfoCell.swift in Sources */,
 				E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */,
 				E903458A1C8D2BB800542F55 /* Extensions.swift in Sources */,
-				E920742C1C8E6D3F0029611A /* PickSchoolViewController.swift in Sources */,
+				E920742C1C8E6D3F0029611A /* PickSchool.swift in Sources */,
 				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,
+				E92074441C8EB27C0029611A /* SimpleCell.swift in Sources */,
 				B5D7A3751C8D86120092636F /* SchoolInfo.swift in Sources */,
+				E92074341C8E93FA0029611A /* PickSchoolHeader.swift in Sources */,
 				B5D7A36F1C8D57340092636F /* Stars.swift in Sources */,
 				E903456B1C8D26C700542F55 /* AppDelegate.swift in Sources */,
 				E90345811C8D283500542F55 /* TabBarController.swift in Sources */,
-				E94DB2A01C8D59D70030F431 /* NearByViewController.swift in Sources */,
+				E94DB2A01C8D59D70030F431 /* NearBy.swift in Sources */,
 				E903458E1C8D2C4300542F55 /* Greatschools-Define.swift in Sources */,
+				E920743C1C8EA77F0029611A /* AppCell.swift in Sources */,
 				E90345861C8D28CC00542F55 /* Widgets.swift in Sources */,
+				E920743A1C8EA2E40029611A /* MileStoneCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
