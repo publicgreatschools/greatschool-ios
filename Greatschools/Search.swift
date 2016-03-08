@@ -10,15 +10,19 @@ import Greycats
 
 class SearchViewController: UIViewController{
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var navRightItem: UIBarButtonItem!
 	
 	var segmentId: Int = 0
 	var segmentChanged: Bool = false
+	var isMapView: Bool = false
+	var mapView: MapView!
 	
 	// MARK: - override
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		tableView.registerNib(UINib(nibName: "SchoolInfoCell", bundle: nil), forCellReuseIdentifier: "SchoolInfoCell")
+		mapView = MapView(frame: CGRectMake(0, 20+44+44, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-20-44-44-49))
 	}
 	
 	// MARK: - tableview
@@ -49,7 +53,7 @@ class SearchViewController: UIViewController{
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
 	}
 	
-	// MARK: - Gesture
+	// MARK: - gesture
 	
 	@IBAction func handleSwipeFrom(sender: UISwipeGestureRecognizer) {
 		segmentChanged = false
@@ -73,4 +77,19 @@ class SearchViewController: UIViewController{
 			tableView.reloadData()
 		}
 	}
+	
+	// MARK: - nav
+	
+	@IBAction func ChangeSearchView(sender: AnyObject) {
+		if isMapView {
+			navRightItem.image = UIImage(named: "Map")
+			isMapView = false
+			mapView.removeFromSuperview()
+		} else {
+			navRightItem.image = UIImage(named: "List")
+			isMapView = true
+			self.view.addSubview(mapView)
+		}
+	}
+	
 }

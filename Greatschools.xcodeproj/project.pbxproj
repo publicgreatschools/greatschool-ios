@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB241C8E6C7C0087A26A /* MapView.swift */; };
 		B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */; };
 		B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36C1C8D53C20092636F /* Stars.xib */; };
 		B5D7A36F1C8D57340092636F /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7A36E1C8D57340092636F /* Stars.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B584CB241C8E6C7C0087A26A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoCell.xib; sourceTree = "<group>"; };
 		B5D7A36C1C8D53C20092636F /* Stars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Stars.xib; sourceTree = "<group>"; };
 		B5D7A36E1C8D57340092636F /* Stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				E90345971C8D2FCD00542F55 /* Search.storyboard */,
 				B5D7A3701C8D6AB40092636F /* Search.swift */,
+				B584CB241C8E6C7C0087A26A /* MapView.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D7A3711C8D6AB40092636F /* Search.swift in Sources */,
+				B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */,
 				B5D7A3731C8D6EF30092636F /* SchoolInfoCell.swift in Sources */,
 				E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */,
 				E903458A1C8D2BB800542F55 /* Extensions.swift in Sources */,

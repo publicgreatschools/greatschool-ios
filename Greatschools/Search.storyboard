@@ -57,9 +57,17 @@
                             <outletCollection property="gestureRecognizers" destination="Xkx-zc-41C" appends="YES" id="XnA-FS-iAw"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Search" id="hsg-9j-rxV"/>
+                    <navigationItem key="navigationItem" title="Search" id="hsg-9j-rxV">
+                        <barButtonItem key="leftBarButtonItem" image="Hamburger" id="qxe-Ya-qc2"/>
+                        <barButtonItem key="rightBarButtonItem" image="Map" id="ROC-Ag-LWB">
+                            <connections>
+                                <action selector="ChangeSearchView:" destination="3Ve-8E-Z32" id="lSs-sZ-fDs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="navRightItem" destination="ROC-Ag-LWB" id="whA-aW-p6n"/>
                         <outlet property="tableView" destination="3wP-D3-AdU" id="b4u-p4-2SI"/>
                     </connections>
                 </viewController>
@@ -97,4 +105,8 @@
             <point key="canvasLocation" x="23" y="121"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hamburger" width="24" height="18"/>
+        <image name="Map" width="24" height="26"/>
+    </resources>
 </document>
