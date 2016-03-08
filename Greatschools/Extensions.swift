@@ -38,6 +38,20 @@ extension UITabBar {
 	}
 }
 
+extension UIBarButtonItem {
+	@IBInspectable var original: Bool {
+		get {
+			return image?.renderingMode == .AlwaysOriginal
+		}
+		set(original) {
+			image = image?.imageWithRenderingMode(original ? .AlwaysOriginal : .AlwaysTemplate)
+		}
+	}
+}
+
+class TransparentNavigationController: UINavigationController {
+}
+
 extension UIFont {
 	class func regularFontOfSize(fontSize: CGFloat) -> UIFont {
 		return UIFont(name: regularFont, size: fontSize)!
