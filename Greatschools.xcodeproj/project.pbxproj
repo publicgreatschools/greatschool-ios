@@ -28,6 +28,8 @@
 		E90345981C8D2FCD00542F55 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345971C8D2FCD00542F55 /* Search.storyboard */; };
 		E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90345991C8D2FDB00542F55 /* MySchools.storyboard */; };
 		E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E903459B1C8D2FE800542F55 /* GreatKids.storyboard */; };
+		E920742C1C8E6D3F0029611A /* PickSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920742B1C8E6D3F0029611A /* PickSchoolViewController.swift */; };
+		E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = E920742D1C8E758D0029611A /* CartoonButton.xib */; };
 		E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345911C8D2D0500542F55 /* ProximaNova-Bold.otf */; };
 		E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345921C8D2D0500542F55 /* ProximaNova-Light.otf */; };
 		E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345931C8D2D0500542F55 /* ProximaNova-Regular.otf */; };
@@ -46,7 +48,7 @@
 		B5D7A3741C8D86120092636F /* SchoolInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolInfo.swift; sourceTree = "<group>"; };
 		CAEA027565171A5336A7BFAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E026157D431E85F27D397280 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E90345671C8D26C700542F55 /* Greatschools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greatschools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90345671C8D26C700542F55 /* Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E903456A1C8D26C700542F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E903456F1C8D26C700542F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E90345711C8D26C700542F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 		E90345971C8D2FCD00542F55 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		E90345991C8D2FDB00542F55 /* MySchools.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MySchools.storyboard; sourceTree = "<group>"; };
 		E903459B1C8D2FE800542F55 /* GreatKids.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreatKids.storyboard; sourceTree = "<group>"; };
+		E920742B1C8E6D3F0029611A /* PickSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickSchoolViewController.swift; sourceTree = "<group>"; };
+		E920742D1C8E758D0029611A /* CartoonButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartoonButton.xib; sourceTree = "<group>"; };
 		E94DB29F1C8D59D70030F431 /* NearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewController.swift; sourceTree = "<group>"; };
 		E94DB2A51C8D85A20030F431 /* Article.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Article.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,7 +127,7 @@
 		E90345681C8D26C700542F55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E90345671C8D26C700542F55 /* Greatschools.app */,
+				E90345671C8D26C700542F55 /* Native.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +176,7 @@
 			children = (
 				E90345851C8D28CC00542F55 /* Widgets.swift */,
 				E94DB2A51C8D85A20030F431 /* Article.xib */,
+				E920742D1C8E758D0029611A /* CartoonButton.xib */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			children = (
 				E90345951C8D2FBE00542F55 /* NearBy.storyboard */,
 				E94DB29F1C8D59D70030F431 /* NearByViewController.swift */,
+				E920742B1C8E6D3F0029611A /* PickSchoolViewController.swift */,
 			);
 			name = NearBy;
 			sourceTree = "<group>";
@@ -267,7 +273,7 @@
 			);
 			name = Greatschools;
 			productName = Greatschools;
-			productReference = E90345671C8D26C700542F55 /* Greatschools.app */;
+			productReference = E90345671C8D26C700542F55 /* Native.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -311,6 +317,7 @@
 				E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */,
 				E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */,
 				E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */,
+				E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */,
 				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
 				E94DB2A61C8D85A20030F431 /* Article.xib in Resources */,
@@ -384,6 +391,7 @@
 				B5D7A3731C8D6EF30092636F /* SchoolInfoCell.swift in Sources */,
 				E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */,
 				E903458A1C8D2BB800542F55 /* Extensions.swift in Sources */,
+				E920742C1C8E6D3F0029611A /* PickSchoolViewController.swift in Sources */,
 				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,
 				B5D7A3751C8D86120092636F /* SchoolInfo.swift in Sources */,
 				B5D7A36F1C8D57340092636F /* Stars.swift in Sources */,
@@ -507,7 +515,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilabs.Greatschools;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Native;
 			};
 			name = Debug;
 		};
@@ -520,7 +528,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilabs.Greatschools;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Native;
 			};
 			name = Release;
 		};
