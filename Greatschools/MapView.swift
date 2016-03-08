@@ -9,7 +9,9 @@
 import UIKit
 
 class MapView: UIView {
+	var imageView: UIImageView!
 	var scaledPin: PinView?
+	var infoView: SchoolInfoView!
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -18,9 +20,16 @@ class MapView: UIView {
 		tapGesture.numberOfTapsRequired = 1
 		self.addGestureRecognizer(tapGesture)
 		
-		let imageView = UIImageView(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
+		imageView = UIImageView(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
 		imageView.image = UIImage(named: "Bitmap")
-		self.addSubview(imageView)
+		
+		infoView = SchoolInfoView()
+		infoView.frame = CGRectMake(16, 11, self.frame.size.width-16*2, 130)
+		infoView.tag = 99
+		infoView.backgroundColor = UIColor.whiteColor()
+		infoView.cornerRadius = 4
+		infoView.masksToBounds = true
+		infoView.transform = CGAffineTransformScale(self.infoView.transform, 0, 0)
 	}
 
 	required init?(coder aDecoder: NSCoder) {
@@ -28,8 +37,15 @@ class MapView: UIView {
 	}
 	
 	override func willMoveToSuperview(newSuperview: UIView?) {
+		for subView in self.subviews {
+			subView.removeFromSuperview()
+		}
+		
+		self.addSubview(imageView)
+		self.addSubview(infoView)
+		
 		for schoolInfo in SchoolInfo.demoData {
-			let pin = PinView(schoolInfo: schoolInfo)
+			let pin = PinView(info: schoolInfo)
 			let tapGesture = UITapGestureRecognizer(target: self, action: "pinTap:")
 			tapGesture.numberOfTapsRequired = 1
 			pin.addGestureRecognizer(tapGesture)
@@ -47,6 +63,7 @@ class MapView: UIView {
 		if let pin = scaledPin {
 			UIView.animateWithDuration(0.3, animations: {
 				pin.transform = CGAffineTransformIdentity
+				self.infoView.transform = CGAffineTransformScale(self.infoView.transform, 0, 0)
 			})
 			scaledPin = nil
 		}
@@ -55,23 +72,30 @@ class MapView: UIView {
 	func pinTap(gesture: UIPanGestureRecognizer) {
 		if let pinCurrent = gesture.view as? PinView {
 			if let pinScaled = scaledPin {
-				if pinCurrent.schoolID == pinScaled.schoolID {
+				if pinCurrent.schoolInfo.id == pinScaled.schoolInfo.id {
 					return
 				}
 				else {
 					UIView.animateWithDuration(0.3, animations: {
 						pinScaled.transform = CGAffineTransformScale(pinScaled.transform, 1/2, 1/2)
+						self.infoView.transform = CGAffineTransformScale(self.infoView.transform, 0, 0)
+						}, completion: {finished in
+							self.scaledPin = pinCurrent
+							self.infoView.schoolInfo = pinCurrent.schoolInfo
+							UIView.animateWithDuration(0.3, animations: {
+								pinCurrent.transform = CGAffineTransformScale(pinCurrent.transform, 2, 2)
+								self.infoView.transform = CGAffineTransformIdentity
+							})
 					})
 				}
+			} else {
+				scaledPin = pinCurrent
+				infoView.schoolInfo = pinCurrent.schoolInfo
+				UIView.animateWithDuration(0.3, animations: {
+					pinCurrent.transform = CGAffineTransformScale(pinCurrent.transform, 2, 2)
+					self.infoView.transform = CGAffineTransformIdentity
+				})
 			}
-			
-			scaledPin = pinCurrent
-			UIView.animateWithDuration(0.3, animations: {
-				pinCurrent.transform = CGAffineTransformScale(pinCurrent.transform, 2, 2)
-			})
-			
-			let schoolInfoView = NSBundle.mainBundle().loadNibNamed("SchoolInfoCell", owner: nil, options: nil).first as? SchoolInfoCell
-			self.addSubview(schoolInfoView!)
 		}
 	}
 }
@@ -79,10 +103,10 @@ class MapView: UIView {
 // MARK: -
 
 class PinView: UIView {
-	var schoolID: Int
+	var schoolInfo: SchoolInfo
 	
-	init(schoolInfo: SchoolInfo) {
-		schoolID = schoolInfo.id
+	init(info: SchoolInfo) {
+		schoolInfo = info
 		super.init(frame: CGRectMake(CGFloat(arc4random_uniform(300)), 150+CGFloat(arc4random_uniform(200)), 47, 53))
 		let imageView = UIImageView(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
 		imageView.image = UIImage(named: schoolInfo.pinColorId == 0 ? "PinGreen" : "PinOrange")
@@ -93,10 +117,6 @@ class PinView: UIView {
 		rateLabel.textColor = schoolInfo.pinColorId == 0 ? UIColor(hexRGB: 0x7BC526) : UIColor(hexRGB: 0xF37746)
 		rateLabel.text = "\(schoolInfo.rateInfo.rate)"
 		imageView.addSubview(rateLabel)
-		
-		let tapGesture = UITapGestureRecognizer(target: self, action: "pinTap:")
-		tapGesture.numberOfTapsRequired = 1
-		self.addGestureRecognizer(tapGesture)
 	}
 
 	required init?(coder aDecoder: NSCoder) {
