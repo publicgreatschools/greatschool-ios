@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */; };
+		B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36C1C8D53C20092636F /* Stars.xib */; };
+		B5D7A36F1C8D57340092636F /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7A36E1C8D57340092636F /* Stars.swift */; };
+		B5D7A3711C8D6AB40092636F /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7A3701C8D6AB40092636F /* Search.swift */; };
+		B5D7A3731C8D6EF30092636F /* SchoolInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7A3721C8D6EF30092636F /* SchoolInfoCell.swift */; };
+		B5D7A3751C8D86120092636F /* SchoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7A3741C8D86120092636F /* SchoolInfo.swift */; };
 		BB64C731E3E46684679EDD28 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E026157D431E85F27D397280 /* Pods.framework */; };
 		E903456B1C8D26C700542F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903456A1C8D26C700542F55 /* AppDelegate.swift */; };
 		E90345701C8D26C700542F55 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E903456E1C8D26C700542F55 /* Home.storyboard */; };
@@ -34,6 +40,12 @@
 
 /* Begin PBXFileReference section */
 		A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoCell.xib; sourceTree = "<group>"; };
+		B5D7A36C1C8D53C20092636F /* Stars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Stars.xib; sourceTree = "<group>"; };
+		B5D7A36E1C8D57340092636F /* Stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		B5D7A3701C8D6AB40092636F /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		B5D7A3721C8D6EF30092636F /* SchoolInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolInfoCell.swift; sourceTree = "<group>"; };
+		B5D7A3741C8D86120092636F /* SchoolInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolInfo.swift; sourceTree = "<group>"; };
 		CAEA027565171A5336A7BFAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E026157D431E85F27D397280 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90345671C8D26C700542F55 /* Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +93,17 @@
 				A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5D7A3691C8D512E0092636F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */,
+				B5D7A3721C8D6EF30092636F /* SchoolInfoCell.swift */,
+				B5D7A36C1C8D53C20092636F /* Stars.xib */,
+				B5D7A36E1C8D57340092636F /* Stars.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		D62C20BFCB8E38672A4201DA /* Frameworks */ = {
@@ -143,6 +166,7 @@
 				E9483D801C8D427F002656B8 /* MySchools */,
 				E9483D7F1C8D4274002656B8 /* NearBy */,
 				E9483D7E1C8D426A002656B8 /* Search */,
+				B5D7A3691C8D512E0092636F /* View */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -168,6 +192,7 @@
 		E90345841C8D28A200542F55 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5D7A3741C8D86120092636F /* SchoolInfo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -197,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				E90345971C8D2FCD00542F55 /* Search.storyboard */,
+				B5D7A3701C8D6AB40092636F /* Search.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -292,12 +318,14 @@
 				E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */,
 				E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */,
 				E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */,
+				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
 				E94DB2A61C8D85A20030F431 /* Article.xib in Resources */,
 				E90345751C8D26C700542F55 /* LaunchScreen.storyboard in Resources */,
 				E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */,
 				E90345721C8D26C700542F55 /* Assets.xcassets in Resources */,
 				E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */,
+				B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */,
 				E90345701C8D26C700542F55 /* Home.storyboard in Resources */,
 				E90345961C8D2FBE00542F55 /* NearBy.storyboard in Resources */,
 				E90345981C8D2FCD00542F55 /* Search.storyboard in Resources */,
@@ -359,10 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D7A3711C8D6AB40092636F /* Search.swift in Sources */,
+				B5D7A3731C8D6EF30092636F /* SchoolInfoCell.swift in Sources */,
 				E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */,
 				E903458A1C8D2BB800542F55 /* Extensions.swift in Sources */,
 				E920742C1C8E6D3F0029611A /* PickSchoolViewController.swift in Sources */,
 				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,
+				B5D7A3751C8D86120092636F /* SchoolInfo.swift in Sources */,
+				B5D7A36F1C8D57340092636F /* Stars.swift in Sources */,
 				E903456B1C8D26C700542F55 /* AppDelegate.swift in Sources */,
 				E90345811C8D283500542F55 /* TabBarController.swift in Sources */,
 				E94DB2A01C8D59D70030F431 /* NearByViewController.swift in Sources */,
