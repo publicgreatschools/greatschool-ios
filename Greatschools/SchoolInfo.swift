@@ -53,3 +53,20 @@ struct OverviewInfo {
 extension OverviewInfo {
 	static var demoData = OverviewInfo(schoolRate: SchoolRate(rate: 9, color: UIColor(hexRGB: 0x60BD02)), reviewRate: SchoolRate(rate: 2, color: UIColor(hexRGB: 0xF5A623)), starInfo: SchoolStar(count: 3, color: UIColor(hexRGB: 0xF5A623)), enrolled: 1950, address: "Public District, Pleasant Hill, CA", beforeCare: false, afterCare: false)
 }
+
+
+struct ReviewInfo {
+	let starInfo: SchoolStar
+	let date: String
+	let comment: String
+	let imageName: String
+	let reviewerName: String
+}
+
+extension ReviewInfo {
+	static var demoData = [
+		ReviewInfo(starInfo: SchoolStar(count: 2, color: UIColor(hexRGB: 0xF5A623)), date: "August 24, 2015", comment: "The administration at this school is an embarrassment. The level of incompetency is monumental. The fact that the students succeed at all is due entirely to the many excellent teachers and parental involvement. ", imageName: "ReviewPic0", reviewerName: "Sunny"),
+	ReviewInfo(starInfo: SchoolStar(count: 4, color: UIColor(hexRGB: 0x60BD02)), date: "August 23, 2015", comment: "The administration at this school is an embarrassment. The level of incompetency is monumental. The fact that the students succeed at all is due entirely to the many excellent teachers and parental involvement. ", imageName: "", reviewerName: "Tony"),
+	ReviewInfo(starInfo: SchoolStar(count: 3, color: UIColor(hexRGB: 0xF5A623)), date: "August 23, 2015", comment: "I've only been going to College Park for a week now and I already love the school! Not only do the teachers care, but the electives they offer are more than I've ever seen! ", imageName: "ReviewPic2", reviewerName: "Evan")]
+}
+
