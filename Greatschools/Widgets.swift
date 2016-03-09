@@ -24,18 +24,28 @@ class TabBarItem: UITabBarItem {
 	}
 }
 
+@IBDesignable
 class CardScrollView: NibView {
 	override var nibName: String { return "CardScrollView" }
 }
 
+@IBDesignable
+class SearchView: NibView {
+	override var nibName: String { return "SearchView" }
+	@IBOutlet weak var textField: UITextField!
+}
+
+@IBDesignable
 class Article: NibView {
 	override var nibName: String { return "Article" }
 }
 
+@IBDesignable
 class MileStone: NibView {
 	override var nibName: String { return "MileStone" }
 }
 
+@IBDesignable
 class CartoonButton: NibView {
 	override var nibName: String { return "CartoonButton" }
 	@IBOutlet weak var textLabel: KernLabel!
