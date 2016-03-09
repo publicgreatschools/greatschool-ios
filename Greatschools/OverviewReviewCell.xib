@@ -15,7 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="U09-4O-85D">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="U09-4O-85D" customClass="OverviewReviewCell" customModule="Native" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U09-4O-85D" id="rXc-Jy-4T9">
@@ -97,6 +97,12 @@
                     <constraint firstItem="9WX-tW-6kg" firstAttribute="top" secondItem="rXc-Jy-4T9" secondAttribute="top" id="sts-q7-hRK"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="rate" destination="0bh-Mi-afx" id="TCK-7V-suz"/>
+                <outlet property="rateBackground" destination="vfb-Xr-Fcb" id="61t-De-mUa"/>
+                <outlet property="star" destination="5vx-B5-qew" id="MJB-0t-d6Z"/>
+                <outlet property="view" destination="9WX-tW-6kg" id="a5A-K8-NcJ"/>
+            </connections>
             <point key="canvasLocation" x="295" y="310"/>
         </tableViewCell>
     </objects>

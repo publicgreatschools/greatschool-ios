@@ -15,7 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7ri-xc-9Gm">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7ri-xc-9Gm" customClass="OverviewRatingCell" customModule="Native" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ri-xc-9Gm" id="Rtk-rf-Ajr">
@@ -87,6 +87,11 @@
                     <constraint firstAttribute="trailing" secondItem="knH-0y-V7v" secondAttribute="trailing" constant="16" id="b3F-CU-ukg"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="rate" destination="VBi-VZ-mDs" id="qPX-1Y-qDm"/>
+                <outlet property="rateBackground" destination="SSD-N7-5nQ" id="kpX-er-If7"/>
+                <outlet property="view" destination="knH-0y-V7v" id="kPT-uO-yvy"/>
+            </connections>
             <point key="canvasLocation" x="295" y="310"/>
         </tableViewCell>
     </objects>
