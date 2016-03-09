@@ -8,7 +8,7 @@
 
 import Greycats
 
-class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SearchViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var gradientView: GradientView!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var searchView: SearchView!
@@ -29,6 +29,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 		demoData.sortInPlace{ $0.miles < $1.miles }
 		tableView.registerNib(UINib(nibName: "SchoolInfoCell", bundle: nil), forCellReuseIdentifier: "SchoolInfoCell")
 		mapView = MapView(frame: CGRectMake(0, 160, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame) - 160))
+		searchView.textField.delegate = self
 		
 		for subview in gradientView.subviews {
 			if let button = subview as? UIButton {
@@ -66,13 +67,30 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
 	}
 	
-	// MARK: - gesture
+	// MARK: - textfield
 	
-	@IBAction func selectFilter(sender:AnyObject) {
-		if let btn = sender as? UIButton {
-			self.changeSelectButton(btn.tag)
+	func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+		if string == "\n" {
+			textField.resignFirstResponder()
+			return false
+		}
+		return true
+	}
+	
+	func textFieldDidEndEditing(textField: UITextField) {
+		if let input = textField.text?.lowercaseString {
+			if input == "" {
+				demoData = SchoolInfo.demoData
+			} else {
+				demoData = SchoolInfo.demoData.filter{ $0.name.lowercaseString.containsString(input) }
+			}
+			self.sortData()
+			mapView.demoData = demoData
+			mapView.resetData()
 		}
 	}
+	
+	// MARK: - gesture
 	
 	@IBAction func handleSwipeFrom(sender: UISwipeGestureRecognizer) {
 		if sender.direction == .Left {
@@ -103,35 +121,31 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 		navRightItem.original = true
 	}
 	
-	// MARK: - search
+	// MARK: - action
 	
-	func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-		if searchText == "" {
-			demoData = SchoolInfo.demoData
-		} else {
-			demoData = SchoolInfo.demoData.filter{ $0.name.containsString(searchText) }
+	@IBAction func selectFilter(sender:AnyObject) {
+		if let btn = sender as? UIButton {
+			self.changeSelectButton(btn.tag)
 		}
-		tableView.reloadData()
-		mapView.demoData = demoData
-		mapView.resetData()
 	}
 	
 	// MARK: - private
 	
-	private func changeSelectButton(cuttentTag: Int) {
-		leftConstraint.constant = CGFloat(cuttentTag-1) * CGRectGetWidth(view.frame) / 3.0 + CGRectGetWidth(view.frame) * 0.1 / 6.0
+	private func changeSelectButton(currentTag: Int) {
+		leftConstraint.constant = CGFloat(currentTag-1) * CGRectGetWidth(view.frame) / 3.0 + CGRectGetWidth(view.frame) * 0.1 / 6.0
 		UIView.animateWithDuration(0.2) {
 			self.view.layoutIfNeeded()
 		}
 		for button in buttons {
-			button.selected = button.tag == cuttentTag
+			button.selected = button.tag == currentTag
 			button.alpha = button.selected ? 1 : 0.77
 			button.titleLabel?.font = button.selected ? UIFont.boldFontOfSize(13) : UIFont.semiBoldFontOfSize(13)
 		}
-		self.sortData(cuttentTag)
+		sortId = currentTag
+		self.sortData()
 	}
 	
-	private func sortData(sortId: Int) {
+	private func sortData() {
 		switch sortId {
 		case 2: demoData.sortInPlace{ $0.name < $1.name }
 		case 3: demoData.sortInPlace{ $0.rateInfo.rate > $1.rateInfo.rate }
