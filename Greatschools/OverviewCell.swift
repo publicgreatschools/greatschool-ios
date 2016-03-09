@@ -42,8 +42,8 @@ class OverviewReviewCell: OverviewCell {
 		didSet {
 			let imageTemplate = UIImage(named: "rate_background")!.imageWithRenderingMode(.AlwaysTemplate)
 			rateBackground.image = imageTemplate
-			rateBackground.tintColor = overviewInfo.schoolRate.color
-			rate.text = "\(overviewInfo.schoolRate.rate)"
+			rateBackground.tintColor = overviewInfo.reviewRate.color
+			rate.text = "\(overviewInfo.reviewRate.rate)"
 			star.starInfo = overviewInfo.starInfo
 		}
 	}
