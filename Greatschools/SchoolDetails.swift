@@ -29,20 +29,10 @@ class SchoolDetailsViewController: ViewController {
 			return nil
 		}
 	}
-	var topRequestViewController: TestViewController? {
-		get {
-			for controller in childViewControllers as! [TestViewController] {
-				if !controller.view.hidden {
-					return controller
-				}
-			}
-			return nil
-		}
-	}
 	
 	func transitionToTab(tab: Int) {
 		topView?.endEditing(true)
-		for (i, controller) in (childViewControllers as! [TestViewController]).enumerate() {
+		for (i, controller) in childViewControllers.enumerate() {
 			if i == tab {
 				controller.beginAppearanceTransition(true, animated: true)
 				container[i].hidden = false
