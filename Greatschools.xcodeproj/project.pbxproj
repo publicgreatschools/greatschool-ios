@@ -65,6 +65,9 @@
 		E94DB2A01C8D59D70030F431 /* NearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DB29F1C8D59D70030F431 /* NearBy.swift */; };
 		E94DB2A61C8D85A20030F431 /* Article.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DB2A51C8D85A20030F431 /* Article.xib */; };
 		E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98C33831C8EFD4100BE349F /* SearchView.xib */; };
+		E9BAB0671C90122E00E9CB29 /* SchoolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */; };
+		E9BAB0691C901D1600E9CB29 /* DetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */; };
+		E9BAB06B1C90243500E9CB29 /* CustomSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +135,9 @@
 		E94DB29F1C8D59D70030F431 /* NearBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearBy.swift; sourceTree = "<group>"; };
 		E94DB2A51C8D85A20030F431 /* Article.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Article.xib; sourceTree = "<group>"; };
 		E98C33831C8EFD4100BE349F /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetails.swift; sourceTree = "<group>"; };
+		E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailHeader.xib; sourceTree = "<group>"; };
+		E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSegment.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +301,8 @@
 				E92074351C8E995F0029611A /* MileStone.xib */,
 				E92074471C8EB8990029611A /* CardScrollView.xib */,
 				E98C33831C8EFD4100BE349F /* SearchView.xib */,
+				E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */,
+				E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -364,6 +372,7 @@
 				E90345951C8D2FBE00542F55 /* NearBy.storyboard */,
 				E94DB29F1C8D59D70030F431 /* NearBy.swift */,
 				E920742B1C8E6D3F0029611A /* PickSchool.swift */,
+				E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */,
 			);
 			name = NearBy;
 			sourceTree = "<group>";
@@ -468,6 +477,7 @@
 				E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */,
 				B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */,
 				E92074381C8EA2C10029611A /* MileStoneCell.xib in Resources */,
+				E9BAB06B1C90243500E9CB29 /* CustomSegment.xib in Resources */,
 				E90345701C8D26C700542F55 /* Home.storyboard in Resources */,
 				E92074321C8E933E0029611A /* PickSchoolHeader.xib in Resources */,
 				E92074421C8EB03B0029611A /* ss-standard.ttf in Resources */,
@@ -476,6 +486,7 @@
 				E92074361C8E995F0029611A /* MileStone.xib in Resources */,
 				E92074481C8EB8990029611A /* CardScrollView.xib in Resources */,
 				B545A7461C8FFFA2006065B4 /* OverviewReviewCell.xib in Resources */,
+				E9BAB0691C901D1600E9CB29 /* DetailHeader.xib in Resources */,
 				E920743E1C8EA78E0029611A /* AppCell.xib in Resources */,
 				E90345981C8D2FCD00542F55 /* Search.storyboard in Resources */,
 			);
@@ -548,6 +559,7 @@
 				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,
 				E92074441C8EB27C0029611A /* SimpleCell.swift in Sources */,
 				B5D7A3751C8D86120092636F /* SchoolInfo.swift in Sources */,
+				E9BAB0671C90122E00E9CB29 /* SchoolDetails.swift in Sources */,
 				B545A7581C901F63006065B4 /* OverviewCell.swift in Sources */,
 				E92074341C8E93FA0029611A /* PickSchoolHeader.swift in Sources */,
 				B5D7A36F1C8D57340092636F /* Stars.swift in Sources */,
