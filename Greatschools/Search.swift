@@ -15,21 +15,20 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 	@IBOutlet weak var navRightItem: UIBarButtonItem!
 	@IBOutlet weak var leftConstraint: NSLayoutConstraint!
 	
-	var segmentId: Int = 0
-	var segmentChanged: Bool = false
+	var sortId: Int = 1
 	var isMapView: Bool = false
 	var mapView: MapView!
 	var demoData: [SchoolInfo]!
 	var buttons: [UIButton] = []
+	
 	// MARK: - override
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		demoData = SchoolInfo.demoData
+		demoData.sortInPlace{ $0.miles < $1.miles }
 		tableView.registerNib(UINib(nibName: "SchoolInfoCell", bundle: nil), forCellReuseIdentifier: "SchoolInfoCell")
 		mapView = MapView(frame: CGRectMake(0, 160, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame) - 160))
-		mapView.hidden = true
-		view.addSubview(mapView)
 		
 		for subview in gradientView.subviews {
 			if let button = subview as? UIButton {
@@ -71,40 +70,21 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 	
 	@IBAction func selectFilter(sender:AnyObject) {
 		if let btn = sender as? UIButton {
-			let index = btn.tag - 1
-			leftConstraint.constant = CGFloat(index) * CGRectGetWidth(view.frame) / 3.0 + CGRectGetWidth(view.frame) * 0.1 / 6.0
-			UIView.animateWithDuration(0.2) {
-				self.view.layoutIfNeeded()
-			}
-			for button in buttons {
-				button.selected = button.tag == btn.tag
-				button.alpha = button.selected ? 1 : 0.77
-				button.titleLabel?.font = button.selected ? UIFont.boldFontOfSize(13) : UIFont.semiBoldFontOfSize(13)
-			}
+			self.changeSelectButton(btn.tag)
 		}
 	}
 	
 	@IBAction func handleSwipeFrom(sender: UISwipeGestureRecognizer) {
-		segmentChanged = false
 		if sender.direction == .Left {
-			if segmentId < 2 {
-				segmentId++
-				segmentChanged = true
+			if sortId < 3 {
+				sortId++
 			}
 		} else if sender.direction == .Right {
-			if segmentId > 0 {
-				segmentId--
-				segmentChanged = true
+			if sortId > 1 {
+				sortId--
 			}
 		}
-		if segmentChanged {
-			switch segmentId {
-				case 1: demoData.sortInPlace{ $0.name < $1.name }
-				case 2: demoData.sortInPlace{ $0.rateInfo.rate > $1.rateInfo.rate }
-				default: demoData.sortInPlace{ $0.miles < $1.miles }
-			}
-			tableView.reloadData()
-		}
+		self.changeSelectButton(sortId)
 	}
 	
 	// MARK: - nav
@@ -112,16 +92,15 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 	@IBAction func ChangeSearchView(sender: AnyObject) {
 		if isMapView {
 			navRightItem.image = UIImage(named: "Map")
-			navRightItem.original = true
 			isMapView = false
-			mapView.hidden = true
+			mapView.removeFromSuperview()
 		} else {
 			navRightItem.image = UIImage(named: "List")
-			navRightItem.original = true
 			isMapView = true
 			mapView.demoData = demoData
-			mapView.hidden = false
+			self.view.addSubview(mapView)
 		}
+		navRightItem.original = true
 	}
 	
 	// MARK: - search
@@ -135,5 +114,29 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 		tableView.reloadData()
 		mapView.demoData = demoData
 		mapView.resetData()
+	}
+	
+	// MARK: - private
+	
+	private func changeSelectButton(cuttentTag: Int) {
+		leftConstraint.constant = CGFloat(cuttentTag-1) * CGRectGetWidth(view.frame) / 3.0 + CGRectGetWidth(view.frame) * 0.1 / 6.0
+		UIView.animateWithDuration(0.2) {
+			self.view.layoutIfNeeded()
+		}
+		for button in buttons {
+			button.selected = button.tag == cuttentTag
+			button.alpha = button.selected ? 1 : 0.77
+			button.titleLabel?.font = button.selected ? UIFont.boldFontOfSize(13) : UIFont.semiBoldFontOfSize(13)
+		}
+		self.sortData(cuttentTag)
+	}
+	
+	private func sortData(sortId: Int) {
+		switch sortId {
+		case 2: demoData.sortInPlace{ $0.name < $1.name }
+		case 3: demoData.sortInPlace{ $0.rateInfo.rate > $1.rateInfo.rate }
+		default: demoData.sortInPlace{ $0.miles < $1.miles }
+		}
+		tableView.reloadData()
 	}
 }
