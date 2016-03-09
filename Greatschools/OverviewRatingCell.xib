@@ -64,6 +64,7 @@
                             <constraint firstItem="VBi-VZ-mDs" firstAttribute="centerY" secondItem="SSD-N7-5nQ" secondAttribute="centerY" id="73p-M0-Fuy"/>
                             <constraint firstItem="IX9-Qi-tAJ" firstAttribute="leading" secondItem="KJf-SC-Fpu" secondAttribute="leading" id="8ZX-dR-oaR"/>
                             <constraint firstItem="KJf-SC-Fpu" firstAttribute="leading" secondItem="knH-0y-V7v" secondAttribute="leading" constant="20" id="PsG-PU-KZg"/>
+                            <constraint firstItem="dZM-ni-sjy" firstAttribute="trailing" secondItem="knH-0y-V7v" secondAttribute="trailing" constant="-12" id="aDj-42-YOX"/>
                             <constraint firstItem="dZM-ni-sjy" firstAttribute="leading" secondItem="SSD-N7-5nQ" secondAttribute="trailing" constant="4" id="bwR-3v-G0Z"/>
                             <constraint firstItem="KJf-SC-Fpu" firstAttribute="top" secondItem="knH-0y-V7v" secondAttribute="top" constant="19" id="fIx-EY-QaZ"/>
                             <constraint firstItem="SSD-N7-5nQ" firstAttribute="top" secondItem="knH-0y-V7v" secondAttribute="top" constant="14" id="hb8-J1-EBe"/>
@@ -71,6 +72,11 @@
                             <constraint firstItem="IX9-Qi-tAJ" firstAttribute="top" secondItem="KJf-SC-Fpu" secondAttribute="bottom" constant="5" id="pZR-8d-RiG"/>
                             <constraint firstItem="VBi-VZ-mDs" firstAttribute="centerX" secondItem="SSD-N7-5nQ" secondAttribute="centerX" id="x7q-Yc-bLw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bwR-3v-G0Z"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>

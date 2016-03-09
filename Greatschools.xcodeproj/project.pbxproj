@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		B545A7421C8FF869006065B4 /* OverviewRatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A7411C8FF869006065B4 /* OverviewRatingCell.xib */; };
 		B545A7461C8FFFA2006065B4 /* OverviewReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A7451C8FFFA2006065B4 /* OverviewReviewCell.xib */; };
+		B545A74A1C900CBF006065B4 /* OverviewEnrolledCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A7491C900CBF006065B4 /* OverviewEnrolledCell.xib */; };
+		B545A74C1C9010D1006065B4 /* OverviewLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A74B1C9010D1006065B4 /* OverviewLocationCell.xib */; };
+		B545A74E1C901384006065B4 /* OverviewBeforeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A74D1C901384006065B4 /* OverviewBeforeCell.xib */; };
+		B545A7501C901402006065B4 /* OverviewAfter.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A74F1C901402006065B4 /* OverviewAfter.xib */; };
 		B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB241C8E6C7C0087A26A /* MapView.swift */; };
 		B584CB271C8EC15A0087A26A /* SchoolInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */; };
 		B584CB291C8EC2A40087A26A /* SchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */; };
@@ -64,6 +68,10 @@
 		A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B545A7411C8FF869006065B4 /* OverviewRatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewRatingCell.xib; sourceTree = "<group>"; };
 		B545A7451C8FFFA2006065B4 /* OverviewReviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewReviewCell.xib; sourceTree = "<group>"; };
+		B545A7491C900CBF006065B4 /* OverviewEnrolledCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewEnrolledCell.xib; sourceTree = "<group>"; };
+		B545A74B1C9010D1006065B4 /* OverviewLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewLocationCell.xib; sourceTree = "<group>"; };
+		B545A74D1C901384006065B4 /* OverviewBeforeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewBeforeCell.xib; sourceTree = "<group>"; };
+		B545A74F1C901402006065B4 /* OverviewAfter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewAfter.xib; sourceTree = "<group>"; };
 		B584CB241C8E6C7C0087A26A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoView.xib; sourceTree = "<group>"; };
 		B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolInfoView.swift; sourceTree = "<group>"; };
@@ -154,6 +162,10 @@
 			children = (
 				B545A7411C8FF869006065B4 /* OverviewRatingCell.xib */,
 				B545A7451C8FFFA2006065B4 /* OverviewReviewCell.xib */,
+				B545A7491C900CBF006065B4 /* OverviewEnrolledCell.xib */,
+				B545A74B1C9010D1006065B4 /* OverviewLocationCell.xib */,
+				B545A74D1C901384006065B4 /* OverviewBeforeCell.xib */,
+				B545A74F1C901402006065B4 /* OverviewAfter.xib */,
 			);
 			name = OverView;
 			sourceTree = "<group>";
@@ -408,13 +420,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B545A74C1C9010D1006065B4 /* OverviewLocationCell.xib in Resources */,
 				E920744C1C8EBD1E0029611A /* CardCell.xib in Resources */,
 				E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */,
 				E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */,
+				B545A7501C901402006065B4 /* OverviewAfter.xib in Resources */,
 				E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */,
 				B584CB271C8EC15A0087A26A /* SchoolInfoView.xib in Resources */,
+				B545A74A1C900CBF006065B4 /* OverviewEnrolledCell.xib in Resources */,
 				B545A7421C8FF869006065B4 /* OverviewRatingCell.xib in Resources */,
 				E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */,
+				B545A74E1C901384006065B4 /* OverviewBeforeCell.xib in Resources */,
 				E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */,
 				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,

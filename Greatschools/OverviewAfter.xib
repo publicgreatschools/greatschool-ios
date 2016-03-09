@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6gI-Ct-KYN">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6gI-Ct-KYN" id="c1P-dP-MD4">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NS-YL-WqC">
+                        <rect key="frame" x="16" y="0.0" width="382" height="52.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After Care" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMB-Ow-BPC">
+                                <rect key="frame" x="20" y="16" width="81" height="22"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.1450980392" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cr-we-YH1">
+                                <rect key="frame" x="315" y="16" width="33" height="22"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                <color key="textColor" red="0.396078431372549" green="0.6470588235294118" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Cr-we-YH1" firstAttribute="centerY" secondItem="1NS-YL-WqC" secondAttribute="centerY" id="WrZ-JI-2Rz"/>
+                            <constraint firstItem="PMB-Ow-BPC" firstAttribute="leading" secondItem="1NS-YL-WqC" secondAttribute="leading" constant="20" id="bQq-za-H1X"/>
+                            <constraint firstAttribute="trailing" secondItem="9Cr-we-YH1" secondAttribute="trailing" constant="34" id="iTR-Xn-aaU"/>
+                            <constraint firstItem="PMB-Ow-BPC" firstAttribute="centerY" secondItem="1NS-YL-WqC" secondAttribute="centerY" id="nAB-ui-UO9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1NS-YL-WqC" secondAttribute="bottom" id="Ppk-x1-Gap"/>
+                    <constraint firstItem="1NS-YL-WqC" firstAttribute="top" secondItem="c1P-dP-MD4" secondAttribute="top" id="WKP-ah-4sW"/>
+                    <constraint firstItem="1NS-YL-WqC" firstAttribute="leading" secondItem="c1P-dP-MD4" secondAttribute="leading" constant="16" id="j2K-AR-JJN"/>
+                    <constraint firstAttribute="trailing" secondItem="1NS-YL-WqC" secondAttribute="trailing" constant="16" id="svZ-Vp-oWz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="538" y="318"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -68,6 +68,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dF6-4R-6IL" secondAttribute="trailing" constant="12" id="29u-Et-acd"/>
                             <constraint firstItem="5vx-B5-qew" firstAttribute="trailing" secondItem="vfb-Xr-Fcb" secondAttribute="leading" constant="-14" id="65U-y4-xmj"/>
                             <constraint firstItem="dF6-4R-6IL" firstAttribute="centerY" secondItem="9WX-tW-6kg" secondAttribute="centerY" id="B4g-tI-kfG"/>
                             <constraint firstItem="fsJ-6i-YHG" firstAttribute="leading" secondItem="Vma-cB-g40" secondAttribute="leading" id="Dkd-0V-ACz"/>
@@ -81,6 +82,11 @@
                             <constraint firstAttribute="trailing" secondItem="vfb-Xr-Fcb" secondAttribute="trailing" constant="27" id="e68-2E-S0f"/>
                             <constraint firstItem="0bh-Mi-afx" firstAttribute="centerX" secondItem="vfb-Xr-Fcb" secondAttribute="centerX" id="phw-Jc-kId"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IVp-yV-yxv"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
