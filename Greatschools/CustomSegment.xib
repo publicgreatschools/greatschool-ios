@@ -18,6 +18,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSegment" customModule="Native" customModuleProvider="target">
             <connections>
                 <outlet property="first" destination="sw4-PK-BB6" id="nSj-te-7Dr"/>
+                <outlet property="indicator" destination="TmN-8W-617" id="qPY-PA-vGc"/>
+                <outlet property="indicatorConstraint" destination="kLx-F3-bxO" id="ys6-1c-ITJ"/>
                 <outlet property="leftConstraint" destination="Tac-Vb-pmk" id="Mb2-Gp-PDh"/>
                 <outlet property="second" destination="RHz-ne-LyX" id="UNX-jr-ozS"/>
                 <outlet property="third" destination="VJE-FI-lui" id="rIQ-PQ-t7c"/>

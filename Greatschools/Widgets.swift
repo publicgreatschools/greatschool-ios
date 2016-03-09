@@ -56,7 +56,9 @@ class CustomSegment: NibView {
 	@IBOutlet weak var first: UIButton!
 	@IBOutlet weak var second: UIButton!
 	@IBOutlet weak var third: UIButton!
+	@IBOutlet weak var indicator: UIView!
 	@IBOutlet weak var leftConstraint: NSLayoutConstraint!
+	@IBOutlet weak var indicatorConstraint: NSLayoutConstraint!
 	@IBInspectable var unselectedTextAlpha: CGFloat = 0
 	@IBInspectable var text1: String = "" { didSet { first.setTitle(text1, forState: .Normal) } }
 	@IBInspectable var text2: String = "" { didSet { second.setTitle(text2, forState: .Normal) } }
@@ -68,6 +70,8 @@ class CustomSegment: NibView {
 			third.setTitleColor(textColor, forState: .Normal)
 		}
 	}
+	@IBInspectable var indicatorColor: UIColor = UIColor.whiteColor() { didSet { indicator.backgroundColor = indicatorColor } }
+	@IBInspectable var indicatorHeight: CGFloat = 2.0 { didSet { indicatorConstraint.constant = indicatorHeight } }
 	var defaultLeftMargin: CGFloat = 0
 	var selectedTextFont: UIFont = UIFont.boldFontOfSize(14)
 	var textFont: UIFont = UIFont.semiBoldFontOfSize(14) {
