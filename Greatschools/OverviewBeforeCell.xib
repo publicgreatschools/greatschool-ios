@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VCt-tO-xQG" customClass="OverviewBeforeCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VCt-tO-xQG" id="tTL-E8-7e9">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-lO-LaX">
+                        <rect key="frame" x="16" y="0.0" width="382" height="52.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before Care" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFw-cS-ZBg">
+                                <rect key="frame" x="20" y="16" width="95.5" height="22"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.1450980392" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq6-UA-Gfx">
+                                <rect key="frame" x="321" y="16" width="27" height="22"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                <color key="textColor" red="0.95686274509803915" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellDivider" translatesAutoresizingMaskIntoConstraints="NO" id="G8s-WY-YRd">
+                                <rect key="frame" x="0.0" y="51.5" width="382" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ahq-2U-DeJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tFw-cS-ZBg" firstAttribute="centerY" secondItem="Cb2-lO-LaX" secondAttribute="centerY" id="7H5-Xf-a8W"/>
+                            <constraint firstAttribute="trailing" secondItem="G8s-WY-YRd" secondAttribute="trailing" id="IoC-g4-i32"/>
+                            <constraint firstAttribute="trailing" secondItem="hq6-UA-Gfx" secondAttribute="trailing" constant="34" id="Rvg-tq-WFO"/>
+                            <constraint firstAttribute="bottom" secondItem="G8s-WY-YRd" secondAttribute="bottom" id="Ya4-Z9-YKC"/>
+                            <constraint firstItem="tFw-cS-ZBg" firstAttribute="leading" secondItem="Cb2-lO-LaX" secondAttribute="leading" constant="20" id="eHa-r7-uCu"/>
+                            <constraint firstItem="G8s-WY-YRd" firstAttribute="leading" secondItem="Cb2-lO-LaX" secondAttribute="leading" id="vGj-fX-syG"/>
+                            <constraint firstItem="hq6-UA-Gfx" firstAttribute="centerY" secondItem="Cb2-lO-LaX" secondAttribute="centerY" id="wFe-8O-1rS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Cb2-lO-LaX" secondAttribute="trailing" constant="16" id="5VR-8y-BJi"/>
+                    <constraint firstItem="Cb2-lO-LaX" firstAttribute="top" secondItem="tTL-E8-7e9" secondAttribute="top" id="Cfz-QN-uYP"/>
+                    <constraint firstAttribute="bottom" secondItem="Cb2-lO-LaX" secondAttribute="bottom" id="pxb-Up-C30"/>
+                    <constraint firstItem="Cb2-lO-LaX" firstAttribute="leading" secondItem="tTL-E8-7e9" secondAttribute="leading" constant="16" id="tIM-xQ-gER"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="view" destination="Cb2-lO-LaX" id="E4N-6L-Zz1"/>
+            </connections>
+            <point key="canvasLocation" x="538" y="318"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CellDivider" width="382" height="1"/>
+    </resources>
+</document>
