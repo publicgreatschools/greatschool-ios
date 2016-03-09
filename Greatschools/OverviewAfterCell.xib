@@ -37,13 +37,22 @@
                                 <color key="textColor" red="0.396078431372549" green="0.6470588235294118" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellDivider" translatesAutoresizingMaskIntoConstraints="NO" id="tbe-AM-jJD">
+                                <rect key="frame" x="0.0" y="51.5" width="382" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Xgx-R5-AMb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="tbe-AM-jJD" firstAttribute="leading" secondItem="1NS-YL-WqC" secondAttribute="leading" id="KgJ-WV-1h2"/>
                             <constraint firstItem="9Cr-we-YH1" firstAttribute="centerY" secondItem="1NS-YL-WqC" secondAttribute="centerY" id="WrZ-JI-2Rz"/>
                             <constraint firstItem="PMB-Ow-BPC" firstAttribute="leading" secondItem="1NS-YL-WqC" secondAttribute="leading" constant="20" id="bQq-za-H1X"/>
                             <constraint firstAttribute="trailing" secondItem="9Cr-we-YH1" secondAttribute="trailing" constant="34" id="iTR-Xn-aaU"/>
+                            <constraint firstAttribute="bottom" secondItem="tbe-AM-jJD" secondAttribute="bottom" id="kcc-gE-8Wv"/>
                             <constraint firstItem="PMB-Ow-BPC" firstAttribute="centerY" secondItem="1NS-YL-WqC" secondAttribute="centerY" id="nAB-ui-UO9"/>
+                            <constraint firstAttribute="trailing" secondItem="tbe-AM-jJD" secondAttribute="trailing" id="tDb-5s-Fp5"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -61,4 +70,7 @@
             <point key="canvasLocation" x="538" y="318"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="CellDivider" width="382" height="1"/>
+    </resources>
 </document>

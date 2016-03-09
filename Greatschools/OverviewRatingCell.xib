@@ -57,15 +57,24 @@
                                     <constraint firstAttribute="width" constant="11" id="hwP-xE-3Kb"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellDivider" translatesAutoresizingMaskIntoConstraints="NO" id="wk7-Hb-nfP">
+                                <rect key="frame" x="0.0" y="88.5" width="382" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ntG-RR-Tbt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="SSD-N7-5nQ" secondAttribute="trailing" constant="27" id="3K0-ou-QZS"/>
+                            <constraint firstItem="wk7-Hb-nfP" firstAttribute="leading" secondItem="knH-0y-V7v" secondAttribute="leading" id="55y-Da-mnE"/>
                             <constraint firstItem="VBi-VZ-mDs" firstAttribute="centerY" secondItem="SSD-N7-5nQ" secondAttribute="centerY" id="73p-M0-Fuy"/>
                             <constraint firstItem="IX9-Qi-tAJ" firstAttribute="leading" secondItem="KJf-SC-Fpu" secondAttribute="leading" id="8ZX-dR-oaR"/>
+                            <constraint firstAttribute="trailing" secondItem="wk7-Hb-nfP" secondAttribute="trailing" id="CE8-fD-XEG"/>
                             <constraint firstItem="KJf-SC-Fpu" firstAttribute="leading" secondItem="knH-0y-V7v" secondAttribute="leading" constant="20" id="PsG-PU-KZg"/>
                             <constraint firstItem="dZM-ni-sjy" firstAttribute="trailing" secondItem="knH-0y-V7v" secondAttribute="trailing" constant="-12" id="aDj-42-YOX"/>
                             <constraint firstItem="dZM-ni-sjy" firstAttribute="leading" secondItem="SSD-N7-5nQ" secondAttribute="trailing" constant="4" id="bwR-3v-G0Z"/>
+                            <constraint firstAttribute="bottom" secondItem="wk7-Hb-nfP" secondAttribute="bottom" id="chm-0u-IwC"/>
                             <constraint firstItem="KJf-SC-Fpu" firstAttribute="top" secondItem="knH-0y-V7v" secondAttribute="top" constant="19" id="fIx-EY-QaZ"/>
                             <constraint firstItem="SSD-N7-5nQ" firstAttribute="top" secondItem="knH-0y-V7v" secondAttribute="top" constant="14" id="hb8-J1-EBe"/>
                             <constraint firstItem="dZM-ni-sjy" firstAttribute="centerY" secondItem="knH-0y-V7v" secondAttribute="centerY" id="jfg-FZ-ZuS"/>
@@ -96,6 +105,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="CellDivider" width="382" height="1"/>
         <image name="Next" width="8" height="10"/>
         <image name="rate_background" width="49" height="48"/>
     </resources>

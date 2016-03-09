@@ -44,15 +44,24 @@ Pleasant Hill, CA</string>
                                     <constraint firstAttribute="width" constant="11" id="Y52-73-oBt"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellDivider" translatesAutoresizingMaskIntoConstraints="NO" id="JdZ-Bo-E9r">
+                                <rect key="frame" x="0.0" y="71.5" width="382" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="tFZ-lZ-7dT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JdZ-Bo-E9r" secondAttribute="bottom" id="9Sd-yz-tGm"/>
                             <constraint firstItem="GgJ-4p-Qdn" firstAttribute="leading" secondItem="xov-nr-ZPq" secondAttribute="leading" constant="20" id="AvO-Qg-rMt"/>
                             <constraint firstItem="D8Y-DU-GDF" firstAttribute="centerY" secondItem="xov-nr-ZPq" secondAttribute="centerY" id="Np2-mJ-KiH"/>
                             <constraint firstItem="GgJ-4p-Qdn" firstAttribute="centerY" secondItem="xov-nr-ZPq" secondAttribute="centerY" id="Pty-hZ-N4q"/>
+                            <constraint firstItem="JdZ-Bo-E9r" firstAttribute="leading" secondItem="xov-nr-ZPq" secondAttribute="leading" id="Z6I-rO-Ny1"/>
                             <constraint firstAttribute="trailing" secondItem="D8Y-DU-GDF" secondAttribute="trailing" constant="12" id="ZLO-tx-KWB"/>
                             <constraint firstAttribute="trailing" secondItem="Ucb-mi-8Nu" secondAttribute="trailing" constant="34" id="jJR-Ig-uF6"/>
                             <constraint firstItem="Ucb-mi-8Nu" firstAttribute="centerY" secondItem="xov-nr-ZPq" secondAttribute="centerY" id="qzB-G4-XwV"/>
+                            <constraint firstAttribute="trailing" secondItem="JdZ-Bo-E9r" secondAttribute="trailing" id="wel-Hx-NCK"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -71,6 +80,7 @@ Pleasant Hill, CA</string>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="CellDivider" width="382" height="1"/>
         <image name="Next" width="8" height="10"/>
     </resources>
 </document>

@@ -37,11 +37,20 @@
                                 <color key="textColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellDivider" translatesAutoresizingMaskIntoConstraints="NO" id="k7l-VN-J1M">
+                                <rect key="frame" x="0.0" y="51.5" width="382" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="wEz-Mm-4ze"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="k7l-VN-J1M" secondAttribute="bottom" id="112-yh-n7q"/>
+                            <constraint firstAttribute="trailing" secondItem="k7l-VN-J1M" secondAttribute="trailing" id="SDR-UN-QKo"/>
                             <constraint firstItem="xwr-PI-fZ2" firstAttribute="leading" secondItem="g7C-nx-BV2" secondAttribute="leading" constant="20" id="cep-84-1VN"/>
                             <constraint firstAttribute="trailing" secondItem="lpW-Ea-cbw" secondAttribute="trailing" constant="34" id="hDP-hA-yKc"/>
+                            <constraint firstItem="k7l-VN-J1M" firstAttribute="leading" secondItem="g7C-nx-BV2" secondAttribute="leading" id="i8B-gq-bwy"/>
                             <constraint firstItem="xwr-PI-fZ2" firstAttribute="centerY" secondItem="g7C-nx-BV2" secondAttribute="centerY" id="yxx-E4-3WT"/>
                             <constraint firstItem="lpW-Ea-cbw" firstAttribute="centerY" secondItem="g7C-nx-BV2" secondAttribute="centerY" id="zaB-bo-sIN"/>
                         </constraints>
@@ -61,4 +70,7 @@
             <point key="canvasLocation" x="538" y="318"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="CellDivider" width="382" height="1"/>
+    </resources>
 </document>
