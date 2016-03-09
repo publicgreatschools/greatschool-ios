@@ -8,12 +8,16 @@
 
 import UIKit
 
-class OverviewRatingCell: UITableViewCell {
+class OverviewCell: UITableViewCell {
+	var overviewInfo: OverviewInfo! { didSet{} }
+}
+
+class OverviewRatingCell: OverviewCell {
 	@IBOutlet weak var view: UIView!
 	@IBOutlet weak var rateBackground: UIImageView!
 	@IBOutlet weak var rate: UILabel!
 	
-	var overviewInfo: OverviewInfo! {
+	override var overviewInfo: OverviewInfo! {
 		didSet {
 			let imageTemplate = UIImage(named: "rate_background")!.imageWithRenderingMode(.AlwaysTemplate)
 			rateBackground.image = imageTemplate
@@ -28,18 +32,18 @@ class OverviewRatingCell: UITableViewCell {
 	}
 }
 
-class OverviewReviewCell: UITableViewCell {
+class OverviewReviewCell: OverviewCell {
 	@IBOutlet weak var view: UIView!
 	@IBOutlet weak var rateBackground: UIImageView!
 	@IBOutlet weak var rate: UILabel!
 	@IBOutlet weak var star: Stars!
 	
-	var overviewInfo: OverviewInfo! {
+	override var overviewInfo: OverviewInfo! {
 		didSet {
 			let imageTemplate = UIImage(named: "rate_background")!.imageWithRenderingMode(.AlwaysTemplate)
 			rateBackground.image = imageTemplate
-			rateBackground.tintColor = overviewInfo.schoolRate.color
-			rate.text = "\(overviewInfo.schoolRate.rate)"
+			rateBackground.tintColor = overviewInfo.reviewRate.color
+			rate.text = "\(overviewInfo.reviewRate.rate)"
 			star.starInfo = overviewInfo.starInfo
 		}
 	}
@@ -50,10 +54,10 @@ class OverviewReviewCell: UITableViewCell {
 	}
 }
 
-class OverviewEnrolledCell: UITableViewCell {
+class OverviewEnrolledCell: OverviewCell {
 	@IBOutlet weak var view: UIView!
 	
-	var overviewInfo: OverviewInfo! {
+	override var overviewInfo: OverviewInfo! {
 		didSet {
 		}
 	}
@@ -64,10 +68,10 @@ class OverviewEnrolledCell: UITableViewCell {
 	}
 }
 
-class OverviewLocationCell: UITableViewCell {
+class OverviewLocationCell: OverviewCell {
 	@IBOutlet weak var view: UIView!
 	
-	var overviewInfo: OverviewInfo! {
+	override var overviewInfo: OverviewInfo! {
 		didSet {
 		}
 	}
@@ -78,10 +82,10 @@ class OverviewLocationCell: UITableViewCell {
 	}
 }
 
-class OverviewBeforeCell: UITableViewCell {
+class OverviewBeforeCell: OverviewCell {
 	@IBOutlet weak var view: UIView!
 	
-	var overviewInfo: OverviewInfo! {
+	override var overviewInfo: OverviewInfo! {
 		didSet {
 		}
 	}
@@ -92,10 +96,10 @@ class OverviewBeforeCell: UITableViewCell {
 	}
 }
 
-class OverviewAfterCell: UITableViewCell {
+class OverviewAfterCell: OverviewCell {
 	@IBOutlet weak var view: UIView!
 	
-	var overviewInfo: OverviewInfo! {
+	override var overviewInfo: OverviewInfo! {
 		didSet {
 		}
 	}
