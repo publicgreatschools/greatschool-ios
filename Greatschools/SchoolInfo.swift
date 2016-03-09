@@ -37,3 +37,19 @@ extension SchoolInfo {
 	SchoolInfo(id: 2, pinColorId: 1, name: "School Name C", address: "Public | 9 - 12 | Pleasant district, CA", miles: 9.43, rateInfo: SchoolRate(rate: 5, color: UIColor(hexRGB: 0xF5A623)), starInfo: SchoolStar(count: 2, color: UIColor(hexRGB: 0xF5A623)), reviews: 242, position: CGPoint(x: 200, y: 200)),
 	SchoolInfo(id: 3, pinColorId: 0, name: "School Name AB", address: "Public | 1 - 6 | Pleasant Hill, CA", miles: 12.6, rateInfo: SchoolRate(rate: 8, color: UIColor(hexRGB: 0x60BD02)), starInfo: SchoolStar(count: 4, color: UIColor(hexRGB: 0x60BD02)), reviews: 198, position: CGPoint(x: 230, y: 250))]
 }
+
+
+
+struct OverviewInfo {
+	let schoolRate: SchoolRate
+	let reviewRate: SchoolRate
+	let starInfo: SchoolStar
+	let enrolled: Int
+	let address: String
+	let beforeCare: Bool
+	let afterCare: Bool
+}
+
+extension OverviewInfo {
+	static var demoData = OverviewInfo(schoolRate: SchoolRate(rate: 9, color: UIColor(hexRGB: 0x60BD02)), reviewRate: SchoolRate(rate: 2, color: UIColor(hexRGB: 0xF5A623)), starInfo: SchoolStar(count: 3, color: UIColor(hexRGB: 0xF5A623)), enrolled: 1950, address: "Public District, Pleasant Hill, CA", beforeCare: false, afterCare: false)
+}

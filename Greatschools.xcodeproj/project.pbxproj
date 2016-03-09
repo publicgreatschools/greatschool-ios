@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		B545A7421C8FF869006065B4 /* OverviewRatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A7411C8FF869006065B4 /* OverviewRatingCell.xib */; };
 		B545A7461C8FFFA2006065B4 /* OverviewReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A7451C8FFFA2006065B4 /* OverviewReviewCell.xib */; };
+		B545A74A1C900CBF006065B4 /* OverviewEnrolledCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A7491C900CBF006065B4 /* OverviewEnrolledCell.xib */; };
+		B545A74C1C9010D1006065B4 /* OverviewLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A74B1C9010D1006065B4 /* OverviewLocationCell.xib */; };
+		B545A74E1C901384006065B4 /* OverviewBeforeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A74D1C901384006065B4 /* OverviewBeforeCell.xib */; };
+		B545A7501C901402006065B4 /* OverviewAfterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A74F1C901402006065B4 /* OverviewAfterCell.xib */; };
+		B545A7531C901547006065B4 /* StatsDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A7521C901547006065B4 /* StatsDetailsCell.xib */; };
+		B545A7561C901982006065B4 /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B545A7551C901982006065B4 /* ReviewCell.xib */; };
+		B545A7581C901F63006065B4 /* OverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545A7571C901F63006065B4 /* OverviewCell.swift */; };
 		B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB241C8E6C7C0087A26A /* MapView.swift */; };
 		B584CB271C8EC15A0087A26A /* SchoolInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */; };
 		B584CB291C8EC2A40087A26A /* SchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */; };
@@ -64,6 +71,13 @@
 		A6DF5E269111C9550B6A452F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B545A7411C8FF869006065B4 /* OverviewRatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewRatingCell.xib; sourceTree = "<group>"; };
 		B545A7451C8FFFA2006065B4 /* OverviewReviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewReviewCell.xib; sourceTree = "<group>"; };
+		B545A7491C900CBF006065B4 /* OverviewEnrolledCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewEnrolledCell.xib; sourceTree = "<group>"; };
+		B545A74B1C9010D1006065B4 /* OverviewLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewLocationCell.xib; sourceTree = "<group>"; };
+		B545A74D1C901384006065B4 /* OverviewBeforeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewBeforeCell.xib; sourceTree = "<group>"; };
+		B545A74F1C901402006065B4 /* OverviewAfterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewAfterCell.xib; sourceTree = "<group>"; };
+		B545A7521C901547006065B4 /* StatsDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatsDetailsCell.xib; sourceTree = "<group>"; };
+		B545A7551C901982006065B4 /* ReviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		B545A7571C901F63006065B4 /* OverviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewCell.swift; sourceTree = "<group>"; };
 		B584CB241C8E6C7C0087A26A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoView.xib; sourceTree = "<group>"; };
 		B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolInfoView.swift; sourceTree = "<group>"; };
@@ -144,6 +158,8 @@
 		B545A7431C8FFF67006065B4 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				B545A7541C901961006065B4 /* Review */,
+				B545A7511C9014CB006065B4 /* Stats */,
 				B545A7441C8FFF7C006065B4 /* OverView */,
 			);
 			name = Details;
@@ -154,8 +170,29 @@
 			children = (
 				B545A7411C8FF869006065B4 /* OverviewRatingCell.xib */,
 				B545A7451C8FFFA2006065B4 /* OverviewReviewCell.xib */,
+				B545A7491C900CBF006065B4 /* OverviewEnrolledCell.xib */,
+				B545A74B1C9010D1006065B4 /* OverviewLocationCell.xib */,
+				B545A74D1C901384006065B4 /* OverviewBeforeCell.xib */,
+				B545A74F1C901402006065B4 /* OverviewAfterCell.xib */,
+				B545A7571C901F63006065B4 /* OverviewCell.swift */,
 			);
 			name = OverView;
+			sourceTree = "<group>";
+		};
+		B545A7511C9014CB006065B4 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				B545A7521C901547006065B4 /* StatsDetailsCell.xib */,
+			);
+			name = Stats;
+			sourceTree = "<group>";
+		};
+		B545A7541C901961006065B4 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				B545A7551C901982006065B4 /* ReviewCell.xib */,
+			);
+			name = Review;
 			sourceTree = "<group>";
 		};
 		B5D7A3691C8D512E0092636F /* View */ = {
@@ -408,19 +445,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B545A74C1C9010D1006065B4 /* OverviewLocationCell.xib in Resources */,
 				E920744C1C8EBD1E0029611A /* CardCell.xib in Resources */,
 				E9483D7A1C8D41AE002656B8 /* ProximaNova-Bold.otf in Resources */,
 				E9483D7B1C8D41AE002656B8 /* ProximaNova-Light.otf in Resources */,
+				B545A7501C901402006065B4 /* OverviewAfterCell.xib in Resources */,
 				E9483D7C1C8D41AE002656B8 /* ProximaNova-Regular.otf in Resources */,
 				B584CB271C8EC15A0087A26A /* SchoolInfoView.xib in Resources */,
+				B545A74A1C900CBF006065B4 /* OverviewEnrolledCell.xib in Resources */,
 				B545A7421C8FF869006065B4 /* OverviewRatingCell.xib in Resources */,
 				E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */,
+				B545A74E1C901384006065B4 /* OverviewBeforeCell.xib in Resources */,
 				E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */,
 				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
 				E94DB2A61C8D85A20030F431 /* Article.xib in Resources */,
 				E92074461C8EB29A0029611A /* SimpleCell.xib in Resources */,
 				E90345751C8D26C700542F55 /* LaunchScreen.storyboard in Resources */,
+				B545A7561C901982006065B4 /* ReviewCell.xib in Resources */,
 				E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */,
 				E90345721C8D26C700542F55 /* Assets.xcassets in Resources */,
 				E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */,
@@ -430,6 +472,7 @@
 				E92074321C8E933E0029611A /* PickSchoolHeader.xib in Resources */,
 				E92074421C8EB03B0029611A /* ss-standard.ttf in Resources */,
 				E90345961C8D2FBE00542F55 /* NearBy.storyboard in Resources */,
+				B545A7531C901547006065B4 /* StatsDetailsCell.xib in Resources */,
 				E92074361C8E995F0029611A /* MileStone.xib in Resources */,
 				E92074481C8EB8990029611A /* CardScrollView.xib in Resources */,
 				B545A7461C8FFFA2006065B4 /* OverviewReviewCell.xib in Resources */,
@@ -505,6 +548,7 @@
 				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,
 				E92074441C8EB27C0029611A /* SimpleCell.swift in Sources */,
 				B5D7A3751C8D86120092636F /* SchoolInfo.swift in Sources */,
+				B545A7581C901F63006065B4 /* OverviewCell.swift in Sources */,
 				E92074341C8E93FA0029611A /* PickSchoolHeader.swift in Sources */,
 				B5D7A36F1C8D57340092636F /* Stars.swift in Sources */,
 				E903456B1C8D26C700542F55 /* AppDelegate.swift in Sources */,

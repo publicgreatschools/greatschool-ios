@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="g4Q-OM-XUk" customClass="OverviewLocationCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g4Q-OM-XUk" id="dEd-l3-Lak">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xov-nr-ZPq">
+                        <rect key="frame" x="16" y="0.0" width="382" height="72.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-4p-Qdn">
+                                <rect key="frame" x="20" y="26" width="67.5" height="22"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.1450980392" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-mi-8Nu">
+                                <rect key="frame" x="232.5" y="17.5" width="115.5" height="39"/>
+                                <string key="text">Public District,
+Pleasant Hill, CA</string>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.1450980392" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next" translatesAutoresizingMaskIntoConstraints="NO" id="D8Y-DU-GDF">
+                                <rect key="frame" x="359" y="30" width="11" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="H2j-eA-akT"/>
+                                    <constraint firstAttribute="width" constant="11" id="Y52-73-oBt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GgJ-4p-Qdn" firstAttribute="leading" secondItem="xov-nr-ZPq" secondAttribute="leading" constant="20" id="AvO-Qg-rMt"/>
+                            <constraint firstItem="D8Y-DU-GDF" firstAttribute="centerY" secondItem="xov-nr-ZPq" secondAttribute="centerY" id="Np2-mJ-KiH"/>
+                            <constraint firstItem="GgJ-4p-Qdn" firstAttribute="centerY" secondItem="xov-nr-ZPq" secondAttribute="centerY" id="Pty-hZ-N4q"/>
+                            <constraint firstAttribute="trailing" secondItem="D8Y-DU-GDF" secondAttribute="trailing" constant="12" id="ZLO-tx-KWB"/>
+                            <constraint firstAttribute="trailing" secondItem="Ucb-mi-8Nu" secondAttribute="trailing" constant="34" id="jJR-Ig-uF6"/>
+                            <constraint firstItem="Ucb-mi-8Nu" firstAttribute="centerY" secondItem="xov-nr-ZPq" secondAttribute="centerY" id="qzB-G4-XwV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xov-nr-ZPq" secondAttribute="bottom" id="ShH-2S-Zff"/>
+                    <constraint firstItem="xov-nr-ZPq" firstAttribute="top" secondItem="dEd-l3-Lak" secondAttribute="top" id="f2R-Hf-7UH"/>
+                    <constraint firstAttribute="trailing" secondItem="xov-nr-ZPq" secondAttribute="trailing" constant="16" id="wx3-zQ-NSn"/>
+                    <constraint firstItem="xov-nr-ZPq" firstAttribute="leading" secondItem="dEd-l3-Lak" secondAttribute="leading" constant="16" id="xXx-mv-2dM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="view" destination="xov-nr-ZPq" id="Aav-QN-Enu"/>
+            </connections>
+            <point key="canvasLocation" x="538" y="318"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Next" width="8" height="10"/>
+    </resources>
+</document>
