@@ -34,21 +34,20 @@ class OverviewController: UIViewController {
 		return 1
 	}
 	
-	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-	{
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
 		return 6
 	}
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let cell: OverviewCell
 		switch indexPath.row {
-		case 0: cell = tableView.dequeueReusableCellWithIdentifier("OverviewRatingCell", forIndexPath: indexPath) as! OverviewRatingCell
-		case 1: cell = tableView.dequeueReusableCellWithIdentifier("OverviewReviewCell", forIndexPath: indexPath) as! OverviewReviewCell
-		case 2: cell = tableView.dequeueReusableCellWithIdentifier("OverviewEnrolledCell", forIndexPath: indexPath) as! OverviewEnrolledCell
-		case 3: cell = tableView.dequeueReusableCellWithIdentifier("OverviewLocationCell", forIndexPath: indexPath) as! OverviewLocationCell
-		case 4: cell = tableView.dequeueReusableCellWithIdentifier("OverviewBeforeCell", forIndexPath: indexPath) as! OverviewBeforeCell
-		case 5: cell = tableView.dequeueReusableCellWithIdentifier("OverviewAfterCell", forIndexPath: indexPath) as! OverviewAfterCell
-		default: cell = tableView.dequeueReusableCellWithIdentifier("OverviewRatingCell", forIndexPath: indexPath) as! OverviewRatingCell
+			case 0: cell = tableView.dequeueReusableCellWithIdentifier("OverviewRatingCell", forIndexPath: indexPath) as! OverviewRatingCell
+			case 1: cell = tableView.dequeueReusableCellWithIdentifier("OverviewReviewCell", forIndexPath: indexPath) as! OverviewReviewCell
+			case 2: cell = tableView.dequeueReusableCellWithIdentifier("OverviewEnrolledCell", forIndexPath: indexPath) as! OverviewEnrolledCell
+			case 3: cell = tableView.dequeueReusableCellWithIdentifier("OverviewLocationCell", forIndexPath: indexPath) as! OverviewLocationCell
+			case 4: cell = tableView.dequeueReusableCellWithIdentifier("OverviewBeforeCell", forIndexPath: indexPath) as! OverviewBeforeCell
+			case 5: cell = tableView.dequeueReusableCellWithIdentifier("OverviewAfterCell", forIndexPath: indexPath) as! OverviewAfterCell
+			default: cell = tableView.dequeueReusableCellWithIdentifier("OverviewRatingCell", forIndexPath: indexPath) as! OverviewRatingCell
 		}
 		cell.overviewInfo = demoData
 		return cell
