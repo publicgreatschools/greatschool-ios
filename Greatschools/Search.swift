@@ -13,13 +13,12 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var searchView: SearchView!
 	@IBOutlet weak var navRightItem: UIBarButtonItem!
-	@IBOutlet weak var leftConstraint: NSLayoutConstraint!
+	@IBOutlet weak var segment: CustomSegment!
 	
 	var sortId: Int = 1
 	var isMapView: Bool = false
 	var mapView: MapView!
 	var demoData: [SchoolInfo]!
-	var buttons: [UIButton] = []
 	
 	// MARK: - override
 	
@@ -30,10 +29,11 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 		tableView.registerNib(UINib(nibName: "SchoolInfoCell", bundle: nil), forCellReuseIdentifier: "SchoolInfoCell")
 		mapView = MapView(frame: CGRectMake(0, 160, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame) - 160))
 		searchView.textField.delegate = self
-		
-		for subview in gradientView.subviews {
-			if let button = subview as? UIButton {
-				buttons.append(button)
+		segment.textFont = UIFont.semiBoldFontOfSize(13)
+		segment.selectedTextFont = UIFont.boldFontOfSize(13)
+		segment.onSelected = { [weak self] index in
+			if let weakself = self {
+				weakself.changeSelectButton(index+1)
 			}
 		}
 	}
@@ -121,28 +121,11 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 		navRightItem.original = true
 	}
 	
-	// MARK: - action
-	
-	@IBAction func selectFilter(sender:AnyObject) {
-		if let btn = sender as? UIButton {
-			self.changeSelectButton(btn.tag)
-		}
-	}
-	
 	// MARK: - private
 	
 	private func changeSelectButton(currentTag: Int) {
-		leftConstraint.constant = CGFloat(currentTag-1) * CGRectGetWidth(view.frame) / 3.0 + CGRectGetWidth(view.frame) * 0.1 / 6.0
-		UIView.animateWithDuration(0.2) {
-			self.view.layoutIfNeeded()
-		}
-		for button in buttons {
-			button.selected = button.tag == currentTag
-			button.alpha = button.selected ? 1 : 0.77
-			button.titleLabel?.font = button.selected ? UIFont.boldFontOfSize(13) : UIFont.semiBoldFontOfSize(13)
-		}
 		sortId = currentTag
-		self.sortData()
+		sortData()
 	}
 	
 	private func sortData() {

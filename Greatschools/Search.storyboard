@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q9z-Ab-6Pe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q9z-Ab-6Pe">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="ProximaNova-Bold.otf">
-            <string>ProximaNova-Bold</string>
-        </mutableArray>
-        <mutableArray key="ProximaNova-Semibold.otf">
-            <string>ProximaNova-Semibold</string>
-            <string>ProximaNova-Semibold</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--Search-->
         <scene sceneID="IZC-sd-hrM">
@@ -43,72 +33,37 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Q3-a0-AT9">
-                                        <rect key="frame" x="0.0" y="151" width="106.5" height="30"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJi-H9-lL5" customClass="CustomSegment" customModule="Native" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="146" width="320" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="jA7-Zq-aW3"/>
+                                            <constraint firstAttribute="height" constant="50" id="jMj-XZ-SVU"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="13"/>
-                                        <state key="normal" title="DISTANCE"/>
-                                        <state key="selected" title="DISTANCE"/>
-                                        <connections>
-                                            <action selector="selectFilter:" destination="3Ve-8E-Z32" eventType="touchUpInside" id="mzk-ru-R4H"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" alpha="0.77000000000000002" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UW-RV-zPs">
-                                        <rect key="frame" x="106" y="151" width="107" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Y0u-0h-Mgt"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="13"/>
-                                        <state key="normal" title="A-Z">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" title="A-Z"/>
-                                        <connections>
-                                            <action selector="selectFilter:" destination="3Ve-8E-Z32" eventType="touchUpInside" id="dBr-Aw-RXt"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" alpha="0.77000000000000002" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFe-9b-XyL">
-                                        <rect key="frame" x="213" y="151" width="107" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="tUF-k8-rXa"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="13"/>
-                                        <state key="normal" title="RATINGS">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" title="RATINGS"/>
-                                        <connections>
-                                            <action selector="selectFilter:" destination="3Ve-8E-Z32" eventType="touchUpInside" id="1o9-zA-98A"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wa-0H-4e3">
-                                        <rect key="frame" x="10" y="192" width="96" height="4"/>
-                                        <color key="backgroundColor" red="0.90196078431372551" green="0.92156862745098034" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="4" id="B0a-Zz-biM"/>
-                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text1" value="DISTANCE"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text2" value="A-Z"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text3" value="RATINGS"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="unselectedTextAlpha">
+                                                <real key="value" value="0.69999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorHeight">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="LFe-9b-XyL" firstAttribute="leading" secondItem="3UW-RV-zPs" secondAttribute="trailing" id="6aV-pU-RJP"/>
-                                    <constraint firstItem="6Q3-a0-AT9" firstAttribute="bottom" secondItem="3UW-RV-zPs" secondAttribute="bottom" id="H3A-qP-L7F"/>
-                                    <constraint firstAttribute="bottom" secondItem="8wa-0H-4e3" secondAttribute="bottom" id="J20-qy-XaK"/>
-                                    <constraint firstItem="8wa-0H-4e3" firstAttribute="leading" secondItem="HcW-q0-vfD" secondAttribute="leading" constant="10" id="JvK-cv-hWT"/>
-                                    <constraint firstAttribute="bottom" secondItem="6Q3-a0-AT9" secondAttribute="bottom" constant="15" id="L4A-NU-bs9"/>
-                                    <constraint firstAttribute="trailing" secondItem="LFe-9b-XyL" secondAttribute="trailing" id="Mve-CT-nxE"/>
+                                    <constraint firstAttribute="bottom" secondItem="cJi-H9-lL5" secondAttribute="bottom" id="H3z-di-Rqh"/>
                                     <constraint firstItem="YhQ-ps-Gw7" firstAttribute="top" secondItem="HcW-q0-vfD" secondAttribute="top" constant="89" id="Qrd-ly-6lH"/>
-                                    <constraint firstItem="6Q3-a0-AT9" firstAttribute="leading" secondItem="HcW-q0-vfD" secondAttribute="leading" id="VT6-MP-aMM"/>
                                     <constraint firstAttribute="height" constant="196" id="fg3-84-I2M"/>
-                                    <constraint firstItem="3UW-RV-zPs" firstAttribute="leading" secondItem="6Q3-a0-AT9" secondAttribute="trailing" id="gyX-6U-VFn"/>
-                                    <constraint firstItem="6Q3-a0-AT9" firstAttribute="bottom" secondItem="LFe-9b-XyL" secondAttribute="bottom" id="hMs-Xg-Fzq"/>
-                                    <constraint firstItem="6Q3-a0-AT9" firstAttribute="width" secondItem="3UW-RV-zPs" secondAttribute="width" id="hcS-Zj-fBc"/>
                                     <constraint firstItem="YhQ-ps-Gw7" firstAttribute="leading" secondItem="HcW-q0-vfD" secondAttribute="leading" constant="18" id="hpf-e5-nH5"/>
+                                    <constraint firstItem="cJi-H9-lL5" firstAttribute="leading" secondItem="HcW-q0-vfD" secondAttribute="leading" id="jJC-65-nvS"/>
+                                    <constraint firstAttribute="trailing" secondItem="cJi-H9-lL5" secondAttribute="trailing" id="r97-WN-4q9"/>
                                     <constraint firstAttribute="trailing" secondItem="YhQ-ps-Gw7" secondAttribute="trailing" constant="18" id="rzE-yf-NEN"/>
-                                    <constraint firstItem="8wa-0H-4e3" firstAttribute="width" secondItem="HcW-q0-vfD" secondAttribute="width" multiplier="0.3" id="vp6-8q-2FA"/>
-                                    <constraint firstItem="LFe-9b-XyL" firstAttribute="width" secondItem="3UW-RV-zPs" secondAttribute="width" id="yar-cH-Llb"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color1">
@@ -169,9 +124,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="gradientView" destination="HcW-q0-vfD" id="ryf-Yh-bW7"/>
-                        <outlet property="leftConstraint" destination="JvK-cv-hWT" id="J2g-1O-Yna"/>
                         <outlet property="navRightItem" destination="ROC-Ag-LWB" id="whA-aW-p6n"/>
                         <outlet property="searchView" destination="YhQ-ps-Gw7" id="DWs-eW-V8n"/>
+                        <outlet property="segment" destination="cJi-H9-lL5" id="W2X-4Z-EHj"/>
                         <outlet property="tableView" destination="3wP-D3-AdU" id="b4u-p4-2SI"/>
                     </connections>
                 </viewController>

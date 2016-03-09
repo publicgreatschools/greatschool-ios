@@ -46,6 +46,67 @@ class MileStone: NibView {
 }
 
 @IBDesignable
+class DetailHeader: NibView {
+	override var nibName: String { return "DetailHeader" }
+}
+
+@IBDesignable
+class CustomSegment: NibView {
+	override var nibName: String { return "CustomSegment" }
+	@IBOutlet weak var first: UIButton!
+	@IBOutlet weak var second: UIButton!
+	@IBOutlet weak var third: UIButton!
+	@IBOutlet weak var indicator: UIView!
+	@IBOutlet weak var leftConstraint: NSLayoutConstraint!
+	@IBOutlet weak var indicatorConstraint: NSLayoutConstraint!
+	@IBInspectable var unselectedTextAlpha: CGFloat = 0
+	@IBInspectable var text1: String = "" { didSet { first.setTitle(text1, forState: .Normal) } }
+	@IBInspectable var text2: String = "" { didSet { second.setTitle(text2, forState: .Normal) } }
+	@IBInspectable var text3: String = "" { didSet { third.setTitle(text3, forState: .Normal) } }
+	@IBInspectable var textColor: UIColor = UIColor.whiteColor() {
+		didSet {
+			first.setTitleColor(textColor, forState: .Normal)
+			second.setTitleColor(textColor, forState: .Normal)
+			third.setTitleColor(textColor, forState: .Normal)
+		}
+	}
+	@IBInspectable var indicatorColor: UIColor = UIColor.whiteColor() { didSet { indicator.backgroundColor = indicatorColor } }
+	@IBInspectable var indicatorHeight: CGFloat = 2.0 { didSet { indicatorConstraint.constant = indicatorHeight } }
+	var defaultLeftMargin: CGFloat = 0
+	var selectedTextFont: UIFont = UIFont.boldFontOfSize(14)
+	var textFont: UIFont = UIFont.semiBoldFontOfSize(14) {
+		didSet {
+			first.titleLabel?.font = textFont
+			second.titleLabel?.font = textFont
+			third.titleLabel?.font = textFont
+		}
+	}
+	
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		defaultLeftMargin = CGRectGetWidth(first.frame) * (1.0 - 0.8) / 2.0
+		leftConstraint.constant = defaultLeftMargin
+	}
+	
+	var onSelected: ((Int)->())?
+	@IBAction func tapSegement(sender: AnyObject) {
+		if let btn = sender as? UIButton {
+			for (i, button) in [first, second, third].enumerate() {
+				button.selected = i == btn.tag - 1
+				button.titleLabel?.font = button.selected ? selectedTextFont : textFont
+				button.alpha = button.selected ? 1 : unselectedTextAlpha
+			}
+			leftConstraint.constant = defaultLeftMargin + CGRectGetWidth(first.frame) * CGFloat(btn.tag - 1)
+			UIView.animateWithDuration(0.2, animations: {
+				self.layoutIfNeeded()
+				}, completion: { finish in
+					self.onSelected?(btn.tag - 1)
+			})
+		}
+	}
+}
+
+@IBDesignable
 class CartoonButton: NibView {
 	override var nibName: String { return "CartoonButton" }
 	@IBOutlet weak var textLabel: KernLabel!
