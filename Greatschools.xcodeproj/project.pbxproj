@@ -64,6 +64,7 @@
 		E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345941C8D2D0500542F55 /* ProximaNova-Semibold.otf */; };
 		E94DB2A01C8D59D70030F431 /* NearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DB29F1C8D59D70030F431 /* NearBy.swift */; };
 		E94DB2A61C8D85A20030F431 /* Article.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DB2A51C8D85A20030F431 /* Article.xib */; };
+		E98991ED1C90599E00763BBB /* StatsDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98991EC1C90599E00763BBB /* StatsDetailsCell.swift */; };
 		E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98C33831C8EFD4100BE349F /* SearchView.xib */; };
 		E9BAB0671C90122E00E9CB29 /* SchoolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */; };
 		E9BAB0691C901D1600E9CB29 /* DetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */; };
@@ -134,6 +135,7 @@
 		E92074501C8ED1F90029611A /* UIView+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Appearance.m"; sourceTree = "<group>"; };
 		E94DB29F1C8D59D70030F431 /* NearBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearBy.swift; sourceTree = "<group>"; };
 		E94DB2A51C8D85A20030F431 /* Article.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Article.xib; sourceTree = "<group>"; };
+		E98991EC1C90599E00763BBB /* StatsDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsDetailsCell.swift; sourceTree = "<group>"; };
 		E98C33831C8EFD4100BE349F /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetails.swift; sourceTree = "<group>"; };
 		E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailHeader.xib; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				B545A7521C901547006065B4 /* StatsDetailsCell.xib */,
+				E98991EC1C90599E00763BBB /* StatsDetailsCell.swift */,
 			);
 			name = Stats;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				E94DB2A01C8D59D70030F431 /* NearBy.swift in Sources */,
 				E903458E1C8D2C4300542F55 /* Greatschools-Define.swift in Sources */,
 				E920743C1C8EA77F0029611A /* AppCell.swift in Sources */,
+				E98991ED1C90599E00763BBB /* StatsDetailsCell.swift in Sources */,
 				E90345861C8D28CC00542F55 /* Widgets.swift in Sources */,
 				B584CB291C8EC2A40087A26A /* SchoolInfoView.swift in Sources */,
 				E920743A1C8EA2E40029611A /* MileStoneCell.swift in Sources */,
