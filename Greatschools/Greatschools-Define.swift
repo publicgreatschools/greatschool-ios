@@ -15,3 +15,5 @@ public let semiBoldFont = "ProximaNova-Semibold"
 public let ssFont = "SSStandard"
 
 public let TabBarHeight: CGFloat = 60
+public let IsSimulator = TARGET_OS_SIMULATOR == 1
+public let HOCKEY_APP_ID = "88f9ca1ed3cf40c08f34765ab03be3b5"
