@@ -22,7 +22,6 @@
 		B584CB271C8EC15A0087A26A /* SchoolInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */; };
 		B584CB291C8EC2A40087A26A /* SchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */; };
 		B5873C5E1C904E89004A9224 /* OverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5873C5D1C904E89004A9224 /* OverView.swift */; };
-		B5873C601C906A8A004A9224 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5873C5F1C906A8A004A9224 /* ReviewView.swift */; };
 		B5873C621C906E61004A9224 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5873C611C906E61004A9224 /* Review.swift */; };
 		B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */; };
 		B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36C1C8D53C20092636F /* Stars.xib */; };
@@ -83,6 +82,7 @@
 		E9BAB0671C90122E00E9CB29 /* SchoolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */; };
 		E9BAB0691C901D1600E9CB29 /* DetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */; };
 		E9BAB06B1C90243500E9CB29 /* CustomSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */; };
+		E9DB6F921C91535B000C8069 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB6F911C91535B000C8069 /* ReviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,7 +102,6 @@
 		B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoView.xib; sourceTree = "<group>"; };
 		B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolInfoView.swift; sourceTree = "<group>"; };
 		B5873C5D1C904E89004A9224 /* OverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverView.swift; sourceTree = "<group>"; };
-		B5873C5F1C906A8A004A9224 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		B5873C611C906E61004A9224 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoCell.xib; sourceTree = "<group>"; };
 		B5D7A36C1C8D53C20092636F /* Stars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Stars.xib; sourceTree = "<group>"; };
@@ -168,6 +167,7 @@
 		E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetails.swift; sourceTree = "<group>"; };
 		E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailHeader.xib; sourceTree = "<group>"; };
 		E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSegment.xib; sourceTree = "<group>"; };
+		E9DB6F911C91535B000C8069 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,10 +234,10 @@
 		B545A7541C901961006065B4 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				E9DB6F911C91535B000C8069 /* ReviewView.swift */,
 				B545A7551C901982006065B4 /* ReviewCell.xib */,
 				B51059AF1C910A5900DC230D /* ReviewHeader.xib */,
 				B51059B11C91111200DC230D /* ReviewBar.xib */,
-				B5873C5F1C906A8A004A9224 /* ReviewView.swift */,
 				B5873C611C906E61004A9224 /* Review.swift */,
 			);
 			name = Review;
@@ -605,9 +605,7 @@
 				B5D7A3711C8D6AB40092636F /* Search.swift in Sources */,
 				B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */,
 				E92074401C8EA96A0029611A /* AppInfo.swift in Sources */,
-				B5873C601C906A8A004A9224 /* ReviewCell.swift in Sources */,
 				E977A7431C91460900F8AB75 /* HomesCell.swift in Sources */,
-				B5873C601C906A8A004A9224 /* ReviewView.swift in Sources */,
 				B5D7A3731C8D6EF30092636F /* SchoolInfoCell.swift in Sources */,
 				E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */,
 				E92074511C8ED1F90029611A /* UIView+Appearance.m in Sources */,
@@ -626,6 +624,7 @@
 				E920744A1C8EBCFD0029611A /* CardCell.swift in Sources */,
 				E90345811C8D283500542F55 /* TabBarController.swift in Sources */,
 				E94DB2A01C8D59D70030F431 /* NearBy.swift in Sources */,
+				E9DB6F921C91535B000C8069 /* ReviewView.swift in Sources */,
 				E903458E1C8D2C4300542F55 /* Greatschools-Define.swift in Sources */,
 				E920743C1C8EA77F0029611A /* AppCell.swift in Sources */,
 				E98991ED1C90599E00763BBB /* StatsDetailsCell.swift in Sources */,
