@@ -31,7 +31,7 @@ class ReviewController: UIViewController {
 	}
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-		return demoData.count
+		return demoData.count+1
 	}
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
