@@ -211,7 +211,7 @@
                                                 <userDefinedRuntimeAttribute type="string" keyPath="text" value="ASSIGNED SCHOOLS"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="assigned_schools"/>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="badge">
-                                                    <integer key="value" value="30"/>
+                                                    <integer key="value" value="0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
@@ -256,7 +256,7 @@
                                                 <userDefinedRuntimeAttribute type="string" keyPath="text" value="HIGH SCHOOLS"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="high_schools"/>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="badge">
-                                                    <integer key="value" value="8"/>
+                                                    <integer key="value" value="99"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
