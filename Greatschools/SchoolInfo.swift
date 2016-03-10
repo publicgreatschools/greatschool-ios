@@ -36,7 +36,8 @@ extension SchoolInfo {
 		SchoolInfo(id: 0, pinColorId: 0, name: "School Name A", address: "Public | 9 - 12 | Pleasant Hill, CA", miles: 3.25, rateInfo: SchoolRate(rate: 3, color: UIColor(hexRGB: 0xF5A623)), starInfo: SchoolStar(count: 1, color: UIColor(hexRGB: 0xF5A623)), reviews: 121, position: CGPoint(x: 130, y: 140)),
 		SchoolInfo(id: 0, pinColorId: 0, name: "School Name A", address: "Public | 9 - 12 | Pleasant Hill, CA", miles: 3.25, rateInfo: SchoolRate(rate: 6, color: UIColor(hexRGB: 0x60BD02)), starInfo: SchoolStar(count: 3, color: UIColor(hexRGB: 0x60BD02)), reviews: 417, position: CGPoint(x: 130, y: 140)),
 		SchoolInfo(id: 0, pinColorId: 0, name: "School Name A", address: "Public | 9 - 12 | Pleasant Hill, CA", miles: 3.25, rateInfo: SchoolRate(rate: 5, color: UIColor(hexRGB: 0xF5A623)), starInfo: SchoolStar(count: 2, color: UIColor(hexRGB: 0xF5A623)), reviews: 203, position: CGPoint(x: 130, y: 140)),
-		SchoolInfo(id: 0, pinColorId: 0, name: "School Name A", address: "Public | 9 - 12 | Pleasant Hill, CA", miles: 3.25, rateInfo: SchoolRate(rate: 8, color: UIColor(hexRGB: 0x60BD02)), starInfo: SchoolStar(count: 4, color: UIColor(hexRGB: 0x60BD02)), reviews: 688, position: CGPoint(x: 130, y: 140))]
+		SchoolInfo(id: 0, pinColorId: 0, name: "School Name A", address: "Public | 9 - 12 | Pleasant Hill, CA", miles: 3.25, rateInfo: SchoolRate(rate: 8, color: UIColor(hexRGB: 0x60BD02)), starInfo: SchoolStar(count: 4, color: UIColor(hexRGB: 0x60BD02)), reviews: 688, position: CGPoint(x: 130, y: 140)),
+		SchoolInfo(id: 0, pinColorId: 0, name: "School Name A", address: "Public | 9 - 12 | Pleasant Hill, CA", miles: 3.25, rateInfo: SchoolRate(rate: 6, color: UIColor(hexRGB: 0x60BD02)), starInfo: SchoolStar(count: 3, color: UIColor(hexRGB: 0x60BD02)), reviews: 405, position: CGPoint(x: 130, y: 140))]
 }
 
 struct StatsInfo {
