@@ -27,6 +27,12 @@ class TabBarItem: UITabBarItem {
 @IBDesignable
 class CardScrollView: NibView {
 	override var nibName: String { return "CardScrollView" }
+	@IBOutlet weak var card: Card!
+	@IBInspectable var layout: String = "" {
+		didSet {
+			card.layout = layout
+		}
+	}
 }
 
 @IBDesignable
@@ -45,9 +51,43 @@ class MileStone: NibView {
 	override var nibName: String { return "MileStone" }
 }
 
+enum CardStyle: String {
+	case Default = ""
+	case WithButton = "WithButton"
+}
+
+@IBDesignable
+class Card: StyledView {
+	override var nibNamePrefix: String { return "Card" }
+}
+
 @IBDesignable
 class DetailHeader: NibView {
 	override var nibName: String { return "DetailHeader" }
+}
+
+@IBDesignable
+class PercentView: NibView {
+	override var nibName: String { return "PercentView" }
+	@IBOutlet weak var progressView: UIProgressView!
+	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var percentLabel: UILabel!
+	@IBInspectable var percent: Float = 0 {
+		didSet {
+			progressView.progress = percent
+			percentLabel.text = "\(Int(percent * 100))%"
+		}
+	}
+	@IBInspectable var trackColor: UIColor = UIColor.progressTrackColor() {
+		didSet {
+			progressView.trackTintColor = trackColor
+		}
+	}
+	@IBInspectable var progressTintColor: UIColor = UIColor.progressBackgroundColor() {
+		didSet {
+			progressView.progressTintColor = progressTintColor
+		}
+	}
 }
 
 @IBDesignable

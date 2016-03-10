@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="333"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="icX-K5-vkY">
+                    <rect key="frame" x="0.0" y="0.0" width="381" height="191"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="191" id="BSJ-cl-iXf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8614 E Vista Dr, Scottsdale, AZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tU4-6w-03l">
+                    <rect key="frame" x="23" y="215" width="334" height="24.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="20"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4bds | 2ba | 960ft | 6,453 sqft" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuT-4A-siO">
+                    <rect key="frame" x="23" y="243" width="334" height="17.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                    <color key="textColor" red="0.52156862745098043" green="0.57647058823529407" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$329,900" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtu-sd-xsJ">
+                    <rect key="frame" x="23" y="271" width="117" height="32"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="26"/>
+                    <color key="textColor" red="1" green="0.39215686274509803" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MB-dg-Kq4">
+                    <rect key="frame" x="222" y="271" width="135" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="xmp-bU-L6W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                    <state key="normal" title="Check Availability" backgroundImage="btn_green_bg"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="icX-K5-vkY" secondAttribute="trailing" id="9rp-k3-myl"/>
+                <constraint firstItem="tU4-6w-03l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="ADY-eh-uql"/>
+                <constraint firstItem="2MB-dg-Kq4" firstAttribute="trailing" secondItem="tU4-6w-03l" secondAttribute="trailing" id="Agl-fG-OgZ"/>
+                <constraint firstItem="NuT-4A-siO" firstAttribute="top" secondItem="tU4-6w-03l" secondAttribute="bottom" constant="4" id="GB2-Ue-hqW"/>
+                <constraint firstItem="icX-K5-vkY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Llx-bT-THm"/>
+                <constraint firstAttribute="bottom" secondItem="gtu-sd-xsJ" secondAttribute="bottom" constant="30" id="OsW-FY-0Eh"/>
+                <constraint firstItem="gtu-sd-xsJ" firstAttribute="top" secondItem="NuT-4A-siO" secondAttribute="bottom" constant="10" id="RgU-Z8-uA8"/>
+                <constraint firstItem="2MB-dg-Kq4" firstAttribute="centerY" secondItem="gtu-sd-xsJ" secondAttribute="centerY" id="UOI-5E-SNS"/>
+                <constraint firstItem="icX-K5-vkY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cs2-Zp-XVZ"/>
+                <constraint firstItem="tU4-6w-03l" firstAttribute="top" secondItem="icX-K5-vkY" secondAttribute="bottom" constant="24" id="jAD-fv-4pG"/>
+                <constraint firstItem="gtu-sd-xsJ" firstAttribute="leading" secondItem="NuT-4A-siO" secondAttribute="leading" id="kQX-P6-2lz"/>
+                <constraint firstItem="NuT-4A-siO" firstAttribute="trailing" secondItem="tU4-6w-03l" secondAttribute="trailing" id="kkj-UI-fcN"/>
+                <constraint firstItem="NuT-4A-siO" firstAttribute="leading" secondItem="tU4-6w-03l" secondAttribute="leading" id="pk0-5N-Uq5"/>
+                <constraint firstAttribute="trailing" secondItem="tU4-6w-03l" secondAttribute="trailing" constant="24" id="s4S-VV-8p4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="252.5" y="354.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_green_bg" width="135" height="31"/>
+        <image name="card" width="381" height="191"/>
+    </resources>
+</document>

@@ -100,4 +100,12 @@ extension UIColor {
 	class func backgroundColor() -> UIColor {
 		return UIColor(hexRGB: 0xF0F5F6)
 	}
+	
+	class func progressTrackColor() -> UIColor {
+		return UIColor(hexRGB: 0xEF860D)
+	}
+	
+	class func progressBackgroundColor() -> UIColor {
+		return UIColor(hexRGB: 0xE4ECF0)
+	}
 }

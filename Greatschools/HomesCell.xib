@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="421" id="5Rk-VK-gGl" customClass="HomesCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="421"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Rk-VK-gGl" id="g7x-T5-AXA">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="420.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmB-D9-OSh">
+                        <rect key="frame" x="16" y="16" width="349" height="341"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwn-dl-4Gu" customClass="CardScrollView" customModule="Native" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="354"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layout" value="WithButton"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="JX2-Ep-JMK">
+                        <rect key="frame" x="147" y="367" width="87" height="37"/>
+                        <color key="pageIndicatorTintColor" red="0.75686274509999996" green="0.82352941180000006" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="currentPageIndicatorTintColor" red="0.52156862749999999" green="0.57647058819999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JX2-Ep-JMK" secondAttribute="bottom" constant="16" id="OC5-ok-Bjs"/>
+                    <constraint firstItem="JX2-Ep-JMK" firstAttribute="top" secondItem="dmB-D9-OSh" secondAttribute="bottom" constant="10" id="RrV-wA-wXE"/>
+                    <constraint firstItem="dmB-D9-OSh" firstAttribute="leading" secondItem="g7x-T5-AXA" secondAttribute="leading" constant="16" id="XU8-JC-fA6"/>
+                    <constraint firstAttribute="trailing" secondItem="dmB-D9-OSh" secondAttribute="trailing" constant="16" id="fWm-df-stj"/>
+                    <constraint firstItem="dmB-D9-OSh" firstAttribute="top" secondItem="g7x-T5-AXA" secondAttribute="top" constant="16" id="jo1-Y3-1gU"/>
+                    <constraint firstItem="JX2-Ep-JMK" firstAttribute="centerX" secondItem="dmB-D9-OSh" secondAttribute="centerX" id="qis-Co-7mE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="container" destination="dmB-D9-OSh" id="dVB-fv-QaM"/>
+            </connections>
+            <point key="canvasLocation" x="219.5" y="384"/>
+        </tableViewCell>
+    </objects>
+</document>

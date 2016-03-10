@@ -22,7 +22,6 @@
 		B584CB271C8EC15A0087A26A /* SchoolInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */; };
 		B584CB291C8EC2A40087A26A /* SchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */; };
 		B5873C5E1C904E89004A9224 /* OverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5873C5D1C904E89004A9224 /* OverView.swift */; };
-		B5873C601C906A8A004A9224 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5873C5F1C906A8A004A9224 /* ReviewView.swift */; };
 		B5873C621C906E61004A9224 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5873C611C906E61004A9224 /* Review.swift */; };
 		B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */; };
 		B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7A36C1C8D53C20092636F /* Stars.xib */; };
@@ -69,10 +68,21 @@
 		E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E90345941C8D2D0500542F55 /* ProximaNova-Semibold.otf */; };
 		E94DB2A01C8D59D70030F431 /* NearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DB29F1C8D59D70030F431 /* NearBy.swift */; };
 		E94DB2A61C8D85A20030F431 /* Article.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DB2A51C8D85A20030F431 /* Article.xib */; };
+		E977A7331C910FAA00F8AB75 /* TestScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E977A7321C910FAA00F8AB75 /* TestScoreCell.xib */; };
+		E977A7351C91124B00F8AB75 /* PercentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E977A7341C91124B00F8AB75 /* PercentView.xib */; };
+		E977A7371C911FB300F8AB75 /* TestScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E977A7361C911FB300F8AB75 /* TestScoreCell.swift */; };
+		E977A7391C9121E600F8AB75 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E977A7381C9121E600F8AB75 /* DescriptionCell.xib */; };
+		E977A73B1C9122F900F8AB75 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E977A73A1C9122F900F8AB75 /* DescriptionCell.swift */; };
+		E977A73D1C913A7F00F8AB75 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = E977A73C1C913A7F00F8AB75 /* Card.xib */; };
+		E977A73F1C913B3700F8AB75 /* CardWithButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = E977A73E1C913B3700F8AB75 /* CardWithButton.xib */; };
+		E977A7411C9145D100F8AB75 /* HomesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E977A7401C9145D100F8AB75 /* HomesCell.xib */; };
+		E977A7431C91460900F8AB75 /* HomesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E977A7421C91460900F8AB75 /* HomesCell.swift */; };
+		E98991ED1C90599E00763BBB /* StatsDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98991EC1C90599E00763BBB /* StatsDetailsCell.swift */; };
 		E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98C33831C8EFD4100BE349F /* SearchView.xib */; };
 		E9BAB0671C90122E00E9CB29 /* SchoolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */; };
 		E9BAB0691C901D1600E9CB29 /* DetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */; };
 		E9BAB06B1C90243500E9CB29 /* CustomSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */; };
+		E9DB6F921C91535B000C8069 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB6F911C91535B000C8069 /* ReviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,7 +102,6 @@
 		B584CB261C8EC15A0087A26A /* SchoolInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoView.xib; sourceTree = "<group>"; };
 		B584CB281C8EC2A40087A26A /* SchoolInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolInfoView.swift; sourceTree = "<group>"; };
 		B5873C5D1C904E89004A9224 /* OverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverView.swift; sourceTree = "<group>"; };
-		B5873C5F1C906A8A004A9224 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		B5873C611C906E61004A9224 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		B5D7A36A1C8D515D0092636F /* SchoolInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolInfoCell.xib; sourceTree = "<group>"; };
 		B5D7A36C1C8D53C20092636F /* Stars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Stars.xib; sourceTree = "<group>"; };
@@ -144,10 +153,21 @@
 		E92074501C8ED1F90029611A /* UIView+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Appearance.m"; sourceTree = "<group>"; };
 		E94DB29F1C8D59D70030F431 /* NearBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearBy.swift; sourceTree = "<group>"; };
 		E94DB2A51C8D85A20030F431 /* Article.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Article.xib; sourceTree = "<group>"; };
+		E977A7321C910FAA00F8AB75 /* TestScoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestScoreCell.xib; sourceTree = "<group>"; };
+		E977A7341C91124B00F8AB75 /* PercentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PercentView.xib; sourceTree = "<group>"; };
+		E977A7361C911FB300F8AB75 /* TestScoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScoreCell.swift; sourceTree = "<group>"; };
+		E977A7381C9121E600F8AB75 /* DescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
+		E977A73A1C9122F900F8AB75 /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		E977A73C1C913A7F00F8AB75 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
+		E977A73E1C913B3700F8AB75 /* CardWithButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardWithButton.xib; sourceTree = "<group>"; };
+		E977A7401C9145D100F8AB75 /* HomesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomesCell.xib; sourceTree = "<group>"; };
+		E977A7421C91460900F8AB75 /* HomesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomesCell.swift; sourceTree = "<group>"; };
+		E98991EC1C90599E00763BBB /* StatsDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsDetailsCell.swift; sourceTree = "<group>"; };
 		E98C33831C8EFD4100BE349F /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetails.swift; sourceTree = "<group>"; };
 		E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailHeader.xib; sourceTree = "<group>"; };
 		E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSegment.xib; sourceTree = "<group>"; };
+		E9DB6F911C91535B000C8069 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +220,13 @@
 			isa = PBXGroup;
 			children = (
 				B545A7521C901547006065B4 /* StatsDetailsCell.xib */,
+				E98991EC1C90599E00763BBB /* StatsDetailsCell.swift */,
+				E977A7321C910FAA00F8AB75 /* TestScoreCell.xib */,
+				E977A7361C911FB300F8AB75 /* TestScoreCell.swift */,
+				E977A7381C9121E600F8AB75 /* DescriptionCell.xib */,
+				E977A73A1C9122F900F8AB75 /* DescriptionCell.swift */,
+				E977A7401C9145D100F8AB75 /* HomesCell.xib */,
+				E977A7421C91460900F8AB75 /* HomesCell.swift */,
 			);
 			name = Stats;
 			sourceTree = "<group>";
@@ -207,10 +234,10 @@
 		B545A7541C901961006065B4 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				E9DB6F911C91535B000C8069 /* ReviewView.swift */,
 				B545A7551C901982006065B4 /* ReviewCell.xib */,
 				B51059AF1C910A5900DC230D /* ReviewHeader.xib */,
 				B51059B11C91111200DC230D /* ReviewBar.xib */,
-				B5873C5F1C906A8A004A9224 /* ReviewView.swift */,
 				B5873C611C906E61004A9224 /* Review.swift */,
 			);
 			name = Review;
@@ -318,6 +345,9 @@
 				E98C33831C8EFD4100BE349F /* SearchView.xib */,
 				E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */,
 				E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */,
+				E977A7341C91124B00F8AB75 /* PercentView.xib */,
+				E977A73C1C913A7F00F8AB75 /* Card.xib */,
+				E977A73E1C913B3700F8AB75 /* CardWithButton.xib */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -480,6 +510,7 @@
 				B545A74A1C900CBF006065B4 /* OverviewEnrolledCell.xib in Resources */,
 				B545A7421C8FF869006065B4 /* OverviewRatingCell.xib in Resources */,
 				E920742E1C8E758D0029611A /* CartoonButton.xib in Resources */,
+				E977A7331C910FAA00F8AB75 /* TestScoreCell.xib in Resources */,
 				B545A74E1C901384006065B4 /* OverviewBeforeCell.xib in Resources */,
 				E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */,
 				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
@@ -489,7 +520,11 @@
 				E90345751C8D26C700542F55 /* LaunchScreen.storyboard in Resources */,
 				B545A7561C901982006065B4 /* ReviewCell.xib in Resources */,
 				E903459C1C8D2FE800542F55 /* GreatKids.storyboard in Resources */,
+				E977A7391C9121E600F8AB75 /* DescriptionCell.xib in Resources */,
+				E977A7411C9145D100F8AB75 /* HomesCell.xib in Resources */,
+				E977A73F1C913B3700F8AB75 /* CardWithButton.xib in Resources */,
 				E90345721C8D26C700542F55 /* Assets.xcassets in Resources */,
+				E977A73D1C913A7F00F8AB75 /* Card.xib in Resources */,
 				E903459A1C8D2FDB00542F55 /* MySchools.storyboard in Resources */,
 				B5D7A36D1C8D53C20092636F /* Stars.xib in Resources */,
 				E92074381C8EA2C10029611A /* MileStoneCell.xib in Resources */,
@@ -501,6 +536,7 @@
 				E90345961C8D2FBE00542F55 /* NearBy.storyboard in Resources */,
 				B545A7531C901547006065B4 /* StatsDetailsCell.xib in Resources */,
 				E92074361C8E995F0029611A /* MileStone.xib in Resources */,
+				E977A7351C91124B00F8AB75 /* PercentView.xib in Resources */,
 				E92074481C8EB8990029611A /* CardScrollView.xib in Resources */,
 				B545A7461C8FFFA2006065B4 /* OverviewReviewCell.xib in Resources */,
 				E9BAB0691C901D1600E9CB29 /* DetailHeader.xib in Resources */,
@@ -565,10 +601,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92074301C8E8D730029611A /* ViewController.swift in Sources */,
+				E977A73B1C9122F900F8AB75 /* DescriptionCell.swift in Sources */,
 				B5D7A3711C8D6AB40092636F /* Search.swift in Sources */,
 				B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */,
 				E92074401C8EA96A0029611A /* AppInfo.swift in Sources */,
-				B5873C601C906A8A004A9224 /* ReviewView.swift in Sources */,
+				E977A7431C91460900F8AB75 /* HomesCell.swift in Sources */,
 				B5D7A3731C8D6EF30092636F /* SchoolInfoCell.swift in Sources */,
 				E903457E1C8D27FB00542F55 /* AppDelegate+Appearance.swift in Sources */,
 				E92074511C8ED1F90029611A /* UIView+Appearance.m in Sources */,
@@ -587,8 +624,11 @@
 				E920744A1C8EBCFD0029611A /* CardCell.swift in Sources */,
 				E90345811C8D283500542F55 /* TabBarController.swift in Sources */,
 				E94DB2A01C8D59D70030F431 /* NearBy.swift in Sources */,
+				E9DB6F921C91535B000C8069 /* ReviewView.swift in Sources */,
 				E903458E1C8D2C4300542F55 /* Greatschools-Define.swift in Sources */,
 				E920743C1C8EA77F0029611A /* AppCell.swift in Sources */,
+				E98991ED1C90599E00763BBB /* StatsDetailsCell.swift in Sources */,
+				E977A7371C911FB300F8AB75 /* TestScoreCell.swift in Sources */,
 				E90345861C8D28CC00542F55 /* Widgets.swift in Sources */,
 				B584CB291C8EC2A40087A26A /* SchoolInfoView.swift in Sources */,
 				E920743A1C8EA2E40029611A /* MileStoneCell.swift in Sources */,

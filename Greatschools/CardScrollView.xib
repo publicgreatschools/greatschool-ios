@@ -2,16 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9532"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="ProximaNova-Semibold.otf">
-            <string>ProximaNova-Semibold</string>
-            <string>ProximaNova-Semibold</string>
-        </mutableArray>
-    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardScrollView" customModule="Native" customModuleProvider="target">
+            <connections>
+                <outlet property="card" destination="XRe-Vv-Zf9" id="1cj-XU-MbZ"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="381" height="327"/>
@@ -47,55 +45,9 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRe-Vv-Zf9">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRe-Vv-Zf9" customClass="Card" customModule="Native" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="20" width="381" height="307"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EASY LEARNING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hO-De-wbA" customClass="KernLabel" customModule="Greycats">
-                            <rect key="frame" x="139" y="179" width="103.5" height="15"/>
-                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="12"/>
-                            <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="kern">
-                                    <integer key="value" value="1"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XD-GL-RHe">
-                            <rect key="frame" x="180" y="206" width="20" height="4"/>
-                            <color key="backgroundColor" red="0.050980392156862744" green="0.65490196078431373" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="20" id="Tdw-DY-XDv"/>
-                                <constraint firstAttribute="height" constant="4" id="UcN-1A-Lke"/>
-                            </constraints>
-                        </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="easy_learning" translatesAutoresizingMaskIntoConstraints="NO" id="vzP-wb-2Yl">
-                            <rect key="frame" x="0.0" y="0.0" width="381" height="154"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="154" id="568-Wy-eZg"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A tasty way to teach your little ones how to wait" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-Yc-w07">
-                            <rect key="frame" x="35" y="222" width="311" height="49"/>
-                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="20"/>
-                            <color key="textColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="vzP-wb-2Yl" secondAttribute="trailing" id="8td-nI-uFY"/>
-                        <constraint firstItem="1XD-GL-RHe" firstAttribute="top" secondItem="5hO-De-wbA" secondAttribute="bottom" constant="12" id="BsV-Vm-bMe"/>
-                        <constraint firstItem="vzP-wb-2Yl" firstAttribute="top" secondItem="XRe-Vv-Zf9" secondAttribute="top" id="EW2-n5-Bvv"/>
-                        <constraint firstItem="5hO-De-wbA" firstAttribute="top" secondItem="vzP-wb-2Yl" secondAttribute="bottom" constant="25" id="RF9-RC-fOm"/>
-                        <constraint firstItem="1XD-GL-RHe" firstAttribute="centerX" secondItem="XRe-Vv-Zf9" secondAttribute="centerX" id="RcA-KS-aqZ"/>
-                        <constraint firstAttribute="trailing" secondItem="3jU-Yc-w07" secondAttribute="trailing" constant="35" id="XSw-02-Vte"/>
-                        <constraint firstItem="3jU-Yc-w07" firstAttribute="top" secondItem="1XD-GL-RHe" secondAttribute="bottom" constant="12" id="bqP-iF-ABW"/>
-                        <constraint firstItem="vzP-wb-2Yl" firstAttribute="leading" secondItem="XRe-Vv-Zf9" secondAttribute="leading" id="dRC-3c-xYI"/>
-                        <constraint firstItem="5hO-De-wbA" firstAttribute="centerX" secondItem="XRe-Vv-Zf9" secondAttribute="centerX" id="hTf-Lz-68Z"/>
-                        <constraint firstItem="3jU-Yc-w07" firstAttribute="leading" secondItem="XRe-Vv-Zf9" secondAttribute="leading" constant="35" id="nGL-SK-fD9"/>
-                        <constraint firstItem="3jU-Yc-w07" firstAttribute="centerX" secondItem="XRe-Vv-Zf9" secondAttribute="centerX" id="ntY-ln-Hzh"/>
-                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="4"/>
@@ -125,7 +77,4 @@
             <point key="canvasLocation" x="308.5" y="354.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="easy_learning" width="381" height="154"/>
-    </resources>
 </document>

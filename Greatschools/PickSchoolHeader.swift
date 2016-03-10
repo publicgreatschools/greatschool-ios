@@ -7,13 +7,8 @@
 //
 
 import UIKit
+import Greycats
 
 class PickSchoolHeader: UITableViewHeaderFooterView {
-	@IBOutlet weak var titleLabel: UILabel!
-	@IBOutlet weak var topLayoutConstraint: NSLayoutConstraint!
-	var isFirstSection: Bool = true {
-		didSet {
-			topLayoutConstraint.constant = isFirstSection ? 20 : 0
-		}
-	}
+	@IBOutlet weak var titleLabel: KernLabel!
 }

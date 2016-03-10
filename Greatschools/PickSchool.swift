@@ -73,7 +73,7 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 			if indexPath.row == 0 {
 				return 290
 			}
-			return 380
+			return 400
 		}
 		return 75
 	}
@@ -89,7 +89,6 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 		if section == 0 || section == 1 {
 			let header = tableView.dequeueReusableHeaderFooterViewWithIdentifier("PickSchoolHeader") as! PickSchoolHeader
 			header.titleLabel.text = section == 0 ? "ASSIGNED SCHOOLS" : "RECOMMENDED CONTENT"
-			header.isFirstSection = section == 0
 			return header
 		}
 		return nil
