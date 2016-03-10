@@ -65,6 +65,7 @@
                     <constraint firstAttribute="trailing" secondItem="g7C-nx-BV2" secondAttribute="trailing" constant="16" id="Hvd-35-Dfn"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="view" destination="g7C-nx-BV2" id="Tw0-92-fYw"/>
             </connections>

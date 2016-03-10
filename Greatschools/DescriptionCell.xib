@@ -58,6 +58,7 @@
                     <constraint firstAttribute="trailing" secondItem="ElA-Ya-mOC" secondAttribute="trailing" constant="16" id="ugy-f7-jh2"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="container" destination="ElA-Ya-mOC" id="GpJ-3N-p2K"/>
                 <outlet property="titleLabel" destination="7yT-vJ-EtX" id="pwI-zS-jt4"/>

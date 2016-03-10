@@ -39,6 +39,9 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2m-6N-ahr">
                             <rect key="frame" x="115" y="143" width="151" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="8tD-9L-L0C"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                             <state key="normal" title="Let's explore" backgroundImage="orange_btn_bg">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,6 +56,7 @@
                         <constraint firstItem="l1t-Mo-BhL" firstAttribute="centerX" secondItem="szJ-Av-8Je" secondAttribute="centerX" id="50e-b7-qbJ"/>
                         <constraint firstItem="J2m-6N-ahr" firstAttribute="centerX" secondItem="szJ-Av-8Je" secondAttribute="centerX" id="Eph-tD-yXE"/>
                         <constraint firstAttribute="trailing" secondItem="mgz-vs-1gM" secondAttribute="trailing" id="Et8-FD-JMt"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="J2m-6N-ahr" secondAttribute="bottom" id="aTg-iZ-c2Q"/>
                         <constraint firstItem="mgz-vs-1gM" firstAttribute="leading" secondItem="szJ-Av-8Je" secondAttribute="leading" id="cUS-DC-UMf"/>
                         <constraint firstItem="J2m-6N-ahr" firstAttribute="top" secondItem="BNZ-Fb-L9Z" secondAttribute="bottom" constant="15" id="dt3-2t-TTD"/>
                         <constraint firstItem="l1t-Mo-BhL" firstAttribute="top" secondItem="szJ-Av-8Je" secondAttribute="top" constant="15" id="g5k-QV-wBM"/>
