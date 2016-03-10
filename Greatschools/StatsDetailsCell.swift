@@ -12,6 +12,7 @@ class StatsDetailsCell: UITableViewCell {
 	@IBOutlet weak var iconImageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var countLabel: UILabel!
+	@IBOutlet weak var container: UIView!
 	
 	var info: StatsInfo! {
 		didSet {
@@ -19,5 +20,10 @@ class StatsDetailsCell: UITableViewCell {
 			titleLabel.text = info.name
 			countLabel.text = info.count
 		}
+	}
+	
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		selectedBackgroundView?.frame = container.frame
 	}
 }

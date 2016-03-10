@@ -18,13 +18,16 @@ class StatsController: TestViewController, UITableViewDelegate, UITableViewDataS
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		tableView.estimatedRowHeight = 100
+		tableView.estimatedRowHeight = 212
 		tableView.registerNib(UINib(nibName: "StatsDetailsCell", bundle: nil), forCellReuseIdentifier: "StatsDetailsCell")
-		tableView.registerNib(UINib(nibName: "CardCell", bundle: nil), forCellReuseIdentifier: "CardCell")
+		tableView.registerNib(UINib(nibName: "TestScoreCell", bundle: nil), forCellReuseIdentifier: "TestScoreCell")
+		tableView.registerNib(UINib(nibName: "HomesCell", bundle: nil), forCellReuseIdentifier: "HomesCell")
+		tableView.registerNib(UINib(nibName: "DescriptionCell", bundle: nil), forCellReuseIdentifier: "DescriptionCell")
+		tableView.registerNib(UINib(nibName: "PickSchoolHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "PickSchoolHeader")
 	}
 	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-		return 3
+		return 4
 	}
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,30 +44,48 @@ class StatsController: TestViewController, UITableViewDelegate, UITableViewDataS
 			let cell = tableView.dequeueReusableCellWithIdentifier("StatsDetailsCell", forIndexPath: indexPath) as! StatsDetailsCell
 			cell.info = StatsInfo.demoData[indexPath.row]
 			return cell
+		} else if indexPath.section == 1 {
+			let cell = tableView.dequeueReusableCellWithIdentifier("TestScoreCell", forIndexPath: indexPath) as! TestScoreCell
+			return cell
+		} else if indexPath.section == 2 {
+			let cell = tableView.dequeueReusableCellWithIdentifier("HomesCell", forIndexPath: indexPath) as! HomesCell
+			return cell
 		} else {
-			let cell = tableView.dequeueReusableCellWithIdentifier("CardCell", forIndexPath: indexPath) as! CardCell
+			let cell = tableView.dequeueReusableCellWithIdentifier("DescriptionCell", forIndexPath: indexPath) as! DescriptionCell
 			return cell
 		}
 	}
 	
 	func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		if section == 0 {
+			return 57
+		}
 		return 38
 	}
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		return UITableViewAutomaticDimension
+		if indexPath.section == 0 {
+			return 65
+		} else if indexPath.section == 1 {
+			return 318
+		} else if indexPath.section == 2 {
+			return 421
+		}
+		return 212
 	}
 	
 	func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 		let header = tableView.dequeueReusableHeaderFooterViewWithIdentifier("PickSchoolHeader") as! PickSchoolHeader
-		if section == 0 {
+		switch section {
+		case 0:
 			header.titleLabel.text = "DETAILS OVERVIEW"
-		} else if section == 1 {
+		case 1:
 			header.titleLabel.text = "TEST SCORES"
-		} else {
+		case 2:
 			header.titleLabel.text = "HOMES IN THE SCHOOL DISTRICT"
+		default:
+			header.titleLabel.text = "DESCRIPTION"
 		}
-		header.isFirstSection = section == 0
 		return header
 	}
 }

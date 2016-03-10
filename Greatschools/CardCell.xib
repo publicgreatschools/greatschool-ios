@@ -7,49 +7,46 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="382" id="mB4-cC-7WC" customClass="CardCell" customModule="Native" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="382"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="400" id="mB4-cC-7WC" customClass="CardCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="398"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mB4-cC-7WC" id="0p1-ct-G12">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="381.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="381" height="397.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPx-LS-SUi">
-                        <rect key="frame" x="16" y="16" width="288" height="328.5"/>
+                        <rect key="frame" x="16" y="16" width="349" height="318.5"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cp-p7-u6L" customClass="CardScrollView" customModule="Native" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="327"/>
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="327"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="327" id="jAM-eE-mBl"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="Rwn-v6-oyc">
-                                <rect key="frame" x="100" y="337" width="87" height="37"/>
-                                <color key="pageIndicatorTintColor" red="0.75686274509803919" green="0.82352941176470584" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.52156862749999999" green="0.57647058819999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1Cp-p7-u6L" firstAttribute="top" secondItem="cPx-LS-SUi" secondAttribute="top" id="DxQ-Cf-sx3"/>
                             <constraint firstAttribute="trailing" secondItem="1Cp-p7-u6L" secondAttribute="trailing" id="LRZ-Aw-gLd"/>
-                            <constraint firstItem="Rwn-v6-oyc" firstAttribute="centerX" secondItem="cPx-LS-SUi" secondAttribute="centerX" id="QFl-nE-ZK9"/>
-                            <constraint firstItem="Rwn-v6-oyc" firstAttribute="top" secondItem="1Cp-p7-u6L" secondAttribute="bottom" constant="10" id="U1V-gA-QM0"/>
                             <constraint firstItem="1Cp-p7-u6L" firstAttribute="leading" secondItem="cPx-LS-SUi" secondAttribute="leading" id="aDh-GZ-HOT"/>
                         </constraints>
                     </view>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="Rwn-v6-oyc">
+                        <rect key="frame" x="147" y="344.5" width="87" height="37"/>
+                        <color key="pageIndicatorTintColor" red="0.75686274509803919" green="0.82352941176470584" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="currentPageIndicatorTintColor" red="0.52156862749999999" green="0.57647058819999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
                 </subviews>
                 <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="cPx-LS-SUi" firstAttribute="leading" secondItem="0p1-ct-G12" secondAttribute="leading" constant="16" id="1ei-hA-dSA"/>
-                    <constraint firstAttribute="bottom" secondItem="cPx-LS-SUi" secondAttribute="bottom" constant="37" id="ALD-rd-AMx"/>
+                    <constraint firstAttribute="bottom" secondItem="Rwn-v6-oyc" secondAttribute="bottom" constant="16" id="3lh-wa-9Ur"/>
                     <constraint firstAttribute="trailing" secondItem="cPx-LS-SUi" secondAttribute="trailing" constant="16" id="DEb-G9-09Z"/>
+                    <constraint firstItem="Rwn-v6-oyc" firstAttribute="top" secondItem="cPx-LS-SUi" secondAttribute="bottom" constant="10" id="pgv-m3-tDa"/>
+                    <constraint firstItem="Rwn-v6-oyc" firstAttribute="centerX" secondItem="cPx-LS-SUi" secondAttribute="centerX" id="ruS-yO-Rsb"/>
                     <constraint firstItem="cPx-LS-SUi" firstAttribute="top" secondItem="0p1-ct-G12" secondAttribute="top" constant="16" id="vnC-7j-gg4"/>
                 </constraints>
             </tableViewCellContentView>
@@ -57,7 +54,7 @@
             <connections>
                 <outlet property="container" destination="cPx-LS-SUi" id="4Yc-7Q-5bP"/>
             </connections>
-            <point key="canvasLocation" x="220" y="375"/>
+            <point key="canvasLocation" x="219.5" y="384"/>
         </tableViewCell>
     </objects>
 </document>

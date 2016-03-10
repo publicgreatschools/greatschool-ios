@@ -63,16 +63,27 @@
                             </mask>
                         </variation>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMg-Jj-DLg">
+                        <rect key="frame" x="16" y="57" width="382" height="0.5"/>
+                        <color key="backgroundColor" red="0.81960784313725488" green="0.87450980392156863" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="gEd-ta-anB"/>
+                        </constraints>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="GIs-Sq-3HF" secondAttribute="trailing" constant="16" id="KaU-8b-DyJ"/>
+                    <constraint firstAttribute="bottom" secondItem="OMg-Jj-DLg" secondAttribute="bottom" id="TcC-Af-9nX"/>
                     <constraint firstItem="GIs-Sq-3HF" firstAttribute="leading" secondItem="p3R-vT-GrG" secondAttribute="leading" constant="16" id="UI6-Fy-tUp"/>
                     <constraint firstItem="GIs-Sq-3HF" firstAttribute="top" secondItem="p3R-vT-GrG" secondAttribute="top" id="Wha-hI-br4"/>
+                    <constraint firstItem="OMg-Jj-DLg" firstAttribute="leading" secondItem="p3R-vT-GrG" secondAttribute="leading" constant="16" id="cGA-2R-CWX"/>
+                    <constraint firstAttribute="trailing" secondItem="OMg-Jj-DLg" secondAttribute="trailing" constant="16" id="hkc-Xa-Ftv"/>
                     <constraint firstAttribute="bottom" secondItem="GIs-Sq-3HF" secondAttribute="bottom" id="pjj-Vp-dn2"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="container" destination="GIs-Sq-3HF" id="QiM-Q4-HA0"/>
                 <outlet property="countLabel" destination="Ze6-8b-4Mx" id="jUz-qI-VPe"/>
                 <outlet property="iconImageView" destination="4pc-nU-yXj" id="TwK-8v-DYj"/>
                 <outlet property="titleLabel" destination="Cti-YK-P3y" id="XHP-C8-4kY"/>
