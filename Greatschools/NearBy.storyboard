@@ -373,10 +373,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RkD-5R-WAI" customClass="DetailHeader" customModule="Native" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="70" width="320" height="169"/>
+                                <rect key="frame" x="0.0" y="70" width="320" height="219"/>
                                 <subviews>
                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-tr-u5a" customClass="CustomSegment" customModule="Native" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="119" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="169" width="320" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="MhD-dg-2ne"/>
@@ -399,26 +399,26 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="169" id="UIn-ly-wpC"/>
+                                    <constraint firstAttribute="height" constant="219" id="UIn-ly-wpC"/>
                                     <constraint firstAttribute="bottom" secondItem="RZl-tr-u5a" secondAttribute="bottom" id="UKJ-7k-eCa"/>
                                     <constraint firstAttribute="trailing" secondItem="RZl-tr-u5a" secondAttribute="trailing" id="hE0-Mw-NZg"/>
                                     <constraint firstItem="RZl-tr-u5a" firstAttribute="leading" secondItem="RkD-5R-WAI" secondAttribute="leading" id="sui-cK-2kA"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kug-QG-cwu" userLabel="OverView">
-                                <rect key="frame" x="0.0" y="239" width="320" height="329"/>
+                                <rect key="frame" x="0.0" y="289" width="320" height="279"/>
                                 <connections>
                                     <segue destination="txA-IS-Hy0" kind="embed" id="EfJ-8e-LvQ"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-mK-97e" userLabel="Stars">
-                                <rect key="frame" x="0.0" y="239" width="320" height="329"/>
+                                <rect key="frame" x="0.0" y="289" width="320" height="279"/>
                                 <connections>
                                     <segue destination="Uqu-kR-LOp" kind="embed" id="OTC-pV-iTY"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeg-oz-bNK" userLabel="Review">
-                                <rect key="frame" x="0.0" y="239" width="320" height="329"/>
+                                <rect key="frame" x="0.0" y="289" width="320" height="279"/>
                                 <connections>
                                     <segue destination="t8W-O8-ZVf" kind="embed" id="yTm-s0-AUs"/>
                                 </connections>
@@ -487,11 +487,11 @@
                         <viewControllerLayoutGuide type="bottom" id="3uq-xc-bFC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pJF-zS-KkM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7vT-Aq-WiJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -525,11 +525,11 @@
                         <viewControllerLayoutGuide type="bottom" id="mw0-HG-2vv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C40-Rb-PLi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FzZ-eY-qM9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -563,11 +563,11 @@
                         <viewControllerLayoutGuide type="bottom" id="cJE-pV-DUj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="prE-0s-aJI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1He-eq-X1K">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.94117647058823528" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
