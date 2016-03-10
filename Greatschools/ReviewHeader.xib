@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CG4-bB-xu2" customClass="ReviewHeader" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CG4-bB-xu2" id="NxM-pA-BOM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="223.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzT-fv-5en">
+                        <rect key="frame" x="17" y="66.5" width="380" height="150"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="4.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yp-qk-3L7">
+                                <rect key="frame" x="35" y="39" width="67.5" height="55"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="50"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.1450980392" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-vW-e3A">
+                                <rect key="frame" x="38" y="115" width="61" height="15"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-d3-O2v" customClass="Stars" customModule="Native" customModuleProvider="target">
+                                <rect key="frame" x="36" y="98" width="65" height="13"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="ZoS-NQ-pTp"/>
+                                    <constraint firstAttribute="height" constant="13" id="c9M-SD-pAF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rr3-fB-NA6" userLabel="bar5" customClass="ReviewBar" customModule="Native" customModuleProvider="target">
+                                <rect key="frame" x="147" y="30" width="184" height="17.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhZ-ji-byd" userLabel="bar4" customClass="ReviewBar" customModule="Native" customModuleProvider="target">
+                                <rect key="frame" x="147" y="49.5" width="184" height="17.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbr-79-yAm" userLabel="bar3" customClass="ReviewBar" customModule="Native" customModuleProvider="target">
+                                <rect key="frame" x="147" y="69" width="184" height="17.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkH-7D-FDT" userLabel="bar2" customClass="ReviewBar" customModule="Native" customModuleProvider="target">
+                                <rect key="frame" x="147" y="88.5" width="184" height="17.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PnS-1h-oIM" userLabel="bar1" customClass="ReviewBar" customModule="Native" customModuleProvider="target">
+                                <rect key="frame" x="147" y="108" width="184" height="17.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SYX-vW-e3A" firstAttribute="centerX" secondItem="oiz-d3-O2v" secondAttribute="centerX" id="23C-aa-aIx"/>
+                            <constraint firstItem="oiz-d3-O2v" firstAttribute="centerX" secondItem="7yp-qk-3L7" secondAttribute="centerX" id="8F4-0a-FyF"/>
+                            <constraint firstItem="lhZ-ji-byd" firstAttribute="leading" secondItem="rr3-fB-NA6" secondAttribute="leading" id="8Ht-2h-ljG"/>
+                            <constraint firstItem="SYX-vW-e3A" firstAttribute="top" secondItem="oiz-d3-O2v" secondAttribute="bottom" constant="4" id="AJt-Ww-HnJ"/>
+                            <constraint firstItem="lhZ-ji-byd" firstAttribute="top" secondItem="rr3-fB-NA6" secondAttribute="bottom" constant="2" id="BCw-K1-ycJ"/>
+                            <constraint firstItem="PnS-1h-oIM" firstAttribute="leading" secondItem="xkH-7D-FDT" secondAttribute="leading" id="I8U-ZL-VTO"/>
+                            <constraint firstItem="PnS-1h-oIM" firstAttribute="top" secondItem="xkH-7D-FDT" secondAttribute="bottom" constant="2" id="Ixh-1h-qhx"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="LOK-lC-uy3"/>
+                            <constraint firstItem="7yp-qk-3L7" firstAttribute="leading" secondItem="JzT-fv-5en" secondAttribute="leading" constant="35" id="Ru9-Hs-fbF"/>
+                            <constraint firstItem="rr3-fB-NA6" firstAttribute="top" secondItem="JzT-fv-5en" secondAttribute="top" constant="30" id="Wup-NS-xnN"/>
+                            <constraint firstItem="Hbr-79-yAm" firstAttribute="top" secondItem="lhZ-ji-byd" secondAttribute="bottom" constant="2" id="bb4-8n-RXR"/>
+                            <constraint firstAttribute="height" constant="150" id="dfU-bO-Npn"/>
+                            <constraint firstItem="rr3-fB-NA6" firstAttribute="leading" secondItem="oiz-d3-O2v" secondAttribute="trailing" constant="46" id="dzs-w0-prO"/>
+                            <constraint firstItem="xkH-7D-FDT" firstAttribute="top" secondItem="Hbr-79-yAm" secondAttribute="bottom" constant="2" id="g2k-Ux-Qjs"/>
+                            <constraint firstAttribute="bottom" secondItem="SYX-vW-e3A" secondAttribute="bottom" constant="20" id="lvV-9H-gBk"/>
+                            <constraint firstItem="xkH-7D-FDT" firstAttribute="leading" secondItem="Hbr-79-yAm" secondAttribute="leading" id="pEh-bf-e8D"/>
+                            <constraint firstItem="7yp-qk-3L7" firstAttribute="top" secondItem="JzT-fv-5en" secondAttribute="top" constant="39" id="pqM-4G-Hcf"/>
+                            <constraint firstItem="Hbr-79-yAm" firstAttribute="leading" secondItem="lhZ-ji-byd" secondAttribute="leading" id="t4u-cW-gvh"/>
+                            <constraint firstItem="oiz-d3-O2v" firstAttribute="top" secondItem="7yp-qk-3L7" secondAttribute="bottom" constant="4" id="x5h-pe-jSn"/>
+                            <constraint firstAttribute="bottom" secondItem="PnS-1h-oIM" secondAttribute="bottom" constant="35" id="zQo-9b-MlQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zQo-9b-MlQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="TOTAL REVIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiq-ea-hle">
+                        <rect key="frame" x="17" y="15" width="96.5" height="36.5"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                        <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKU-2o-5eo">
+                        <rect key="frame" x="326" y="18" width="88" height="30"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                        <state key="normal" title="write a review">
+                            <color key="titleColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="JzT-fv-5en" firstAttribute="leading" secondItem="NxM-pA-BOM" secondAttribute="leading" constant="17" id="0fe-W9-TH3"/>
+                    <constraint firstItem="JzT-fv-5en" firstAttribute="leading" secondItem="oiq-ea-hle" secondAttribute="leading" id="KLS-C7-A2Z"/>
+                    <constraint firstItem="AKU-2o-5eo" firstAttribute="centerY" secondItem="oiq-ea-hle" secondAttribute="centerY" id="LoO-1Z-UnG"/>
+                    <constraint firstItem="JzT-fv-5en" firstAttribute="leading" secondItem="oiq-ea-hle" secondAttribute="leading" id="PFQ-e9-m7d"/>
+                    <constraint firstItem="JzT-fv-5en" firstAttribute="top" secondItem="oiq-ea-hle" secondAttribute="bottom" constant="15" id="SB4-9B-FOV"/>
+                    <constraint firstItem="AKU-2o-5eo" firstAttribute="centerY" secondItem="oiq-ea-hle" secondAttribute="centerY" id="VDX-jG-32C"/>
+                    <constraint firstItem="oiq-ea-hle" firstAttribute="top" secondItem="NxM-pA-BOM" secondAttribute="top" constant="15" id="XTw-cj-AiM"/>
+                    <constraint firstAttribute="trailing" secondItem="JzT-fv-5en" secondAttribute="trailing" constant="17" id="rxf-Lq-vlr"/>
+                    <constraint firstItem="JzT-fv-5en" firstAttribute="top" secondItem="oiq-ea-hle" secondAttribute="bottom" constant="15" id="s2u-E3-SIS"/>
+                    <constraint firstAttribute="bottom" secondItem="JzT-fv-5en" secondAttribute="bottom" constant="7" id="x4W-hJ-siG"/>
+                    <constraint firstAttribute="trailing" secondItem="AKU-2o-5eo" secondAttribute="trailing" id="zEV-BA-hCx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="star" destination="oiz-d3-O2v" id="dhH-NS-Onh"/>
+                <outlet property="view" destination="JzT-fv-5en" id="8af-9e-wW7"/>
+                <outletCollection property="reviewBars" destination="rr3-fB-NA6" collectionClass="NSMutableArray" id="voJ-jM-bc1"/>
+                <outletCollection property="reviewBars" destination="lhZ-ji-byd" collectionClass="NSMutableArray" id="RL5-Xb-iDd"/>
+                <outletCollection property="reviewBars" destination="Hbr-79-yAm" collectionClass="NSMutableArray" id="7PE-Pc-Bwz"/>
+                <outletCollection property="reviewBars" destination="xkH-7D-FDT" collectionClass="NSMutableArray" id="atp-zr-SRS"/>
+                <outletCollection property="reviewBars" destination="PnS-1h-oIM" collectionClass="NSMutableArray" id="i6m-mx-Xcb"/>
+            </connections>
+            <point key="canvasLocation" x="292" y="942"/>
+        </tableViewCell>
+    </objects>
+</document>

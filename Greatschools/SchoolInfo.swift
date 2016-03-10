@@ -70,3 +70,27 @@ extension ReviewInfo {
 	ReviewInfo(starInfo: SchoolStar(count: 3, color: UIColor(hexRGB: 0xF5A623)), date: "August 23, 2015", comment: "I've only been going to College Park for a week now and I already love the school! Not only do the teachers care, but the electives they offer are more than I've ever seen! ", imageName: "ReviewPic2", reviewerName: "Evan")]
 }
 
+
+
+struct ReviewBarInfo {
+	let colorID: Int
+	let count: Int
+}
+
+extension ReviewBarInfo {
+	static var demoData = [ReviewBarInfo(colorID: 5, count: 38), ReviewBarInfo(colorID: 4, count: 10), ReviewBarInfo(colorID: 3, count: 6), ReviewBarInfo(colorID: 2, count: 4), ReviewBarInfo(colorID: 1, count: 2)]
+}
+
+
+struct ReviewTotalInfo {
+	let rate: Float
+	let starInfo: SchoolStar
+	let reviewCount: Int
+	let barInfos: [ReviewBarInfo]!
+}
+
+extension ReviewTotalInfo {
+	static var demoData = ReviewTotalInfo(rate: 4.3, starInfo: SchoolStar(count: 4, color: UIColor(hexRGB: 0x62717F)), reviewCount: 60, barInfos: ReviewBarInfo.demoData)
+}
+
+
