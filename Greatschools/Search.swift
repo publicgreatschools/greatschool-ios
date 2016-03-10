@@ -114,6 +114,8 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 	// MARK: - nav
 	
 	@IBAction func ChangeSearchView(sender: AnyObject) {
+		return
+		
 		if isMapView {
 			navRightItem.image = UIImage(named: "Map")
 			isMapView = false
