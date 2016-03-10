@@ -65,6 +65,7 @@
                     <constraint firstItem="Cb2-lO-LaX" firstAttribute="leading" secondItem="tTL-E8-7e9" secondAttribute="leading" constant="16" id="tIM-xQ-gER"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="view" destination="Cb2-lO-LaX" id="E4N-6L-Zz1"/>
             </connections>

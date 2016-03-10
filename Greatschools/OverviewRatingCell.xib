@@ -99,6 +99,7 @@
                     <constraint firstAttribute="trailing" secondItem="knH-0y-V7v" secondAttribute="trailing" constant="16" id="b3F-CU-ukg"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="rate" destination="VBi-VZ-mDs" id="qPX-1Y-qDm"/>
                 <outlet property="rateBackground" destination="SSD-N7-5nQ" id="kpX-er-If7"/>

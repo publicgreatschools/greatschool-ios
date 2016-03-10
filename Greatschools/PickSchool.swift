@@ -73,14 +73,14 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 			if indexPath.row == 0 {
 				return 290
 			}
-			return 400
+			return UITableViewAutomaticDimension
 		}
 		return 75
 	}
 	
 	func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
 		if section == 0 || section == 1 {
-			return 38
+			return 52
 		}
 		return CGFloat.min
 	}

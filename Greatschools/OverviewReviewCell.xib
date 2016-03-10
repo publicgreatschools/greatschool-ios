@@ -109,6 +109,7 @@
                     <constraint firstItem="9WX-tW-6kg" firstAttribute="top" secondItem="rXc-Jy-4T9" secondAttribute="top" id="sts-q7-hRK"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="rate" destination="0bh-Mi-afx" id="TCK-7V-suz"/>
                 <outlet property="rateBackground" destination="vfb-Xr-Fcb" id="61t-De-mUa"/>
