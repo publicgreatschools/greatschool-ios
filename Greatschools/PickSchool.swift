@@ -35,7 +35,7 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		if section == 0 {
-			return SchoolInfo.demoData.count + 1
+			return 3
 		} else if section == 1 {
 			return 2
 		} else {
@@ -101,7 +101,9 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
-		performSegueWithIdentifier("detail", sender: nil)
+		if indexPath.section == 0 {
+			performSegueWithIdentifier("detail", sender: nil)
+		}
 	}
 }
 
