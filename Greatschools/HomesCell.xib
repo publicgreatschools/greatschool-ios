@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmB-D9-OSh">
-                        <rect key="frame" x="16" y="16" width="349" height="351.5"/>
+                        <rect key="frame" x="16" y="16" width="349" height="341"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwn-dl-4Gu" customClass="CardScrollView" customModule="Native" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="349" height="354"/>
@@ -36,7 +36,7 @@
                 <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="JX2-Ep-JMK" secondAttribute="bottom" constant="16" id="OC5-ok-Bjs"/>
-                    <constraint firstItem="JX2-Ep-JMK" firstAttribute="top" secondItem="dmB-D9-OSh" secondAttribute="bottom" id="RrV-wA-wXE"/>
+                    <constraint firstItem="JX2-Ep-JMK" firstAttribute="top" secondItem="dmB-D9-OSh" secondAttribute="bottom" constant="10" id="RrV-wA-wXE"/>
                     <constraint firstItem="dmB-D9-OSh" firstAttribute="leading" secondItem="g7x-T5-AXA" secondAttribute="leading" constant="16" id="XU8-JC-fA6"/>
                     <constraint firstAttribute="trailing" secondItem="dmB-D9-OSh" secondAttribute="trailing" constant="16" id="fWm-df-stj"/>
                     <constraint firstItem="dmB-D9-OSh" firstAttribute="top" secondItem="g7x-T5-AXA" secondAttribute="top" constant="16" id="jo1-Y3-1gU"/>

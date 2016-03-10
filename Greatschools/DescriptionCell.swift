@@ -11,4 +11,10 @@ import Greycats
 
 class DescriptionCell: UITableViewCell {
 	@IBOutlet weak var titleLabel: KernLabel!
+	@IBOutlet weak var container: UIView!
+	
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		selectedBackgroundView?.frame = container.frame
+	}
 }
