@@ -1,46 +1,94 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CDi-uz-gus">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NJP-Mq-1ft">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="pRs-F1-F6A">
+        <scene sceneID="b5h-JT-D4Y">
             <objects>
-                <viewController id="KSH-qs-bJI" sceneMemberID="viewController">
+                <viewController id="gWu-ez-yAF" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="345-uf-Jnh"/>
-                        <viewControllerLayoutGuide type="bottom" id="5cB-se-uS2"/>
+                        <viewControllerLayoutGuide type="top" id="cNu-X4-kcE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pj7-Zg-GKB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TaV-gD-tgf">
+                    <view key="view" contentMode="scaleToFill" id="yaX-XG-tT8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsz-mL-id4" customClass="GradientView" customModule="Greycats">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GreatKids" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Lw-GC-Lqs">
+                                        <rect key="frame" x="260.5" y="33" width="79.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksk-Ap-Sdy">
+                                        <rect key="frame" x="173" y="275" width="255" height="49"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2Lw-GC-Lqs" firstAttribute="top" secondItem="gsz-mL-id4" secondAttribute="top" constant="33" id="BQp-l9-ho4"/>
+                                    <constraint firstItem="2Lw-GC-Lqs" firstAttribute="centerX" secondItem="gsz-mL-id4" secondAttribute="centerX" id="EE4-Jv-5D0"/>
+                                    <constraint firstItem="Ksk-Ap-Sdy" firstAttribute="centerY" secondItem="gsz-mL-id4" secondAttribute="centerY" id="ie9-ru-H0G"/>
+                                    <constraint firstItem="Ksk-Ap-Sdy" firstAttribute="centerX" secondItem="gsz-mL-id4" secondAttribute="centerX" id="sMV-g4-g6s"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color1">
+                                        <color key="value" red="0.090196078430000007" green="0.41176470590000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                        <color key="value" red="0.21960784310000001" green="0.7843137255" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gsz-mL-id4" firstAttribute="leading" secondItem="yaX-XG-tT8" secondAttribute="leading" id="Q66-Zb-ugY"/>
+                            <constraint firstAttribute="trailing" secondItem="gsz-mL-id4" secondAttribute="trailing" id="U3e-jN-qKY"/>
+                            <constraint firstItem="Pj7-Zg-GKB" firstAttribute="top" secondItem="gsz-mL-id4" secondAttribute="bottom" id="YeT-5s-9gv"/>
+                            <constraint firstItem="gsz-mL-id4" firstAttribute="top" secondItem="yaX-XG-tT8" secondAttribute="top" id="qxm-yr-JxP"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Wen-6R-TmR"/>
+                    <navigationItem key="navigationItem" id="9Ry-XI-dVt"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="My8-Hu-SsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCm-lR-FRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="172"/>
+            <point key="canvasLocation" x="1715" y="166"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="cWF-Sz-zLf">
+        <scene sceneID="9rX-3Y-Ce2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CDi-uz-gus" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NJP-Mq-1ft" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7hQ-nU-Zgw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xbJ-gi-B4a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="KSH-qs-bJI" kind="relationship" relationship="rootViewController" id="qvc-Mg-cRh"/>
+                        <segue destination="gWu-ez-yAF" kind="relationship" relationship="rootViewController" id="Q7t-5u-TLd"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t5x-PI-lZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7J-qF-7et" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="172"/>
+            <point key="canvasLocation" x="903" y="166"/>
         </scene>
     </scenes>
 </document>

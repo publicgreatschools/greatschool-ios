@@ -14,7 +14,7 @@ class NearByViewController: ViewController {
 	@IBOutlet weak var gredientView: GradientView!
 	@IBOutlet weak var header: UIImageView!
 	@IBOutlet weak var countLabel: GradientLabel!
-	@IBOutlet weak var descriptionLabel: UILabel!
+	@IBOutlet weak var descriptionLabel: KernLabel!
 	@IBOutlet weak var exploreButton: UIButton!
 	@IBOutlet weak var article: Article!
 	
@@ -27,7 +27,7 @@ class NearByViewController: ViewController {
 		let neighBorhood = "NEIGHBORHOOD"
 		let string = "SCHOOLS IN THIS " + neighBorhood
 		let attributedString = NSMutableAttributedString(string: string)
-		attributedString.setAttributes([NSFontAttributeName: UIFont.boldFontOfSize(13), NSForegroundColorAttributeName: UIColor.lightGreenColor()], range: NSMakeRange(string.length - neighBorhood.length, neighBorhood.length))
+		attributedString.setAttributes([NSFontAttributeName: UIFont.boldFontOfSize(15), NSForegroundColorAttributeName: UIColor.lightGreenColor(), NSUnderlineStyleAttributeName: 1], range: NSMakeRange(string.length - neighBorhood.length, neighBorhood.length))
 		descriptionLabel.attributedText = attributedString
 	}
 }

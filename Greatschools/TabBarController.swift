@@ -36,12 +36,6 @@ class TabBarController: UITabBarController {
 				if let nav = viewControllers?[index] as? UINavigationController, let _ = nav.viewControllers.first as? PickSchoolViewController {
 					nav.popToRootViewControllerAnimated(true)
 				}
-			case 2,3:
-				SVProgressHUD.setDefaultMaskType(.Gradient)
-				SVProgressHUD.showWithStatus("Coming soon!")
-				dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
-					SVProgressHUD.dismiss()
-				})
 			default: return
 			}
 		}

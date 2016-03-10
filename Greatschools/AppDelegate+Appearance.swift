@@ -41,7 +41,7 @@ extension AppDelegate {
 		
 		let tabBarItemAppearance = UITabBarItem.appearance()
 		paragraphStyle.lineSpacing = 13
-		tabBarItemAppearance.setTitleTextAttributes([NSFontAttributeName: UIFont.semiBoldFontOfSize(11), NSForegroundColorAttributeName: UIColor.barGreyColor(), NSKernAttributeName: 0.7, NSParagraphStyleAttributeName: paragraphStyle], forState: .Normal)
-		tabBarItemAppearance.setTitleTextAttributes([NSFontAttributeName: UIFont.semiBoldFontOfSize(11), NSForegroundColorAttributeName: UIColor.barBlueTextColor(), NSKernAttributeName: 0.7, NSParagraphStyleAttributeName: paragraphStyle], forState: .Selected)
+		tabBarItemAppearance.setTitleTextAttributes([NSFontAttributeName: UIFont.semiBoldFontOfSize(13), NSForegroundColorAttributeName: UIColor.barGreyColor(), NSKernAttributeName: 0.7, NSParagraphStyleAttributeName: paragraphStyle], forState: .Normal)
+		tabBarItemAppearance.setTitleTextAttributes([NSFontAttributeName: UIFont.semiBoldFontOfSize(13), NSForegroundColorAttributeName: UIColor.barBlueTextColor(), NSKernAttributeName: 0.7, NSParagraphStyleAttributeName: paragraphStyle], forState: .Selected)
 	}
 }

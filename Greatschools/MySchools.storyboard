@@ -4,6 +4,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="Yik-Yi-IcL">
@@ -16,7 +24,47 @@
                     <view key="view" contentMode="scaleToFill" id="TVD-XJ-Brc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0I-fn-WUN" customClass="GradientView" customModule="Greycats">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Schools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jd-2Q-jIg">
+                                        <rect key="frame" x="254" y="33" width="92.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY5-9b-6sZ">
+                                        <rect key="frame" x="173" y="275.5" width="255" height="49"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="HY5-9b-6sZ" firstAttribute="centerY" secondItem="F0I-fn-WUN" secondAttribute="centerY" id="3Vv-3s-E85"/>
+                                    <constraint firstItem="HY5-9b-6sZ" firstAttribute="centerX" secondItem="F0I-fn-WUN" secondAttribute="centerX" id="IsQ-eS-2XR"/>
+                                    <constraint firstItem="1jd-2Q-jIg" firstAttribute="centerX" secondItem="F0I-fn-WUN" secondAttribute="centerX" id="Myi-yW-Fea"/>
+                                    <constraint firstItem="1jd-2Q-jIg" firstAttribute="top" secondItem="F0I-fn-WUN" secondAttribute="top" constant="33" id="gR9-SD-eBP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color1">
+                                        <color key="value" red="0.090196078430000007" green="0.41176470590000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                        <color key="value" red="0.21960784310000001" green="0.7843137255" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F0I-fn-WUN" firstAttribute="leading" secondItem="TVD-XJ-Brc" secondAttribute="leading" id="5A0-25-tNf"/>
+                            <constraint firstItem="F0I-fn-WUN" firstAttribute="top" secondItem="TVD-XJ-Brc" secondAttribute="top" id="LAz-sh-Ucd"/>
+                            <constraint firstAttribute="trailing" secondItem="F0I-fn-WUN" secondAttribute="trailing" id="RFP-2f-cQ2"/>
+                            <constraint firstItem="4A3-La-WnU" firstAttribute="top" secondItem="F0I-fn-WUN" secondAttribute="bottom" id="ThP-lA-UhQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EF2-nl-x7T"/>
                 </viewController>
@@ -27,7 +75,7 @@
         <!--Navigation Controller-->
         <scene sceneID="aad-cJ-dKn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jhK-mF-Hgw" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="jhK-mF-Hgw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vma-Dj-y1A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

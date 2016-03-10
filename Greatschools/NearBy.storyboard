@@ -38,7 +38,7 @@
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vat-YL-6Do" customClass="GradientLabel" customModule="Native" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="100" width="200" height="140"/>
+                                        <rect key="frame" x="60" y="156" width="200" height="140"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="XSb-JB-Rh8"/>
@@ -64,12 +64,12 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDg-gh-X6z">
-                                        <rect key="frame" x="72" y="286" width="175" height="44"/>
+                                        <rect key="frame" x="72" y="344" width="175" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Lf0-Pc-WMB"/>
                                             <constraint firstAttribute="width" constant="175" id="ycT-DI-cZJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="Let's explore" backgroundImage="gradient_background">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -89,11 +89,16 @@
                                             <action selector="explore:" destination="cqa-iO-JoP" eventType="touchUpInside" id="Goq-Iu-Row"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHOOLS IN THIS NEIGHBORHOOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZi-3I-Utl">
-                                        <rect key="frame" x="51" y="240" width="217.5" height="16"/>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="13"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHOOLS IN THIS NEIGHBORHOOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZi-3I-Utl" customClass="KernLabel" customModule="Greycats">
+                                        <rect key="frame" x="20.5" y="296" width="279" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="kern">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="y0w-Tc-KCV">
                                         <rect key="frame" x="0.0" y="408" width="320" height="2"/>
@@ -102,7 +107,7 @@
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xn-5p-epV" customClass="Article" customModule="Native" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="428" width="280" height="100"/>
+                                        <rect key="frame" x="36" y="428" width="260" height="100"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="YAY-dP-LFq"/>
@@ -115,15 +120,15 @@
                                     <constraint firstAttribute="bottom" secondItem="8xn-5p-epV" secondAttribute="bottom" constant="40" id="5Bj-vB-Hq6"/>
                                     <constraint firstItem="y0w-Tc-KCV" firstAttribute="leading" secondItem="Aw9-R7-lQC" secondAttribute="leading" id="BSh-nf-maX"/>
                                     <constraint firstItem="VwM-9Z-eVS" firstAttribute="top" secondItem="Aw9-R7-lQC" secondAttribute="top" constant="45" id="E9i-GQ-Jbc"/>
-                                    <constraint firstAttribute="trailing" secondItem="8xn-5p-epV" secondAttribute="trailing" constant="20" id="GAv-G3-r81"/>
+                                    <constraint firstAttribute="trailing" secondItem="8xn-5p-epV" secondAttribute="trailing" constant="24" id="GAv-G3-r81"/>
                                     <constraint firstItem="8xn-5p-epV" firstAttribute="top" secondItem="y0w-Tc-KCV" secondAttribute="bottom" constant="18" id="IfF-ga-KZH"/>
-                                    <constraint firstItem="Vat-YL-6Do" firstAttribute="top" secondItem="VwM-9Z-eVS" secondAttribute="bottom" constant="30" id="KaO-B7-dzt"/>
+                                    <constraint firstItem="Vat-YL-6Do" firstAttribute="top" secondItem="VwM-9Z-eVS" secondAttribute="bottom" constant="86" id="KaO-B7-dzt"/>
                                     <constraint firstItem="KDg-gh-X6z" firstAttribute="top" secondItem="rZi-3I-Utl" secondAttribute="bottom" constant="30" id="Zq5-gg-Srj"/>
                                     <constraint firstItem="Vat-YL-6Do" firstAttribute="centerX" secondItem="Aw9-R7-lQC" secondAttribute="centerX" id="exH-TM-zqo"/>
                                     <constraint firstItem="VwM-9Z-eVS" firstAttribute="centerX" secondItem="Aw9-R7-lQC" secondAttribute="centerX" id="hpx-GU-jhP"/>
                                     <constraint firstAttribute="trailing" secondItem="y0w-Tc-KCV" secondAttribute="trailing" id="kXw-SA-FLe"/>
                                     <constraint firstItem="rZi-3I-Utl" firstAttribute="top" secondItem="Vat-YL-6Do" secondAttribute="bottom" id="oDt-8l-LnA"/>
-                                    <constraint firstItem="8xn-5p-epV" firstAttribute="leading" secondItem="Aw9-R7-lQC" secondAttribute="leading" constant="20" id="sxV-Tm-KdZ"/>
+                                    <constraint firstItem="8xn-5p-epV" firstAttribute="leading" secondItem="Aw9-R7-lQC" secondAttribute="leading" constant="36" id="sxV-Tm-KdZ"/>
                                     <constraint firstItem="KDg-gh-X6z" firstAttribute="centerX" secondItem="Aw9-R7-lQC" secondAttribute="centerX" id="wrr-Nh-ae5"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>

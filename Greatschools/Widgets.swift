@@ -16,7 +16,7 @@ class TabBarItem: UITabBarItem {
 		self.title = title
 		image = UIImage(named: imageName + "_inactive")?.imageWithRenderingMode(.AlwaysOriginal)
 		selectedImage = UIImage(named: imageName + "_active")?.imageWithRenderingMode(.AlwaysOriginal)
-		titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -5)
+		titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -7)
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
