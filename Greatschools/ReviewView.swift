@@ -6,7 +6,7 @@
 //  Copyright © 2016 ilabs. All rights reserved.
 //
 
-import UIKit
+import Greycats
 
 class ReviewCell: UITableViewCell {
 	@IBOutlet weak var view: UIView!
@@ -27,6 +27,41 @@ class ReviewCell: UITableViewCell {
 				pic.removeFromSuperview()
 			}
 			submit.text = "Submitted by " + reviewInfo.reviewerName
+		}
+	}
+	
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		selectedBackgroundView?.frame = view.frame
+	}
+}
+
+
+@IBDesignable
+class ReviewBar: NibView {
+	@IBOutlet weak var count: UILabel!
+	@IBOutlet weak var barImage: UIImageView!
+	
+	var reviewBarInfo: ReviewBarInfo! {
+		didSet {
+			count.text = "\(reviewBarInfo.count)"
+			barImage.image = UIImage(named: "ReviewBar\(reviewBarInfo.colorID)")
+		}
+	}
+}
+
+
+class ReviewHeader: UITableViewCell {
+	@IBOutlet weak var view: UIView!
+	@IBOutlet weak var star: Stars!
+	@IBOutlet var reviewBars: [ReviewBar]!
+	
+	var reviewTotalInfo: ReviewTotalInfo! {
+		didSet {
+			star.starInfo = reviewTotalInfo.starInfo
+			reviewBars.enumerate().forEach { i, bar in
+				bar.reviewBarInfo = reviewTotalInfo.barInfos[i]
+			}
 		}
 	}
 	
