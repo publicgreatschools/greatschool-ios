@@ -164,6 +164,7 @@
         <!--Pick School View Controller-->
         <scene sceneID="pQF-Ch-JQz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzQ-eF-IlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NX6-aV-anK" customClass="PickSchoolViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="50q-f0-4F9"/>
@@ -316,8 +317,6 @@
                         <segue destination="Yw2-rI-YDf" kind="show" identifier="detail" id="JRf-NI-v4T"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lzQ-eF-IlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="mh5-ah-TlL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="977" y="335"/>
         </scene>
@@ -340,7 +339,7 @@
                                         <rect key="frame" x="18" y="34" width="20" height="22"/>
                                         <state key="normal" image="back"/>
                                         <connections>
-                                            <segue destination="mh5-ah-TlL" kind="unwind" unwindAction="unwindSegueToViewController:" id="YI1-mP-uhN"/>
+                                            <action selector="pop:" destination="Yw2-rI-YDf" eventType="touchUpInside" id="mhF-EI-DcR"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bv-ey-3D1">

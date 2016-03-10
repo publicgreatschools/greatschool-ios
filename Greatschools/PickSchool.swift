@@ -24,6 +24,11 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 		tableView.registerNib(UINib(nibName: "PickSchoolHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "PickSchoolHeader")
 	}
 	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.setNavigationBarHidden(true, animated: true)
+	}
+	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 		return 3
 	}

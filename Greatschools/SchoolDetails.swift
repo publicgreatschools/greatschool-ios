@@ -46,11 +46,20 @@ class SchoolDetailsViewController: ViewController {
 		}
 	}
 	
+	@IBAction func pop(sender: AnyObject) {
+		navigationController?.popViewControllerAnimated(true)
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		fullScreenLayout = false
 		segment.onSelected = { index in
 			self.transitionToTab(index)
 		}
+	}
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.setNavigationBarHidden(true, animated: true)
 	}
 }

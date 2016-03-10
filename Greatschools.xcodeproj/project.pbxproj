@@ -84,6 +84,7 @@
 		E9BAB06B1C90243500E9CB29 /* CustomSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */; };
 		E9DB6F921C91535B000C8069 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB6F911C91535B000C8069 /* ReviewView.swift */; };
 		E9DB6F941C915FA1000C8069 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB6F931C915FA1000C8069 /* StatsView.swift */; };
+		E9DB6F961C9168DE000C8069 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DB6F951C9168DE000C8069 /* Details.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +171,7 @@
 		E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSegment.xib; sourceTree = "<group>"; };
 		E9DB6F911C91535B000C8069 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		E9DB6F931C915FA1000C8069 /* StatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		E9DB6F951C9168DE000C8069 /* Details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				E903456E1C8D26C700542F55 /* Home.storyboard */,
+				E9DB6F951C9168DE000C8069 /* Details.storyboard */,
 				E90345801C8D283500542F55 /* TabBarController.swift */,
 				E920742F1C8E8D730029611A /* ViewController.swift */,
 				E9483D811C8D428D002656B8 /* GreatKids */,
@@ -517,6 +520,7 @@
 				B545A74E1C901384006065B4 /* OverviewBeforeCell.xib in Resources */,
 				E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */,
 				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
+				E9DB6F961C9168DE000C8069 /* Details.storyboard in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
 				E94DB2A61C8D85A20030F431 /* Article.xib in Resources */,
 				E92074461C8EB29A0029611A /* SimpleCell.xib in Resources */,
