@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zuY-99-qLR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zuY-99-qLR">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -164,7 +164,6 @@
         <!--Pick School View Controller-->
         <scene sceneID="pQF-Ch-JQz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lzQ-eF-IlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NX6-aV-anK" customClass="PickSchoolViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="50q-f0-4F9"/>
@@ -317,6 +316,7 @@
                         <segue destination="Yw2-rI-YDf" kind="show" identifier="detail" id="JRf-NI-v4T"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzQ-eF-IlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="977" y="335"/>
         </scene>
@@ -375,7 +375,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RkD-5R-WAI" customClass="DetailHeader" customModule="Native" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="70" width="320" height="169"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-tr-u5a" customClass="CustomSegment" customModule="Native" customModuleProvider="target">
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-tr-u5a" customClass="CustomSegment" customModule="Native" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="119" width="320" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
