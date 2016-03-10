@@ -35,7 +35,7 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		if section == 0 {
-			return 3
+			return 4
 		} else if section == 1 {
 			return 2
 		} else {
@@ -45,7 +45,7 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		if indexPath.section == 0 {
-			if indexPath.row < SchoolInfo.demoData.count {
+			if indexPath.row < 3 {
 				let cell = tableView.dequeueReusableCellWithIdentifier("SchoolInfoCell", forIndexPath: indexPath) as! SchoolInfoCell
 				cell.schoolInfo = SchoolInfo.demoData[indexPath.row]
 				return cell
@@ -70,7 +70,7 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		if indexPath.section == 0 {
-			if indexPath.row < SchoolInfo.demoData.count {
+			if indexPath.row < 3 {
 				return 144
 			}
 			return 62
@@ -101,7 +101,7 @@ class PickSchoolViewController: ViewController, UITableViewDataSource, UITableVi
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
-		if indexPath.section == 0 {
+		if indexPath.section == 0 && indexPath.row < 3 {
 			performSegueWithIdentifier("detail", sender: nil)
 		}
 	}
