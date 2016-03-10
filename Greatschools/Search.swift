@@ -8,7 +8,7 @@
 
 import Greycats
 
-class SearchViewController: UIViewController, UITextFieldDelegate {
+class SearchViewController: ViewController, UITextFieldDelegate, AutoFocus {
 	@IBOutlet weak var gradientView: GradientView!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var searchView: SearchView!
@@ -24,6 +24,8 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		autoDetectKeyboard = true
+		shouldTapToEndEditing = true
 		demoData = SchoolInfo.demoData
 		demoData.sortInPlace{ $0.miles < $1.miles }
 		tableView.registerNib(UINib(nibName: "SchoolInfoCell", bundle: nil), forCellReuseIdentifier: "SchoolInfoCell")
@@ -36,6 +38,24 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 				weakself.changeSelectButton(index+1)
 			}
 		}
+	}
+	
+	func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+		if touch.view!.isDescendantOfView(tableView) {
+			return false
+		}
+		if searchView.textField.isFirstResponder() {
+			return true
+		}
+		return true
+	}
+	
+	func activeField() -> UIView? {
+		return searchView.textField
+	}
+	
+	func scrollingView() -> UIScrollView? {
+		return tableView
 	}
 	
 	override func viewWillAppear(animated: Bool) {

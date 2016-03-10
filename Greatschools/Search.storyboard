@@ -27,7 +27,6 @@
                                             <constraint firstAttribute="height" constant="48" id="d42-Zc-ofT"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="leftImageName" value="search"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
@@ -95,10 +94,10 @@
                         <constraints>
                             <constraint firstItem="HcW-q0-vfD" firstAttribute="top" secondItem="2yB-EV-Rcb" secondAttribute="top" id="6nd-1O-foX"/>
                             <constraint firstItem="3wP-D3-AdU" firstAttribute="top" secondItem="HcW-q0-vfD" secondAttribute="bottom" id="OJ9-i7-e98"/>
+                            <constraint firstItem="cXC-ex-bCp" firstAttribute="top" secondItem="3wP-D3-AdU" secondAttribute="bottom" id="Rst-fO-UTc"/>
                             <constraint firstItem="3wP-D3-AdU" firstAttribute="leading" secondItem="2yB-EV-Rcb" secondAttribute="leading" id="bnU-0N-W5x"/>
                             <constraint firstAttribute="trailing" secondItem="3wP-D3-AdU" secondAttribute="trailing" id="q6m-Pg-dkV"/>
                             <constraint firstAttribute="trailing" secondItem="HcW-q0-vfD" secondAttribute="trailing" id="vkz-FE-rUK"/>
-                            <constraint firstAttribute="bottom" secondItem="3wP-D3-AdU" secondAttribute="bottom" id="xXT-zI-9ym"/>
                             <constraint firstItem="HcW-q0-vfD" firstAttribute="leading" secondItem="2yB-EV-Rcb" secondAttribute="leading" id="xXz-rq-lMU"/>
                         </constraints>
                         <connections>
@@ -124,6 +123,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="gradientView" destination="HcW-q0-vfD" id="ryf-Yh-bW7"/>
+                        <outlet property="keyboardHeight" destination="Rst-fO-UTc" id="9JN-rS-PwC"/>
                         <outlet property="navRightItem" destination="ROC-Ag-LWB" id="whA-aW-p6n"/>
                         <outlet property="searchView" destination="YhQ-ps-Gw7" id="DWs-eW-V8n"/>
                         <outlet property="segment" destination="cJi-H9-lL5" id="W2X-4Z-EHj"/>
