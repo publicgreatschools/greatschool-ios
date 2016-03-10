@@ -599,6 +599,6 @@
         <image name="divider" width="414" height="3"/>
         <image name="divider_vertical" width="4" height="185"/>
         <image name="gradient_background" width="175" height="44"/>
-        <image name="headerLogo" width="107" height="25"/>
+        <image name="headerLogo" width="110" height="25"/>
     </resources>
 </document>
