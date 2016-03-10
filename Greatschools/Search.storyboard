@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcW-q0-vfD" customClass="GradientView" customModule="Greycats">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="196"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-ps-Gw7" customClass="SearchView" customModule="Native" customModuleProvider="target">
                                         <rect key="frame" x="18" y="89" width="284" height="48"/>
@@ -33,8 +33,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJi-H9-lL5" customClass="CustomSegment" customModule="Native" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="146" width="320" height="50"/>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJi-H9-lL5" customClass="CustomSegment" customModule="Native" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="106" width="320" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="jMj-XZ-SVU"/>
@@ -59,7 +59,7 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="cJi-H9-lL5" secondAttribute="bottom" id="H3z-di-Rqh"/>
                                     <constraint firstItem="YhQ-ps-Gw7" firstAttribute="top" secondItem="HcW-q0-vfD" secondAttribute="top" constant="89" id="Qrd-ly-6lH"/>
-                                    <constraint firstAttribute="height" constant="196" id="fg3-84-I2M"/>
+                                    <constraint firstAttribute="height" constant="156" id="fg3-84-I2M"/>
                                     <constraint firstItem="YhQ-ps-Gw7" firstAttribute="leading" secondItem="HcW-q0-vfD" secondAttribute="leading" constant="18" id="hpf-e5-nH5"/>
                                     <constraint firstItem="cJi-H9-lL5" firstAttribute="leading" secondItem="HcW-q0-vfD" secondAttribute="leading" id="jJC-65-nvS"/>
                                     <constraint firstAttribute="trailing" secondItem="cJi-H9-lL5" secondAttribute="trailing" id="r97-WN-4q9"/>
@@ -81,7 +81,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="3wP-D3-AdU">
-                                <rect key="frame" x="0.0" y="196" width="320" height="372"/>
+                                <rect key="frame" x="0.0" y="156" width="320" height="412"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
