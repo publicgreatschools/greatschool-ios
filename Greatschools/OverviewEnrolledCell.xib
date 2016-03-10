@@ -15,30 +15,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eGy-1H-Ujo" customClass="OverviewEnrolledCell" customModule="Native" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="eGy-1H-Ujo" customClass="OverviewEnrolledCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eGy-1H-Ujo" id="s6G-f9-wPZ">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7C-nx-BV2">
-                        <rect key="frame" x="16" y="0.0" width="382" height="52.5"/>
+                        <rect key="frame" x="16" y="0.0" width="382" height="99.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Enrolled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwr-PI-fZ2">
-                                <rect key="frame" x="20" y="16" width="131" height="22"/>
+                                <rect key="frame" x="20" y="22" width="131" height="57"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                 <color key="textColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,950" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpW-Ea-cbw">
-                                <rect key="frame" x="299" y="14.5" width="49" height="24.5"/>
+                                <rect key="frame" x="299" y="38" width="49" height="24.5"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="20"/>
                                 <color key="textColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellDivider" translatesAutoresizingMaskIntoConstraints="NO" id="k7l-VN-J1M">
-                                <rect key="frame" x="0.0" y="51.5" width="382" height="1"/>
+                                <rect key="frame" x="0.0" y="98.5" width="382" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="wEz-Mm-4ze"/>
                                 </constraints>
@@ -49,6 +49,7 @@
                             <constraint firstAttribute="bottom" secondItem="k7l-VN-J1M" secondAttribute="bottom" id="112-yh-n7q"/>
                             <constraint firstAttribute="trailing" secondItem="k7l-VN-J1M" secondAttribute="trailing" id="SDR-UN-QKo"/>
                             <constraint firstItem="xwr-PI-fZ2" firstAttribute="leading" secondItem="g7C-nx-BV2" secondAttribute="leading" constant="20" id="cep-84-1VN"/>
+                            <constraint firstItem="xwr-PI-fZ2" firstAttribute="top" secondItem="g7C-nx-BV2" secondAttribute="top" constant="22" id="efq-ce-tMH"/>
                             <constraint firstAttribute="trailing" secondItem="lpW-Ea-cbw" secondAttribute="trailing" constant="34" id="hDP-hA-yKc"/>
                             <constraint firstItem="k7l-VN-J1M" firstAttribute="leading" secondItem="g7C-nx-BV2" secondAttribute="leading" id="i8B-gq-bwy"/>
                             <constraint firstItem="xwr-PI-fZ2" firstAttribute="centerY" secondItem="g7C-nx-BV2" secondAttribute="centerY" id="yxx-E4-3WT"/>
@@ -67,7 +68,7 @@
             <connections>
                 <outlet property="view" destination="g7C-nx-BV2" id="Tw0-92-fYw"/>
             </connections>
-            <point key="canvasLocation" x="538" y="318"/>
+            <point key="canvasLocation" x="538" y="322"/>
         </tableViewCell>
     </objects>
     <resources>

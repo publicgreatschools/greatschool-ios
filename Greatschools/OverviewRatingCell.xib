@@ -15,50 +15,50 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7ri-xc-9Gm" customClass="OverviewRatingCell" customModule="Native" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="7ri-xc-9Gm" customClass="OverviewRatingCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ri-xc-9Gm" id="Rtk-rf-Ajr">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knH-0y-V7v">
-                        <rect key="frame" x="16" y="0.0" width="382" height="89.5"/>
+                        <rect key="frame" x="16" y="0.0" width="382" height="99.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GreatSchools Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJf-SC-Fpu">
-                                <rect key="frame" x="20" y="19" width="182.5" height="24.5"/>
+                                <rect key="frame" x="20" y="22" width="182.5" height="31.5"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="20"/>
                                 <color key="textColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out of 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX9-Qi-tAJ">
-                                <rect key="frame" x="20" y="48.5" width="63" height="19.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Out of 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX9-Qi-tAJ">
+                                <rect key="frame" x="20" y="58" width="63" height="19.5"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                 <color key="textColor" red="0.52156862745098043" green="0.57647058823529407" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rate_background" translatesAutoresizingMaskIntoConstraints="NO" id="SSD-N7-5nQ">
-                                <rect key="frame" x="298" y="14" width="57" height="57"/>
+                                <rect key="frame" x="298" y="21.5" width="57" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="57" id="A6s-pX-uVx"/>
                                     <constraint firstAttribute="height" constant="57" id="d2Y-YQ-c3h"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBi-VZ-mDs">
-                                <rect key="frame" x="319.5" y="28" width="15" height="29"/>
+                                <rect key="frame" x="319" y="35.5" width="15" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next" translatesAutoresizingMaskIntoConstraints="NO" id="dZM-ni-sjy">
-                                <rect key="frame" x="359" y="38.5" width="11" height="13"/>
+                                <rect key="frame" x="359" y="43" width="11" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="13" id="d8a-uj-k2h"/>
                                     <constraint firstAttribute="width" constant="11" id="hwP-xE-3Kb"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellDivider" translatesAutoresizingMaskIntoConstraints="NO" id="wk7-Hb-nfP">
-                                <rect key="frame" x="0.0" y="88.5" width="382" height="1"/>
+                                <rect key="frame" x="0.0" y="98" width="382" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ntG-RR-Tbt"/>
                                 </constraints>
@@ -71,18 +71,21 @@
                             <constraint firstItem="VBi-VZ-mDs" firstAttribute="centerY" secondItem="SSD-N7-5nQ" secondAttribute="centerY" id="73p-M0-Fuy"/>
                             <constraint firstItem="IX9-Qi-tAJ" firstAttribute="leading" secondItem="KJf-SC-Fpu" secondAttribute="leading" id="8ZX-dR-oaR"/>
                             <constraint firstAttribute="trailing" secondItem="wk7-Hb-nfP" secondAttribute="trailing" id="CE8-fD-XEG"/>
+                            <constraint firstItem="SSD-N7-5nQ" firstAttribute="centerY" secondItem="knH-0y-V7v" secondAttribute="centerY" id="LWH-55-Qxj"/>
                             <constraint firstItem="KJf-SC-Fpu" firstAttribute="leading" secondItem="knH-0y-V7v" secondAttribute="leading" constant="20" id="PsG-PU-KZg"/>
                             <constraint firstItem="dZM-ni-sjy" firstAttribute="trailing" secondItem="knH-0y-V7v" secondAttribute="trailing" constant="-12" id="aDj-42-YOX"/>
                             <constraint firstItem="dZM-ni-sjy" firstAttribute="leading" secondItem="SSD-N7-5nQ" secondAttribute="trailing" constant="4" id="bwR-3v-G0Z"/>
                             <constraint firstAttribute="bottom" secondItem="wk7-Hb-nfP" secondAttribute="bottom" id="chm-0u-IwC"/>
-                            <constraint firstItem="KJf-SC-Fpu" firstAttribute="top" secondItem="knH-0y-V7v" secondAttribute="top" constant="19" id="fIx-EY-QaZ"/>
+                            <constraint firstItem="KJf-SC-Fpu" firstAttribute="top" secondItem="knH-0y-V7v" secondAttribute="top" constant="22" id="fIx-EY-QaZ"/>
                             <constraint firstItem="SSD-N7-5nQ" firstAttribute="top" secondItem="knH-0y-V7v" secondAttribute="top" constant="14" id="hb8-J1-EBe"/>
+                            <constraint firstAttribute="bottom" secondItem="IX9-Qi-tAJ" secondAttribute="bottom" constant="22" id="iaI-L7-uG3"/>
                             <constraint firstItem="dZM-ni-sjy" firstAttribute="centerY" secondItem="knH-0y-V7v" secondAttribute="centerY" id="jfg-FZ-ZuS"/>
                             <constraint firstItem="IX9-Qi-tAJ" firstAttribute="top" secondItem="KJf-SC-Fpu" secondAttribute="bottom" constant="5" id="pZR-8d-RiG"/>
                             <constraint firstItem="VBi-VZ-mDs" firstAttribute="centerX" secondItem="SSD-N7-5nQ" secondAttribute="centerX" id="x7q-Yc-bLw"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="hb8-J1-EBe"/>
                                 <exclude reference="bwR-3v-G0Z"/>
                             </mask>
                         </variation>
@@ -101,7 +104,7 @@
                 <outlet property="rateBackground" destination="SSD-N7-5nQ" id="kpX-er-If7"/>
                 <outlet property="view" destination="knH-0y-V7v" id="kPT-uO-yvy"/>
             </connections>
-            <point key="canvasLocation" x="295" y="310"/>
+            <point key="canvasLocation" x="295" y="314"/>
         </tableViewCell>
     </objects>
     <resources>

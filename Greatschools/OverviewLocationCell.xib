@@ -13,24 +13,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="g4Q-OM-XUk" customClass="OverviewLocationCell" customModule="Native" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="g4Q-OM-XUk" customClass="OverviewLocationCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g4Q-OM-XUk" id="dEd-l3-Lak">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="72.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="416" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xov-nr-ZPq">
-                        <rect key="frame" x="16" y="0.0" width="382" height="72.5"/>
+                        <rect key="frame" x="16" y="0.0" width="384" height="99.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-4p-Qdn">
-                                <rect key="frame" x="20" y="26" width="67.5" height="22"/>
+                                <rect key="frame" x="20" y="39.5" width="67.5" height="22"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.1450980392" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-mi-8Nu">
-                                <rect key="frame" x="232.5" y="17.5" width="115.5" height="39"/>
+                                <rect key="frame" x="234.5" y="22" width="115.5" height="57"/>
                                 <string key="text">Public District,
 Pleasant Hill, CA</string>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
@@ -38,14 +38,14 @@ Pleasant Hill, CA</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next" translatesAutoresizingMaskIntoConstraints="NO" id="D8Y-DU-GDF">
-                                <rect key="frame" x="359" y="30" width="11" height="13"/>
+                                <rect key="frame" x="361" y="43.5" width="11" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="13" id="H2j-eA-akT"/>
                                     <constraint firstAttribute="width" constant="11" id="Y52-73-oBt"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellDivider" translatesAutoresizingMaskIntoConstraints="NO" id="JdZ-Bo-E9r">
-                                <rect key="frame" x="0.0" y="71.5" width="382" height="1"/>
+                                <rect key="frame" x="0.0" y="98.5" width="384" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="tFZ-lZ-7dT"/>
                                 </constraints>
@@ -60,6 +60,7 @@ Pleasant Hill, CA</string>
                             <constraint firstItem="JdZ-Bo-E9r" firstAttribute="leading" secondItem="xov-nr-ZPq" secondAttribute="leading" id="Z6I-rO-Ny1"/>
                             <constraint firstAttribute="trailing" secondItem="D8Y-DU-GDF" secondAttribute="trailing" constant="12" id="ZLO-tx-KWB"/>
                             <constraint firstAttribute="trailing" secondItem="Ucb-mi-8Nu" secondAttribute="trailing" constant="34" id="jJR-Ig-uF6"/>
+                            <constraint firstItem="Ucb-mi-8Nu" firstAttribute="top" secondItem="xov-nr-ZPq" secondAttribute="top" constant="22" id="jOC-Ju-m2T"/>
                             <constraint firstItem="Ucb-mi-8Nu" firstAttribute="centerY" secondItem="xov-nr-ZPq" secondAttribute="centerY" id="qzB-G4-XwV"/>
                             <constraint firstAttribute="trailing" secondItem="JdZ-Bo-E9r" secondAttribute="trailing" id="wel-Hx-NCK"/>
                         </constraints>
@@ -76,7 +77,7 @@ Pleasant Hill, CA</string>
             <connections>
                 <outlet property="view" destination="xov-nr-ZPq" id="Aav-QN-Enu"/>
             </connections>
-            <point key="canvasLocation" x="538" y="318"/>
+            <point key="canvasLocation" x="539" y="329.5"/>
         </tableViewCell>
     </objects>
     <resources>
