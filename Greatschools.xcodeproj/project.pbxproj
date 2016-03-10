@@ -79,6 +79,7 @@
 		E977A7431C91460900F8AB75 /* HomesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E977A7421C91460900F8AB75 /* HomesCell.swift */; };
 		E98991ED1C90599E00763BBB /* StatsDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98991EC1C90599E00763BBB /* StatsDetailsCell.swift */; };
 		E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98C33831C8EFD4100BE349F /* SearchView.xib */; };
+		E9B5EB5F1C9195C200FC7862 /* AppDelegate+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B5EB5E1C9195C200FC7862 /* AppDelegate+Configuration.swift */; };
 		E9BAB0671C90122E00E9CB29 /* SchoolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */; };
 		E9BAB0691C901D1600E9CB29 /* DetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */; };
 		E9BAB06B1C90243500E9CB29 /* CustomSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */; };
@@ -166,6 +167,7 @@
 		E977A7421C91460900F8AB75 /* HomesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomesCell.swift; sourceTree = "<group>"; };
 		E98991EC1C90599E00763BBB /* StatsDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsDetailsCell.swift; sourceTree = "<group>"; };
 		E98C33831C8EFD4100BE349F /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		E9B5EB5E1C9195C200FC7862 /* AppDelegate+Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Configuration.swift"; sourceTree = "<group>"; };
 		E9BAB0661C90122E00E9CB29 /* SchoolDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetails.swift; sourceTree = "<group>"; };
 		E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailHeader.xib; sourceTree = "<group>"; };
 		E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSegment.xib; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				E903456A1C8D26C700542F55 /* AppDelegate.swift */,
 				E903457D1C8D27FB00542F55 /* AppDelegate+Appearance.swift */,
 				E90345871C8D2A7900542F55 /* AppDelegate+UI.swift */,
+				E9B5EB5E1C9195C200FC7862 /* AppDelegate+Configuration.swift */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				E92074301C8E8D730029611A /* ViewController.swift in Sources */,
 				E977A73B1C9122F900F8AB75 /* DescriptionCell.swift in Sources */,
 				B5D7A3711C8D6AB40092636F /* Search.swift in Sources */,
+				E9B5EB5F1C9195C200FC7862 /* AppDelegate+Configuration.swift in Sources */,
 				B584CB251C8E6C7C0087A26A /* MapView.swift in Sources */,
 				E92074401C8EA96A0029611A /* AppInfo.swift in Sources */,
 				E977A7431C91460900F8AB75 /* HomesCell.swift in Sources */,
