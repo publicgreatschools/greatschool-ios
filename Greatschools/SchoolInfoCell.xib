@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y67-gZ-IgS" customClass="SchoolInfoView" customModule="Native" customModuleProvider="target">
-                        <rect key="frame" x="16" y="7" width="467" height="124.5"/>
+                        <rect key="frame" x="16" y="0.0" width="467" height="124.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -28,8 +28,8 @@
                 <constraints>
                     <constraint firstItem="Y67-gZ-IgS" firstAttribute="leading" secondItem="Jqj-ZQ-b2x" secondAttribute="leading" constant="16" id="6WW-7u-drO"/>
                     <constraint firstAttribute="trailing" secondItem="Y67-gZ-IgS" secondAttribute="trailing" constant="16" id="9ir-jL-Tml"/>
-                    <constraint firstItem="Y67-gZ-IgS" firstAttribute="top" secondItem="Jqj-ZQ-b2x" secondAttribute="top" constant="7" id="ohz-41-d1Z"/>
-                    <constraint firstAttribute="bottom" secondItem="Y67-gZ-IgS" secondAttribute="bottom" constant="7" id="tjD-kU-CHn"/>
+                    <constraint firstItem="Y67-gZ-IgS" firstAttribute="top" secondItem="Jqj-ZQ-b2x" secondAttribute="top" id="ohz-41-d1Z"/>
+                    <constraint firstAttribute="bottom" secondItem="Y67-gZ-IgS" secondAttribute="bottom" constant="14" id="tjD-kU-CHn"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

@@ -7,15 +7,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="211" id="bGH-aw-PqT" customClass="MileStoneCell" customModule="Native" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="351" id="bGH-aw-PqT" customClass="MileStoneCell" customModule="Native" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="351"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bGH-aw-PqT" id="lWv-lf-THt">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="210.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="327" height="350.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pe-SP-tmi" customClass="MileStone" customModule="Native" customModuleProvider="target">
-                        <rect key="frame" x="16" y="0.0" width="288" height="210.5"/>
+                        <rect key="frame" x="16" y="0.0" width="295" height="350.5"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
                                 <point key="value" x="0.0" y="9"/>
@@ -39,7 +39,7 @@
             <connections>
                 <outlet property="container" destination="9pe-SP-tmi" id="NuR-fy-28L"/>
             </connections>
-            <point key="canvasLocation" x="309" y="438.5"/>
+            <point key="canvasLocation" x="312.5" y="468.5"/>
         </tableViewCell>
     </objects>
 </document>

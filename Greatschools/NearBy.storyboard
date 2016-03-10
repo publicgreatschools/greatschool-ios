@@ -96,13 +96,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="y0w-Tc-KCV">
-                                        <rect key="frame" x="0.0" y="380" width="320" height="2"/>
+                                        <rect key="frame" x="0.0" y="408" width="320" height="2"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="5YC-qO-eF1"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xn-5p-epV" customClass="Article" customModule="Native" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="400" width="280" height="100"/>
+                                        <rect key="frame" x="20" y="428" width="280" height="100"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="YAY-dP-LFq"/>
@@ -111,8 +111,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="y0w-Tc-KCV" firstAttribute="top" secondItem="KDg-gh-X6z" secondAttribute="bottom" constant="50" id="0Iw-QD-rze"/>
                                     <constraint firstItem="rZi-3I-Utl" firstAttribute="centerX" secondItem="Aw9-R7-lQC" secondAttribute="centerX" id="2zj-Wb-Afz"/>
+                                    <constraint firstAttribute="bottom" secondItem="8xn-5p-epV" secondAttribute="bottom" constant="40" id="5Bj-vB-Hq6"/>
                                     <constraint firstItem="y0w-Tc-KCV" firstAttribute="leading" secondItem="Aw9-R7-lQC" secondAttribute="leading" id="BSh-nf-maX"/>
                                     <constraint firstItem="VwM-9Z-eVS" firstAttribute="top" secondItem="Aw9-R7-lQC" secondAttribute="top" constant="45" id="E9i-GQ-Jbc"/>
                                     <constraint firstAttribute="trailing" secondItem="8xn-5p-epV" secondAttribute="trailing" constant="20" id="GAv-G3-r81"/>
@@ -164,6 +164,7 @@
         <!--Pick School View Controller-->
         <scene sceneID="pQF-Ch-JQz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzQ-eF-IlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NX6-aV-anK" customClass="PickSchoolViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="50q-f0-4F9"/>
@@ -316,8 +317,6 @@
                         <segue destination="Yw2-rI-YDf" kind="show" identifier="detail" id="JRf-NI-v4T"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lzQ-eF-IlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="mh5-ah-TlL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="977" y="335"/>
         </scene>
@@ -340,7 +339,7 @@
                                         <rect key="frame" x="18" y="34" width="20" height="22"/>
                                         <state key="normal" image="back"/>
                                         <connections>
-                                            <segue destination="mh5-ah-TlL" kind="unwind" unwindAction="unwindSegueToViewController:" id="YI1-mP-uhN"/>
+                                            <action selector="pop:" destination="Yw2-rI-YDf" eventType="touchUpInside" id="mhF-EI-DcR"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bv-ey-3D1">
@@ -599,6 +598,6 @@
         <image name="divider" width="414" height="3"/>
         <image name="divider_vertical" width="4" height="185"/>
         <image name="gradient_background" width="175" height="44"/>
-        <image name="headerLogo" width="107" height="25"/>
+        <image name="headerLogo" width="110" height="25"/>
     </resources>
 </document>

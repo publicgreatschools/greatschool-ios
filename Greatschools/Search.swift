@@ -38,14 +38,18 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 		}
 	}
 	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.setNavigationBarHidden(false, animated: true)
+	}
+	
 	// MARK: - tableview
 	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 		return 1
 	}
 	
-	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-	{
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return demoData.count
 	}
 	
@@ -65,6 +69,8 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
+		let details = UIStoryboard(name: "Details", bundle: nil).instantiateInitialViewController() as! SchoolDetailsViewController
+		navigationController?.pushViewController(details, animated: true)
 	}
 	
 	// MARK: - textfield

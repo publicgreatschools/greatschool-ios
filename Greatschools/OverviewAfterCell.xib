@@ -65,6 +65,7 @@
                     <constraint firstAttribute="trailing" secondItem="1NS-YL-WqC" secondAttribute="trailing" constant="16" id="svZ-Vp-oWz"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="view" destination="1NS-YL-WqC" id="Lp6-AB-S9H"/>
             </connections>
