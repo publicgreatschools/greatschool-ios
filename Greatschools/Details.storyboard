@@ -13,7 +13,7 @@
         <!--School Details View Controller-->
         <scene sceneID="WYR-zL-jqV">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="K25-ea-BMh" customClass="SchoolDetailsViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K25-ea-BMh" customClass="SchoolDetailsViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="79X-x2-wBU"/>
                         <viewControllerLayoutGuide type="bottom" id="SFf-Wo-hGo"/>

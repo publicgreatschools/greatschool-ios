@@ -323,7 +323,7 @@
         <!--School Details View Controller-->
         <scene sceneID="C9X-ut-T21">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="Yw2-rI-YDf" customClass="SchoolDetailsViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yw2-rI-YDf" customClass="SchoolDetailsViewController" customModule="Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zj2-65-sKf"/>
                         <viewControllerLayoutGuide type="bottom" id="TES-Pi-wIX"/>
