@@ -8,7 +8,7 @@
 
 import Greycats
 
-class OverviewController: UIViewController {
+class OverviewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	@IBOutlet weak var tableView: UITableView!
 	
 	var demoData: OverviewInfo!
@@ -51,6 +51,26 @@ class OverviewController: UIViewController {
 		}
 		cell.overviewInfo = demoData
 		return cell
+	}
+	
+	func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		return 15
+	}
+	
+	func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+		return 15
+	}
+	
+	func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		let view = UIView()
+		view.backgroundColor = UIColor.backgroundColor()
+		return view
+	}
+	
+	func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+		let view = UIView()
+		view.backgroundColor = UIColor.backgroundColor()
+		return view
 	}
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

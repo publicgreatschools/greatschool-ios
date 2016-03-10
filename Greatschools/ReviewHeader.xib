@@ -131,6 +131,7 @@
                     <constraint firstAttribute="trailing" secondItem="AKU-2o-5eo" secondAttribute="trailing" id="zEV-BA-hCx"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="star" destination="oiz-d3-O2v" id="dhH-NS-Onh"/>
                 <outlet property="view" destination="JzT-fv-5en" id="8af-9e-wW7"/>

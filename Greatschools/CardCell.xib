@@ -17,8 +17,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPx-LS-SUi">
                         <rect key="frame" x="16" y="16" width="349" height="318.5"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cp-p7-u6L" customClass="CardScrollView" customModule="Native" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="349" height="327"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cp-p7-u6L" customClass="CardScrollView" customModule="Native" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="318.5"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -29,6 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1Cp-p7-u6L" secondAttribute="bottom" id="4wH-xt-EgA"/>
                             <constraint firstItem="1Cp-p7-u6L" firstAttribute="top" secondItem="cPx-LS-SUi" secondAttribute="top" id="DxQ-Cf-sx3"/>
                             <constraint firstAttribute="trailing" secondItem="1Cp-p7-u6L" secondAttribute="trailing" id="LRZ-Aw-gLd"/>
                             <constraint firstItem="1Cp-p7-u6L" firstAttribute="leading" secondItem="cPx-LS-SUi" secondAttribute="leading" id="aDh-GZ-HOT"/>

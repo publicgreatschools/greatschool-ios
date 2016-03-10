@@ -83,6 +83,8 @@
 		E9BAB0691C901D1600E9CB29 /* DetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */; };
 		E9BAB06B1C90243500E9CB29 /* CustomSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */; };
 		E9DB6F921C91535B000C8069 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB6F911C91535B000C8069 /* ReviewView.swift */; };
+		E9DB6F941C915FA1000C8069 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB6F931C915FA1000C8069 /* StatsView.swift */; };
+		E9DB6F961C9168DE000C8069 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DB6F951C9168DE000C8069 /* Details.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,6 +170,8 @@
 		E9BAB0681C901D1600E9CB29 /* DetailHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailHeader.xib; sourceTree = "<group>"; };
 		E9BAB06A1C90243500E9CB29 /* CustomSegment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSegment.xib; sourceTree = "<group>"; };
 		E9DB6F911C91535B000C8069 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		E9DB6F931C915FA1000C8069 /* StatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		E9DB6F951C9168DE000C8069 /* Details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,7 @@
 				E977A73A1C9122F900F8AB75 /* DescriptionCell.swift */,
 				E977A7401C9145D100F8AB75 /* HomesCell.xib */,
 				E977A7421C91460900F8AB75 /* HomesCell.swift */,
+				E9DB6F931C915FA1000C8069 /* StatsView.swift */,
 			);
 			name = Stats;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				E903456E1C8D26C700542F55 /* Home.storyboard */,
+				E9DB6F951C9168DE000C8069 /* Details.storyboard */,
 				E90345801C8D283500542F55 /* TabBarController.swift */,
 				E920742F1C8E8D730029611A /* ViewController.swift */,
 				E9483D811C8D428D002656B8 /* GreatKids */,
@@ -514,6 +520,7 @@
 				B545A74E1C901384006065B4 /* OverviewBeforeCell.xib in Resources */,
 				E98C33841C8EFD4100BE349F /* SearchView.xib in Resources */,
 				B5D7A36B1C8D515D0092636F /* SchoolInfoCell.xib in Resources */,
+				E9DB6F961C9168DE000C8069 /* Details.storyboard in Resources */,
 				E9483D7D1C8D41AE002656B8 /* ProximaNova-Semibold.otf in Resources */,
 				E94DB2A61C8D85A20030F431 /* Article.xib in Resources */,
 				E92074461C8EB29A0029611A /* SimpleCell.xib in Resources */,
@@ -611,6 +618,7 @@
 				E92074511C8ED1F90029611A /* UIView+Appearance.m in Sources */,
 				B5873C5E1C904E89004A9224 /* OverView.swift in Sources */,
 				B5873C621C906E61004A9224 /* Review.swift in Sources */,
+				E9DB6F941C915FA1000C8069 /* StatsView.swift in Sources */,
 				E903458A1C8D2BB800542F55 /* Extensions.swift in Sources */,
 				E920742C1C8E6D3F0029611A /* PickSchool.swift in Sources */,
 				E90345881C8D2A7900542F55 /* AppDelegate+UI.swift in Sources */,

@@ -112,6 +112,7 @@
                     <constraint firstItem="Qge-lt-GFL" firstAttribute="leading" secondItem="p9G-pE-2n8" secondAttribute="leading" constant="17" id="yKT-vc-zpq"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="comment" destination="DqP-cC-vzp" id="ioF-E6-tpd"/>
                 <outlet property="date" destination="5n0-rJ-rei" id="QwM-aY-EWG"/>
